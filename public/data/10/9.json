@@ -1,0 +1,148 @@
+{
+  "chapter_no": 9,
+  "name": "Creating Database with Access",
+  "questions": [
+    {
+      "question_group": "Very Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is field name?",
+          "answer": "Field name is the name given to a column in a table to identify the data it stores.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is data type?",
+          "answer": "Data type defines the kind of data that can be stored in a field, like text, number, or date.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What do you mean by field description?",
+          "answer": "Field description is a short explanation of what the field contains or its purpose.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is primary key?",
+          "answer": "Primary key is a unique field that identifies each record in a table.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is candidate key?",
+          "answer": "Candidate key is a field or set of fields that can uniquely identify records and can be chosen as a primary key.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is composite key?",
+          "answer": "Composite key is a key made of two or more fields combined to uniquely identify a record.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What is field properties pane?",
+          "answer": "Field properties pane shows settings and options to customize a field’s behavior in a table.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "What is default value?",
+          "answer": "Default value is the value automatically assigned to a field if no other value is entered.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What is caption?",
+          "answer": "Caption is a label shown to users instead of the field name in forms or reports.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What is data validation?",
+          "answer": "Data validation ensures that data entered into a field meets certain rules or criteria.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "What is Validation Rule?",
+          "answer": "Validation Rule is a condition that data must satisfy to be accepted in a field.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "What is Validation Text?",
+          "answer": "Validation Text is the error message shown when data does not follow the Validation Rule.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "What is updating the table design?",
+          "answer": "Updating table design means changing the structure of a table, like adding or modifying fields.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "What is logical data type?",
+          "answer": "Logical data type stores data with only two values: true or false (Yes/No).",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "What is input mask?",
+          "answer": "Input mask controls the format in which data is entered in a field, like phone numbers.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 16,
+          "question": "Why should you appropriately mention the field name?",
+          "answer": "Appropriate field names make it easy to understand what data is stored. They help users and developers identify fields quickly and avoid confusion.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "Why do you use OLE object data type?",
+          "answer": "OLE Object data type is used to store objects like images, audio, or documents inside the database. It allows embedding different file types in a record.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "Why do you use calculated data type?",
+          "answer": "Calculated data type stores values automatically calculated from other fields using expressions. It helps in performing automatic calculations like totals or discounts.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "When do you use 'Autonumber' data type?",
+          "answer": "Autonumber is used when you want Access to automatically assign a unique number to each record. It is useful for primary keys.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "Why do you use primary key?",
+          "answer": "Primary key uniquely identifies each record, which prevents duplicate records. It helps link tables and maintain data integrity.",
+          "content_type": "text"
+        },
+        {
+          "id": 21,
+          "question": "Why do you use Required property?",
+          "answer": "Required property makes sure that a field cannot be left empty. It ensures that important data is always entered.",
+          "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "Differentiate between long text and short text data type.",
+          "answer": "Short text stores small amounts of text up to 255 characters, like names. Long text can store large text, like descriptions or notes, with thousands of characters.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

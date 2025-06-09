@@ -1,0 +1,82 @@
+{
+  "chapter_no": 10,
+  "name": "Entering & Editing Data",
+  "questions": [
+    {
+      "question_group": "Very Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is viewing table?",
+          "answer": "Viewing table referes to displaying information stored in table.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is switching view?",
+          "answer": "Switching view means changing how the table or data is displayed, like between Datasheet View and Design View.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is adding records?",
+          "answer": "Adding records means entering new data into the table.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is editing records?",
+          "answer": "Editing records means changing existing data in the table.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is deleting record?",
+          "answer": "Deleting record means removing data from the table permanently.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is freezing column?",
+          "answer": "Freezing column keeps a column visible while you scroll horizontally in the table.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What is sorting?",
+          "answer": "Sorting arranges data in ascending or descending order based on a selected field.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 8,
+          "question": "What is resize height/width of the row/column?",
+          "answer": "Resizing row height or column width changes the size to better fit the data, making it easier to read or view more data at once.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "Why do you use the Datasheet View?",
+          "answer": "Datasheet View is used to view, add, edit, and delete data directly in a table like a spreadsheet, making data handling easier.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What is hide or unhide column?",
+          "answer": "Hiding a column makes it invisible to reduce clutter, and unhiding makes it visible again for viewing or editing.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "Why do you use design view?",
+          "answer": "Design View is used to create or modify the structure of a table, such as changing field names, data types, or keys.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

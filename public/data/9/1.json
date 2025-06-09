@@ -1,0 +1,399 @@
+{
+  "chapter_no": 1,
+  "name": "Computer System",
+  "questions": [
+    {
+      "question_group": "Answer the following questions briefly.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is computer system?",
+          "answer": "A computer system is a combination of hardware, software, and users that work together to perform data processing tasks efficiently.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is GIGO?",
+          "answer": "GIGO stands for Garbage In, Garbage Out, which means incorrect or faulty input will produce incorrect output from the computer.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "Why is computer system a diligence machine?",
+          "answer": "Computer system is called a diligence machine because it can perform tasks continuously for long hours without losing efficiency or becoming tired.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "How is a computer versatile machine?",
+          "answer": "Computer is a versatile machine because it can be used in different fields like education, business, and science to perform a wide range of tasks.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "How do input devices work?",
+          "answer": "Input devices work by taking data or instructions from the user and converting them into a form that the computer can understand and process.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is input device?",
+          "answer": "An input device is any hardware component used to enter data and instructions into a computer system, such as a keyboard or mouse.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "How is joystick different than mouse?",
+          "answer": "A joystick is different than a mouse because it moves in all directions and is mostly used in gaming, while a mouse moves the pointer on the screen by sliding it on a surface.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "Why is CPU called brain of the computer?",
+          "answer": "CPU is called the brain of the computer because it carries out all processing tasks and controls the operation of other components.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What do you mean by processing task?",
+          "answer": "Processing task means converting raw input data into meaningful output using logical and arithmetic operations.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "Why is CU called central nerve system of a computer?",
+          "answer": "CU (Control Unit) is called the central nervous system because it controls and coordinates the activities of all hardware components in the computer.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "Why is motherboard called backbone of computer system?",
+          "answer": "Motherboard is called the backbone because it connects all internal components like CPU, RAM, and storage devices, allowing them to communicate.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "What is data bus?",
+          "answer": "Data bus is a group of wires used to transfer data between different parts of a computer like CPU, memory, and input/output devices.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "What is computer memory?",
+          "answer": "Computer memory is a storage system that holds data and instructions temporarily or permanently for processing and future use.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "What is primary memory?",
+          "answer": "Primary memory refers to the main memory like RAM and ROM, which stores data currently being used by the system.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "Why is RAM called volatile memory?",
+          "answer": "RAM is called volatile memory because it loses all stored data when the computer is turned off or restarts.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "What is secondary memory?",
+          "answer": "Secondary memory is non-volatile storage like hard drives or SSDs used to store data and software permanently.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "Why is power backup system UPS used with the computers?",
+          "answer": "UPS provides temporary power during a blackout to prevent data loss and allow the computer to shut down safely.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "Write the role of capacitor and transistor in the context of DRAM.",
+          "answer": "In DRAM, the capacitor stores electrical charge representing data, and the transistor controls access to the capacitor for reading or writing data.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "Why is SRAM faster than DRAM?",
+          "answer": "SRAM is faster than DRAM because it does not need to be refreshed frequently and uses a simpler method for storing data using flip-flops.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "What is firmware?",
+          "answer": "Firmware is a special type of software permanently stored in a hardware device to control its basic functions.",
+          "content_type": "text"
+        },
+        {
+          "id": 21,
+          "question": "How does cache help to improve the performance of CPU?",
+          "answer": "Cache improves CPU performance by storing frequently accessed data and instructions closer to the CPU for faster processing.",
+          "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "What is the use of register memory?",
+          "answer": "Register memory is used by the CPU to store small amounts of data temporarily during operations for quick access.",
+          "content_type": "text"
+        },
+        {
+          "id": 23,
+          "question": "What is HDD?",
+          "answer": "HDD (Hard Disk Drive) is a magnetic storage device used for storing large amounts of data permanently in a computer.",
+          "content_type": "text"
+        },
+        {
+          "id": 24,
+          "question": "What is monitor?",
+          "answer": "A monitor is an output device that displays text, images, and videos to the user from the computer.",
+          "content_type": "text"
+        },
+        {
+          "id": 25,
+          "question": "What is printer?",
+          "answer": "A printer is an output device that produces hard copies of digital documents, images, or data on paper.",
+          "content_type": "text"
+        },
+        {
+          "id": 26,
+          "question": "What are ports?",
+          "answer": "Ports are connection interfaces on a computer used to connect external devices like USBs, monitors, or keyboards.",
+          "content_type": "text"
+        },
+        {
+          "id": 27,
+          "question": "What is system software?",
+          "answer": "System software is a type of software that manages computer hardware and provides a platform for other software to run, such as operating systems.",
+          "content_type": "text"
+        },
+        {
+          "id": 28,
+          "question": "What is firmware?",
+          "answer": "Firmware is a low-level software embedded in hardware to control device functions and is not meant for frequent changes.",
+          "content_type": "text"
+        },
+        {
+          "id": 29,
+          "question": "What is open-source software?",
+          "answer": "Open-source software is software with freely available source code that users can modify, share, and use.",
+          "content_type": "text"
+        },
+        {
+          "id": 30,
+          "question": "What is proprietary software?",
+          "answer": "Proprietary software is software owned by a company or person, with restrictions on usage, modification, and sharing.",
+          "content_type": "text"
+        },
+        {
+          "id": 31,
+          "question": "What is mobile application?",
+          "answer": "Mobile application is a type of software designed to run on mobile devices like smartphones and tablets.",
+          "content_type": "text"
+        },
+        {
+          "id": 32,
+          "question": "What is web application?",
+          "answer": "Web application is a software program that runs on a web server and is accessed through a web browser over the internet.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Explain the common features of computer system.",
+          "answer": "A computer system has several key features that make it efficient and effective in performing tasks. It is fast, allowing operations to be carried out in seconds. It is accurate, as computers process information without errors (when properly programmed). Computers are also reliable, operating for extended periods without failure. Additionally, they are versatile, able to perform a wide range of functions from word processing to complex calculations. Another feature is their storage capability, where vast amounts of data can be saved and retrieved as needed. Finally, a computer system is automated, executing tasks without continuous human intervention once set up.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "Describe the common application fields of computer system.",
+          "answer": "Here are the fields that the computer system is used:",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Field", "Usage"],
+            "rows": [
+              ["Education", "Used for e-learning, research, and teaching"],
+              [
+                "Business and Commerce",
+                "Essential for managing operations, e-commerce, and CRM"
+              ],
+              [
+                "Healthcare",
+                "Manages patient data, medical records, and supports diagnostics and telemedicine"
+              ],
+              [
+                "Entertainment",
+                "Used in multimedia creation, gaming, and media distribution"
+              ],
+              [
+                "Communication",
+                "Facilitates email, social media, video calls, and collaborative work"
+              ],
+              [
+                "Science and Engineering",
+                "Assists in research, simulations, and design in various fields"
+              ],
+              [
+                "Banking and Finance",
+                "Used for processing transactions, online banking, and managing financial databases"
+              ],
+              [
+                "Government and Public Services",
+                "Helps in managing public records, services, and governance tasks"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "Why is CPU called the central component of the computer?",
+          "answer": "The CPU (Central Processing Unit) is often referred to as the brain of the computer because it performs all the processing and calculations necessary to execute instructions. It interprets and carries out commands from the system's memory, making decisions based on data, and sends signals to other components to execute tasks.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "Write the brief introduction of input devices.",
+          "answer": "Input devices are hardware components that allow users to provide data or commands to the computer. These devices convert human actions into signals that the computer can process. Common input devices include the keyboard (for typing text), mouse (for pointing and selecting objects), scanner (for digitizing images), and microphone (for capturing audio).",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "Illustrate the functions of Computer system with block diagram.",
+          "answer": "The computer system performs four main functions: input, process, output, and storage.\n\ni. Input: The user provides data or commands through input devices.\nii. Process: The CPU processes the input and performs calculations or operations.\niii. Output: The processed information is presented through output devices like a monitor or printer.\niv. Storage: Save data and instruction in storage for future use.\n\nBlock diagram: Draw from Book. Page No. 4",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "Explain the functions of major parts of the CPU.",
+          "answer": "The CPU is composed of three major components:\n• ALU (Arithmetic Logic Unit): Performs all arithmetic operations (addition, subtraction, multiplication, etc.) and logical operations (comparisons, decisions).\n• CU (Control Unit): Directs the operation of the processor by interpreting instructions from memory, controlling the flow of data, and coordinating all activities within the computer.\n• Memory Unit (MU): Temporarily stores and manages data and instructions needed for quick access during processing.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "Describe the functions of motherboard in the computer system.",
+          "answer": "The function of a motherboard in a computer system are as follows:\n\ni. The motherboard is the main circuit board in a computer system.\nii. It houses essential components like the CPU, RAM, and chipsets.\niii. It provides communication pathways for all components to exchange data.\niv. It supplies power to various hardware components.\nv. It contains expansion slots for adding peripheral devices like graphic cards, sound cards, and network adapters.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "Write the importance of data bus.",
+          "answer": "The data bus is a system of pathways used by the CPU and other components to transfer data between them. It plays a critical role in ensuring that information is shared efficiently between memory, storage, and input/output devices. The speed and width of the data bus directly affect the computer's overall performance, as a faster and wider bus allows more data to be transferred in less time.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "Write the differences between primary memory and secondary memory.",
+          "answer": "Differences between primary memory and secondary memory are as follows:",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Aspect", "Primary Memory", "Secondary Memory"],
+            "rows": [
+              [
+                "Definition",
+                "Memory directly accessible by the CPU for processing",
+                "External memory used to store data permanently"
+              ],
+              [
+                "Speed",
+                "Faster in speed compared to secondary memory",
+                "Slower than primary memory"
+              ],
+              [
+                "Volatility",
+                "Volatile – data is lost when power is off (e.g., RAM)",
+                "Non-volatile – data remains even after power is off"
+              ],
+              [
+                "Usage",
+                "Used for temporary storage of data during processing",
+                "Used for long-term data storage"
+              ],
+              [
+                "Examples",
+                "RAM, ROM, Cache memory",
+                "Hard Disk, SSD, CD/DVD, USB drive"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How does SSD differ from HDD?",
+          "answer": "An SSD (Solid-State Drive) differs from an HDD (Hard Disk Drive) in the technology used for storing data. While HDDs use spinning magnetic disks to read/write data, SSDs store data on flash memory chips with no moving parts. As a result, SSDs are faster, more durable, and more energy-efficient than HDDs. They also have faster data access speeds, making them ideal for performance-critical tasks.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "Describe the functions and characteristics of primary memory.",
+          "answer": "Functions and Characteristics of Primary Memory are as follows:\n\nFunctions:\n• Stores data and instructions temporarily for processing by the CPU.\n• Holds the operating system and currently running applications.\n• Provides fast access to data needed during execution of programs.\n• Acts as a buffer between the processor and storage devices.\n\nCharacteristics:\n• Volatile – data is lost when power is turned off.\n• Faster than secondary memory in terms of data access speed.\n• Limited capacity compared to secondary storage.\n• Includes types like RAM, ROM, and cache memory.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "Write the functions and characteristics of secondary memory.",
+          "answer": "Functions and Characteristics of Secondary Memory are as follows:\n\nFunctions:\n• Stores data and programs permanently for future use.\n• Holds large volumes of data not currently in use.\n• Provides backup and archival storage.\n• Transfers data to primary memory when required for processing.\n\nCharacteristics:\n• Non-volatile – retains data even when power is off.\n• Slower than primary memory in data access speed.\n• Larger storage capacity compared to primary memory.\n• Includes devices like HDD, SSD, CD/DVD, and USB drives.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "Describe the overview of output devices.",
+          "answer": "Output devices are hardware that allow the computer to present processed data to the user in a usable form. The most common output devices include monitors, which display visual information, printers, which produce hard copies of documents or images, and speakers, which output audio signals. Other examples include projectors for displaying images on a larger scale and plotters for printing large-scale graphics.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "Explain the conceptual overview of software.",
+          "answer": "Software refers to the collection of programs and instructions that tell a computer how to perform specific tasks. It can be divided into two main categories: system software, which manages hardware and provides a platform for other software (e.g., operating systems), and application software, which allows users to perform tasks such as word processing, browsing the web, and playing games. Software makes the computer functional and enables it to execute specific operations.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "What is application software? Explain the types of application software.",
+          "answer": "Application software is designed to help users perform specific tasks or activities. Types of application software include:\n• Productivity software: Programs like word processors (e.g., Microsoft Word) and spreadsheet software (e.g., Microsoft Excel) used for everyday tasks.\n• Multimedia software: Programs for creating and editing images, audio, and video, such as Adobe Photoshop or Windows Media Player.\n• Business software: Includes accounting and project management tools.\n• Entertainment software: Games and multimedia applications.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "What is development software? What does it include?",
+          "answer": "Development software refers to the programs and tools used by developers to create, test, and maintain other software applications. It includes tools that help in writing, debugging, and compiling code.\n\nIt includes:\n• IDEs (Integrated Development Environments) – like Visual Studio, Eclipse, IntelliJ IDEA, etc.\n• Compilers – that convert high-level code into machine code (e.g., GCC).\n• Interpreters – that execute code line-by-line (e.g., Python interpreter).",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "Write the differences between system software and application software.",
+          "answer": "Differences between system software and application software:",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Aspect", "System Software", "Application Software"],
+            "rows": [
+              [
+                "Definition",
+                "System software is designed to manage and control computer hardware and provide a platform for running application software",
+                "Application software is designed to help users perform specific tasks, such as word processing or web browsing"
+              ],
+              [
+                "Examples",
+                "Operating systems (Windows, Linux, macOS), device drivers, utilities",
+                "Word processors (Microsoft Word), web browsers (Google Chrome), media players"
+              ],
+              [
+                "Purpose",
+                "To manage hardware, resources, and provide essential services for other software to function",
+                "To perform user-oriented tasks and solve specific problems or provide entertainment"
+              ],
+              [
+                "Dependence",
+                "System software is necessary for the computer to function and run applications",
+                "Application software depends on system software to operate and cannot function without it"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

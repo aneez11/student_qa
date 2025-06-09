@@ -1,0 +1,59 @@
+{
+  "chapter_no": 12,
+  "name": "Creating Forms & Reports",
+  "questions": [
+    {
+      "question_group": "Short Answers (2 Marks)",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Why do you generate the report?",
+          "answer": "Reports are generated to organize and present data in a readable and printable format.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "How do you create report?",
+          "answer": "You can create a report using the Report Wizard, Design View, or Layout View in MS Access.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is report?",
+          "answer": "A report is a formatted summary of data from a database.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "Why is report created?",
+          "answer": "Reports are created to analyze, summarize, and share information clearly.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "How do you enter and modify data using form?",
+          "answer": "We enter and modify data by filling out fields in a form which updates the underlying table.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is form?",
+          "answer": "A form is a user-friendly interface to enter, view, or edit data in a database.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "How do you create a form?",
+          "answer": "We create a form using the Form Wizard or Design View in MS Access.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "Why do you create a form?",
+          "answer": "Forms are created to make data entry easier and reduce errors.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

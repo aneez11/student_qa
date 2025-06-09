@@ -1,0 +1,82 @@
+{
+  "chapter_no": 8,
+  "name": "Database Management System",
+  "questions": [
+    {
+      "question_group": "Very Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is information?",
+          "answer": "Information is data that has been processed and organized in a way that is meaningful and useful for decision making. It helps people understand and act on facts.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is DBMS?",
+          "answer": "DBMS is software that helps store, organize, and manage data in a database. It allows users to easily retrieve and manipulate data without needing to know technical details.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is database?",
+          "answer": "A database is a structured collection of related data stored electronically. It helps in storing large amounts of data safely and allows easy access and management.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is RDBMS?",
+          "answer": "RDBMS stands for Relational Database Management System. It stores data in tables that are related to each other using keys, making data management efficient.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is MS-Access?",
+          "answer": "MS-Access is a popular database management system by Microsoft. It is used to create, store, and manage relational databases with a user-friendly interface.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is data integrity?",
+          "answer": "Data integrity means keeping data accurate, consistent, and reliable over its entire lifecycle. It prevents data from being corrupted or altered incorrectly.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What is data?",
+          "answer": "Data are raw facts, numbers, or text that have not been processed. Data on its own does not have meaning until it is organized or analyzed.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 8,
+          "question": "Write the application fields of DBMS.",
+          "answer": "DBMS is used in many fields such as banking to manage customer accounts, in education to keep student records, airlines for booking systems, hospitals to manage patient information, and businesses for inventory and sales management. It helps organize large amounts of data efficiently and securely.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "Write the features of RDBMS.",
+          "answer": "RDBMS stores data in tables which are linked by relationships using keys. It supports SQL for querying data and ensures data integrity through constraints. It allows easy data retrieval, updating, and management. RDBMS also prevents data redundancy and inconsistency.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "Why is MS-Access called RDBMS?",
+          "answer": "MS-Access is called an RDBMS because it stores data in multiple tables that are related through keys. It supports relationships between tables which allow users to connect data meaningfully. It provides tools to create, query, and manage data using SQL and graphical interfaces.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "Differentiate between data redundancy and data inconsistency.",
+          "answer": "Data redundancy means storing the same data more than once in different places, which wastes space. Data inconsistency happens when the same data has different values in different locations, causing confusion. Redundancy can lead to inconsistency if updates are not made everywhere the data appears.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "chapter_no": 1,
+  "name": "Network and Telecommunication",
+  "questions": [
+    {
+      "question_group": "Very Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is communication?",
+          "answer": "Communication is the process of exchanging information between two or more people.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is telecommunication?",
+          "answer": "Telecommunication is the transmission of information over a distance using electronic means.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is data communication?",
+          "answer": "Data communication is the exchange of data between devices through a transmission medium.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is transmission signal?",
+          "answer": "A transmission signal is an electrical or electromagnetic signal used to transmit data.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is bandwidth?",
+          "answer": "Bandwidth is the capacity of a communication channel to carry data, measured in bits per second (bps).",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is communication media?",
+          "answer": "Communication media is the physical or wireless path used to transmit data between devices.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What is twisted pair cable?",
+          "answer": "A twisted pair cable is a type of cable with pairs of wires twisted together to reduce interference.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "What is coaxial cable?",
+          "answer": "A coaxial cable is a type of cable with a central conductor, insulating layer, and metallic shield used for high-frequency signals.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What is fiber optic?",
+          "answer": "Fiber optic is a high-speed transmission medium that uses light to transmit data through glass or plastic fibers.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What is wireless transmission media?",
+          "answer": "Wireless transmission media transmits data through the air using radio, microwave, or infrared signals.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "What is satellite communication technology?",
+          "answer": "It is a communication method that uses satellites to send and receive signals over long distances.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "What is a computer network?",
+          "answer": "A computer network is a group of interconnected computers that share data and resources.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "What is a router?",
+          "answer": "A router is a device that forwards data packets between computer networks.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "What is a gateway?",
+          "answer": "A gateway is a device that connects different networks using different protocols.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "What is protocol?",
+          "answer": "A protocol is a set of rules for transmitting data over a network.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "What is LAN?",
+          "answer": "LAN (Local Area Network) is a network that connects computers within a small area like a home, school, or office.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "What is MAN?",
+          "answer": "MAN (Metropolitan Area Network) is a network that covers a city or a large campus.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "What is WAN?",
+          "answer": "WAN (Wide Area Network) is a network that spans a large geographical area, such as a country or the world.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "What is network topology?",
+          "answer": "Network topology is the arrangement or layout of computers in a network.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "What is bus topology?",
+          "answer": "Bus topology connects all devices to a single central cable called the bus.",
+          "content_type": "text"
+        },
+        {
+          "id": 21,
+          "question": "What is star topology?",
+          "answer": "Star topology connects all devices to a central device like a switch or hub.",
+          "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "What is ring topology?",
+          "answer": "Ring topology connects devices in a circular fashion where each device is connected to two others.",
+          "content_type": "text"
+        },
+        {
+          "id": 23,
+          "question": "What is packet or datagram?",
+          "answer": "A packet or datagram is a small unit of data sent over a network.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 24,
+          "question": "Why do we use modem in the telecommunication?",
+          "answer": "A modem is used to convert digital signals from a computer into analog signals that can be transmitted over telephone lines and vice versa. This allows computers to communicate over long distances using the existing telephone infrastructure.",
+          "content_type": "text"
+        },
+        {
+          "id": 25,
+          "question": "Why do we use Bluetooth technology?",
+          "answer": "Bluetooth is used for short-range wireless communication between devices like mobile phones, laptops, printers, and headphones. It eliminates the need for cables and allows devices to exchange data over short distances efficiently.",
+          "content_type": "text"
+        },
+        {
+          "id": 26,
+          "question": "Why is client computer called workstation?",
+          "answer": "A client computer is called a workstation because it is used by a user to perform tasks and access resources provided by a central server in a network. It serves as the working point in a client-server environment.",
+          "content_type": "text"
+        },
+        {
+          "id": 27,
+          "question": "Why is switch more intelligent than hub?",
+          "answer": "A switch is more intelligent than a hub because it can identify the MAC addresses of devices connected to it and forward data only to the intended recipient. This reduces network traffic and increases efficiency.",
+          "content_type": "text"
+        },
+        {
+          "id": 28,
+          "question": "Why is router called intelligent device?",
+          "answer": "A router is called an intelligent device because it can analyze IP addresses, determine the best path for data, and route it to the correct destination. It connects different networks and manages data flow between them.",
+          "content_type": "text"
+        },
+        {
+          "id": 29,
+          "question": "Why do we use repeater?",
+          "answer": "A repeater is used to amplify and regenerate weak signals in a network. It helps to extend the range of a network by ensuring that data can travel longer distances without losing quality or getting corrupted.",
+          "content_type": "text"
+        },
+        {
+          "id": 30,
+          "question": "Why is Ethernet card used?",
+          "answer": "An Ethernet card, also known as a network interface card (NIC), is used to connect a computer to a wired network. It allows the computer to send and receive data over a network using Ethernet protocols.",
+          "content_type": "text"
+        },
+        {
+          "id": 31,
+          "question": "Why is repeater used in every node of Ring Topology?",
+          "answer": "In a ring topology, a repeater is used in every node to regenerate the data signal before passing it to the next device. This ensures the signal does not weaken or get lost as it travels around the ring.",
+          "content_type": "text"
+        },
+        {
+          "id": 32,
+          "question": "What is the role of network operating system?",
+          "answer": "A network operating system (NOS) manages network resources, allows multiple users to communicate, and provides access to files, printers, and applications over a network. It also handles security and user management.",
+          "content_type": "text"
+        },
+        {
+          "id": 33,
+          "question": "What is network architecture?",
+          "answer": "Network architecture is the design and structure of a computer network. It includes the layout of hardware, software, protocols, and transmission media used to ensure effective communication and data flow.",
+          "content_type": "text"
+        },
+        {
+          "id": 34,
+          "question": "Write the five basic elements of data communication.",
+          "answer": "The five basic elements of data communication are:",
+          "content_type": "list",
+          "list_data": [
+            "Message – The data to be communicated",
+            "Sender – The device that sends the data",
+            "Receiver – The device that receives the data",
+            "Medium – The path through which the data travels",
+            "Protocol – The set of rules for communication"
+          ]
+        },
+        {
+          "id": 35,
+          "question": "Differentiate between half-duplex mode and full-duplex mode of data transmission.",
+          "answer": "Half-duplex: Data can flow in both directions but only one at a time (e.g., walkie-talkie). Full-duplex: Data can flow in both directions simultaneously (e.g., telephone call).",
+          "content_type": "text"
+        },
+        {
+          "id": 36,
+          "question": "Differentiate between guided and unguided media.",
+          "answer": "Guided media: Uses physical cables like twisted pair, coaxial, or fiber optic for data transmission. Unguided media: Uses wireless methods like radio waves, microwaves, or infrared to transmit data.",
+          "content_type": "text"
+        },
+        {
+          "id": 37,
+          "question": "Differentiate between STP and UTP.",
+          "answer": "STP (Shielded Twisted Pair): Has additional shielding to prevent electromagnetic interference. UTP (Unshielded Twisted Pair): Does not have shielding and is cheaper and more flexible.",
+          "content_type": "text"
+        },
+        {
+          "id": 38,
+          "question": "Differentiate between client and server.",
+          "answer": "Client: A computer that requests services and resources from a server. Server: A computer that provides services, resources, and data to multiple clients.",
+          "content_type": "text"
+        },
+        {
+          "id": 39,
+          "question": "Differentiate between hub and switch.",
+          "answer": "Hub: Broadcasts data to all connected devices regardless of destination. Switch: Sends data only to the device it is intended for using MAC addresses, improving efficiency.",
+          "content_type": "text"
+        },
+        {
+          "id": 40,
+          "question": "What is centralized computing network? Write its advantages and disadvantages.",
+          "answer": "A centralized computing network is where all resources and data are managed by a single central server.",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Type", "Description"],
+            "rows": [
+              [
+                "Advantages",
+                "Easier to manage and secure data, Centralized backup and updates"
+              ],
+              [
+                "Disadvantages",
+                "Failure of the central server can stop the whole network, High load on the central system"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "question": "Differentiate between router and switch.",
+          "answer": "Router: Connects different networks, uses IP addresses, and determines the best path for data. Switch: Connects devices within the same network and uses MAC addresses to forward data.",
+          "content_type": "text"
+        },
+        {
+          "id": 42,
+          "question": "What do you mean by client-server architecture?",
+          "answer": "Client-server architecture is a network model where multiple client computers request and receive services from a central server. The server processes requests and manages resources, while clients use those resources.",
+          "content_type": "text"
+        },
+        {
+          "id": 43,
+          "question": "Differentiate between centralized and distributed computing.",
+          "answer": "Centralized computing: A single server handles all processing and data management. Distributed computing: Processing and data are spread across multiple systems, improving performance and reliability.",
+          "content_type": "text"
+        },
+        {
+          "id": 44,
+          "question": "In which places is P2P architecture more suitable?",
+          "answer": "P2P (Peer-to-Peer) architecture is more suitable in small networks such as homes, classrooms, or small businesses where a few computers are connected and can share resources directly without a central server.",
+          "content_type": "text"
+        },
+        {
+          "id": 45,
+          "question": "Write the advantages and disadvantages of P2P architecture.",
+          "answer": "",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Type", "Description"],
+            "rows": [
+              [
+                "Advantages",
+                "Simple and inexpensive to set up, No need for a dedicated server"
+              ],
+              [
+                "Disadvantages",
+                "Less secure and harder to manage, Not scalable for large networks"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 46,
+          "question": "Which method is used in Ring Topology to transmit data?",
+          "answer": "The token passing method is used in ring topology to transmit data. In this method, a small data packet called a token circulates around the network. A device can send data only when it captures the free token, which ensures that only one device transmits at a time, preventing data collisions.",
+          "content_type": "text"
+        },
+        {
+          "id": 47,
+          "question": "What is wireless communication technology?",
+          "answer": "Wireless communication technology allows the transmission of data without physical cables by using electromagnetic waves such as radio waves, microwaves, or infrared signals. Examples include Wi-Fi, Bluetooth, and mobile networks, which help connect devices without wiring.",
+          "content_type": "text"
+        },
+        {
+          "id": 48,
+          "question": "Write the working principle of bus topology.",
+          "answer": "In bus topology, all devices are connected to a single central communication cable, called the bus or backbone. When a device sends data, it travels along the bus, and only the device with the matching address accepts the data. It uses terminators at both ends to prevent signal bounce or reflection.",
+          "content_type": "text"
+        },
+        {
+          "id": 49,
+          "question": "What is signal reflection in Bus Topology?",
+          "answer": "Signal reflection in bus topology occurs when data signals reach the end of the communication line and are not absorbed by a terminator, causing them to bounce back along the cable. This can interfere with other signals and cause data collisions or loss, so terminators are used to absorb the signals and prevent reflection.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write a short note on :",
+      "questions": [
+        {
+          "id": 1,
+          "question": " Simplex mode.",
+          "answer": "Simplex mode is a type of communication where data flows strictly in one direction only. In this mode, the sender transmits information and the receiver only receives it without any possibility to send feedback or respond. This one-way communication limits interaction but is effective in specific applications where feedback is not needed.\n\nAn example of simplex communication is the transmission of signals from a keyboard to a computer, where the keyboard only sends input data but does not receive any information back. Similarly, traditional television broadcasting is also a simplex mode because the signal is sent to many receivers but there is no direct communication back to the broadcaster.\n\nSimplex mode is simple and inexpensive since it does not require complex protocols for two-way communication or error correction from the receiver. However, its biggest limitation is the lack of any error-checking feedback, which makes it unsuitable for applications where data accuracy and interaction are crucial.\n\nDespite this limitation, simplex communication finds wide usage in many everyday devices where a single direction of data flow is sufficient. It is often used for monitoring, sensing, or broadcasting purposes where the sender just needs to send information.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": " Microwave.",
+          "answer": "Microwaves are a type of electromagnetic wave with frequencies ranging from about 1 GHz to 300 GHz. They have shorter wavelengths than radio waves and are widely used in modern communication systems because of their ability to carry large amounts of data.\n\nMicrowave communication is commonly used in point-to-point wireless links such as satellite communication, cellular networks, and radar systems. Because microwaves travel in straight lines, they require clear line-of-sight paths between transmitting and receiving antennas.\n\nThe ability of microwaves to penetrate the Earth's atmosphere makes them ideal for satellite communication, enabling TV broadcasts, internet services, and GPS technology. Additionally, microwaves can pass through clouds, smoke, and light rain, which helps maintain reliable communication even in adverse weather.\n\nBesides communication, microwaves are also used in everyday devices like microwave ovens, where they generate heat by causing water molecules to vibrate inside food. Overall, microwaves are crucial for high-frequency communication technologies due to their high bandwidth and efficiency.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": " Bluetooth.",
+          "answer": "Bluetooth is a wireless communication technology designed for exchanging data over short distances. Operating in the 2.4 GHz ISM band, it allows devices like smartphones, laptops, and headphones to connect without the need for cables.\n\nIt is widely used for creating personal area networks (PANs), enabling devices to share files, stream audio, and communicate with peripherals like keyboards and mice. Bluetooth operates on low power, making it suitable for battery-powered devices.\n\nThe technology uses frequency hopping spread spectrum to minimize interference and ensure secure communication. Devices need to be paired initially to establish a trusted connection, which prevents unauthorized access.\n\nBluetooth has evolved through various versions, improving range, speed, and power efficiency. Its widespread adoption has made it a standard feature in almost all modern electronic gadgets, simplifying connectivity and enhancing user convenience.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": " Analog signal.",
+          "answer": "An analog signal is a continuous signal that varies smoothly over time to represent physical quantities such as sound, light, temperature, or pressure. Unlike digital signals, analog signals can take on any value within a given range.\n\nThese signals are characterized by amplitude, frequency, and phase. For example, the varying voltage of an audio signal corresponds to the sound wave’s pressure variations. Analog signals are often represented graphically as sine waves.\n\nThough analog signals are natural and straightforward, they are prone to degradation due to noise and interference during transmission. This makes maintaining signal quality difficult over long distances.\n\nDespite the rise of digital communication, analog signals are still used in many applications like traditional radio, telephony, and audio recording. However, analog signals are increasingly being converted into digital form for better processing, storage, and transmission.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": " Radio wave.",
+          "answer": "Radio waves are electromagnetic waves with frequencies ranging from about 3 kHz to 300 GHz, used extensively for wireless communication. They have relatively long wavelengths, which allow them to travel long distances and bend around obstacles.\n\nRadio waves are the foundation of many communication systems, including AM and FM radio, television broadcasting, mobile phones, and Wi-Fi networks. Their ability to propagate through the atmosphere and reflect off the ionosphere enables global communication.\n\nDifferent frequency bands within the radio spectrum are allocated for various applications to avoid interference. Lower frequency waves travel farther but carry less data, while higher frequencies support more data but have shorter ranges.\n\nThe versatility and reliability of radio waves make them indispensable for both everyday consumer communication and critical military and emergency services.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": " Wi-Fi.",
+          "answer": "Wi-Fi is a wireless networking technology that allows devices to connect to the internet or communicate with each other over a local area network (LAN). It operates mainly in the 2.4 GHz and 5 GHz radio frequency bands.\n\nWi-Fi networks use access points (routers) to transmit and receive data wirelessly, enabling multiple devices like smartphones, laptops, and smart home devices to share the same internet connection without cables.\n\nThe technology supports high data transfer rates, security protocols like WPA3, and can cover ranges from a few meters indoors to larger areas with multiple access points. Its ease of use and flexibility have made it ubiquitous in homes, offices, and public spaces.\n\nWi-Fi has transformed how people access the internet, promoting mobility and convenience, and continues to evolve with new standards enhancing speed, security, and capacity.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": " Digital signal.",
+          "answer": "A digital signal represents information using discrete values, typically binary 0s and 1s. Unlike analog signals, digital signals have specific levels, making them less susceptible to noise and distortion.\n\nDigital signals are essential in modern electronics and communication systems such as computers, mobile phones, and the internet. They allow efficient data processing, error detection, and correction.\n\nBecause digital signals can be easily stored and replicated without quality loss, they are preferred for transmitting multimedia content like images, video, and audio.\n\nDigital communication enables secure, reliable, and fast data exchange, forming the backbone of today’s information technology infrastructure.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": " Infrared wave.",
+          "answer": "Infrared waves are electromagnetic waves with frequencies lower than visible light but higher than radio waves. They are commonly used for short-range wireless communication and sensing applications.\n\nInfrared technology is widely used in remote controls, allowing devices like TVs and air conditioners to receive commands without wires. It is also used in thermal imaging to detect heat signatures for medical, military, and industrial purposes.\n\nInfrared waves cannot penetrate walls, which makes them secure for close-range communication but limits their range. They also have minimal interference with other wireless technologies.\n\nDue to these properties, infrared remains a popular choice for certain communication tasks and sensing applications, despite the rise of radio frequency wireless technologies.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

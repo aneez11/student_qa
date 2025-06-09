@@ -1,0 +1,59 @@
+{
+  "chapter_no": 1,
+  "name": "Network and Telecommunication",
+  "questions": [
+    {
+      "question_group": "Short Notes",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a short note on Simplex mode.",
+          "answer": "Simplex mode is a type of communication where data flows strictly in one direction only. In this mode, the sender transmits information and the receiver only receives it without any possibility to send feedback or respond. This one-way communication limits interaction but is effective in specific applications where feedback is not needed.\n\nAn example of simplex communication is the transmission of signals from a keyboard to a computer, where the keyboard only sends input data but does not receive any information back. Similarly, traditional television broadcasting is also a simplex mode because the signal is sent to many receivers but there is no direct communication back to the broadcaster.\n\nSimplex mode is simple and inexpensive since it does not require complex protocols for two-way communication or error correction from the receiver. However, its biggest limitation is the lack of any error-checking feedback, which makes it unsuitable for applications where data accuracy and interaction are crucial.\n\nDespite this limitation, simplex communication finds wide usage in many everyday devices where a single direction of data flow is sufficient. It is often used for monitoring, sensing, or broadcasting purposes where the sender just needs to send information.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "Write a short note on Microwave.",
+          "answer": "Microwaves are a type of electromagnetic wave with frequencies ranging from about 1 GHz to 300 GHz. They have shorter wavelengths than radio waves and are widely used in modern communication systems because of their ability to carry large amounts of data.\n\nMicrowave communication is commonly used in point-to-point wireless links such as satellite communication, cellular networks, and radar systems. Because microwaves travel in straight lines, they require clear line-of-sight paths between transmitting and receiving antennas.\n\nThe ability of microwaves to penetrate the Earth's atmosphere makes them ideal for satellite communication, enabling TV broadcasts, internet services, and GPS technology. Additionally, microwaves can pass through clouds, smoke, and light rain, which helps maintain reliable communication even in adverse weather.\n\nBesides communication, microwaves are also used in everyday devices like microwave ovens, where they generate heat by causing water molecules to vibrate inside food. Overall, microwaves are crucial for high-frequency communication technologies due to their high bandwidth and efficiency.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "Write a short note on Bluetooth.",
+          "answer": "Bluetooth is a wireless communication technology designed for exchanging data over short distances. Operating in the 2.4 GHz ISM band, it allows devices like smartphones, laptops, and headphones to connect without the need for cables.\n\nIt is widely used for creating personal area networks (PANs), enabling devices to share files, stream audio, and communicate with peripherals like keyboards and mice. Bluetooth operates on low power, making it suitable for battery-powered devices.\n\nThe technology uses frequency hopping spread spectrum to minimize interference and ensure secure communication. Devices need to be paired initially to establish a trusted connection, which prevents unauthorized access.\n\nBluetooth has evolved through various versions, improving range, speed, and power efficiency. Its widespread adoption has made it a standard feature in almost all modern electronic gadgets, simplifying connectivity and enhancing user convenience.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "Write a short note on Analog signal.",
+          "answer": "An analog signal is a continuous signal that varies smoothly over time to represent physical quantities such as sound, light, temperature, or pressure. Unlike digital signals, analog signals can take on any value within a given range.\n\nThese signals are characterized by amplitude, frequency, and phase. For example, the varying voltage of an audio signal corresponds to the sound wave’s pressure variations. Analog signals are often represented graphically as sine waves.\n\nThough analog signals are natural and straightforward, they are prone to degradation due to noise and interference during transmission. This makes maintaining signal quality difficult over long distances.\n\nDespite the rise of digital communication, analog signals are still used in many applications like traditional radio, telephony, and audio recording. However, analog signals are increasingly being converted into digital form for better processing, storage, and transmission.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "Write a short note on Radio wave.",
+          "answer": "Radio waves are electromagnetic waves with frequencies ranging from about 3 kHz to 300 GHz, used extensively for wireless communication. They have relatively long wavelengths, which allow them to travel long distances and bend around obstacles.\n\nRadio waves are the foundation of many communication systems, including AM and FM radio, television broadcasting, mobile phones, and Wi-Fi networks. Their ability to propagate through the atmosphere and reflect off the ionosphere enables global communication.\n\nDifferent frequency bands within the radio spectrum are allocated for various applications to avoid interference. Lower frequency waves travel farther but carry less data, while higher frequencies support more data but have shorter ranges.\n\nThe versatility and reliability of radio waves make them indispensable for both everyday consumer communication and critical military and emergency services.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "Write a short note on Wi-Fi.",
+          "answer": "Wi-Fi is a wireless networking technology that allows devices to connect to the internet or communicate with each other over a local area network (LAN). It operates mainly in the 2.4 GHz and 5 GHz radio frequency bands.\n\nWi-Fi networks use access points (routers) to transmit and receive data wirelessly, enabling multiple devices like smartphones, laptops, and smart home devices to share the same internet connection without cables.\n\nThe technology supports high data transfer rates, security protocols like WPA3, and can cover ranges from a few meters indoors to larger areas with multiple access points. Its ease of use and flexibility have made it ubiquitous in homes, offices, and public spaces.\n\nWi-Fi has transformed how people access the internet, promoting mobility and convenience, and continues to evolve with new standards enhancing speed, security, and capacity.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "Write a short note on Digital signal.",
+          "answer": "A digital signal represents information using discrete values, typically binary 0s and 1s. Unlike analog signals, digital signals have specific levels, making them less susceptible to noise and distortion.\n\nDigital signals are essential in modern electronics and communication systems such as computers, mobile phones, and the internet. They allow efficient data processing, error detection, and correction.\n\nBecause digital signals can be easily stored and replicated without quality loss, they are preferred for transmitting multimedia content like images, video, and audio.\n\nDigital communication enables secure, reliable, and fast data exchange, forming the backbone of today’s information technology infrastructure.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "Write a short note on Infrared wave.",
+          "answer": "Infrared waves are electromagnetic waves with frequencies lower than visible light but higher than radio waves. They are commonly used for short-range wireless communication and sensing applications.\n\nInfrared technology is widely used in remote controls, allowing devices like TVs and air conditioners to receive commands without wires. It is also used in thermal imaging to detect heat signatures for medical, military, and industrial purposes.\n\nInfrared waves cannot penetrate walls, which makes them secure for close-range communication but limits their range. They also have minimal interference with other wireless technologies.\n\nDue to these properties, infrared remains a popular choice for certain communication tasks and sensing applications, despite the rise of radio frequency wireless technologies.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "chapter_no": 11,
+  "name": "Queries in MS-Access",
+  "questions": [
+    {
+      "question_group": "Short Answers (2 Marks)",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a query?",
+          "answer": "A query is a request to view or manipulate data from a database.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "Why do you use query?",
+          "answer": "Queries are used to search, filter, and perform actions on data in a database.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is select query?",
+          "answer": "A select query retrieves specific data from one or more tables based on conditions.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is 'wild card characters'?",
+          "answer": "Wild card characters are symbols like * or ? used to represent unknown characters in a search.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "Why are wild card characters used?",
+          "answer": "They are used to find records that match a pattern when exact data is unknown.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What is insert record query?",
+          "answer": "An insert record query adds new records to a table.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What is delete query?",
+          "answer": "A delete query removes records from a table based on specified conditions.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "What is update query?",
+          "answer": "An update query modifies existing data in one or more fields of a table.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What is action query?",
+          "answer": "An action query performs actions like insert, update, or delete records in the database.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What does it mean to run a query?",
+          "answer": "Running a query means executing it to get or change data as per the query instructions.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

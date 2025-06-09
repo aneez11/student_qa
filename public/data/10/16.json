@@ -1,0 +1,94 @@
+{
+  "chapter_no": 16,
+  "name": "Basics of C Programming",
+  "questions": [
+    {
+      "question_group": "Very Short Answers (1 Mark)",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is C language?",
+          "answer": "C is a general-purpose programming language.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What are C tokens?",
+          "answer": "Tokens are the smallest units in a C program like keywords, identifiers, constants, operators, and punctuators.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "Write the advantages of C language.",
+          "answer": "C is fast, portable, and supports structured programming.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is format specifier?",
+          "answer": "Format specifiers tell the compiler how to interpret data types in input/output.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is looping?",
+          "answer": "Looping is repeating a set of instructions multiple times.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "Write the basic structure of C program.",
+          "answer": "A C program has main function, declarations, statements, and return statement.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answers (2 Marks)",
+      "questions": [
+        {
+          "id": 7,
+          "question": "Why is C language called a structured procedural language?",
+          "answer": "Because C uses functions and procedures to organize code in a clear, logical way.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "Why is C language called a middle level language?",
+          "answer": "Because it combines features of both high-level and low-level languages.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What is an identifier? Write the rules for constructing the identifier.",
+          "answer": "An identifier is a name for variables or functions. It must start with a letter or underscore and contain only letters, digits, or underscores without spaces.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "Write the limitations of C language.",
+          "answer": "C lacks built-in support for graphics, string handling, and has no automatic memory management.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "Write the features of C language.",
+          "answer": "C is portable, efficient, supports pointers, and structured programming.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "What is structured programming? Write the features of structured programming.",
+          "answer": "Structured programming organizes code with functions and control structures. Features include clarity, modularity, and easier debugging.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "Differentiate between while and do while loop.",
+          "answer": "While loop checks the condition before executing the loop body, but do while loop executes the body once before checking the condition.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

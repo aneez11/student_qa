@@ -1,0 +1,92 @@
+{
+  "chapter_no": 7,
+  "name": "Number System",
+  "questions": [
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is number system?",
+          "answer": "A number system is a way of expressing numbers using a consistent set of symbols or digits. It is the mathematical notation for representing numbers of a given set using digits or symbols in a consistent manner.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What is binary number system?",
+          "answer": "The binary number system is a base-2 number system that uses only two digits: 0 and 1. It is the fundamental language of computers and digital systems.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is meant by base of number system?",
+          "answer": "The base of a number system refers to the number of unique digits, including zero, used to represent numbers. For example, the decimal system has base 10, and the binary system has base 2.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "What is octal number system?",
+          "answer": "The octal number system is a base-8 number system that uses digits from 0 to 7. It is often used in computing as a more compact representation of binary numbers.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is decimal number system?",
+          "answer": "The decimal number system is a base-10 number system that uses ten digits from 0 to 9. It is the most commonly used number system in everyday life.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "What are the numbers and characters set of hexadecimal number system?",
+          "answer": "The hexadecimal number system is a base-16 system that uses numbers and characters:",
+          "content_type": "table",
+          "table_data": {
+            "headers": ["Symbol", "Decimal Value"],
+            "rows": [
+              ["0", "0"],
+              ["1", "1"],
+              ["2", "2"],
+              ["3", "3"],
+              ["4", "4"],
+              ["5", "5"],
+              ["6", "6"],
+              ["7", "7"],
+              ["8", "8"],
+              ["9", "9"],
+              ["A", "10"],
+              ["B", "11"],
+              ["C", "12"],
+              ["D", "13"],
+              ["E", "14"],
+              ["F", "15"]
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is ASCII?",
+          "answer": "ASCII (Americal Standard Code for Information Exchange) is a 7-bit character encoding standard used to represent text in computers.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "What is BCD?",
+          "answer": "BCD (Binary Coded Decimal) is a method of representing each decimal digit with its own 4-digit binary code.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What is EBCDIC?",
+          "answer": "EBCDIC (Extended Binary Coded Decimal Interchange Code) is an 8-bit character encoding system that stores one alphanumeric character or two decimal digits in a byte.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What is Unicode?",
+          "answer": " Unicode is the most fundamental and universal character encoding standard. For every character, there is a unique 4 to 6-digit unique hexadecimal number known as a Unicode point.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}
