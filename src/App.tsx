@@ -3,6 +3,8 @@ import Home from "./pages/Home/Home";
 import Grade from "./pages/Grade/Grade";
 import Chapter from "./pages/Grade/Chapter/Chapter";
 
+import "./App.css";
+
 const App = () => {
   return (
     <BrowserRouter>

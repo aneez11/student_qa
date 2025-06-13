@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import type { Chapters, QuestionGroup, TableData } from "@/lib/types";
-import { ArrowLeft, Search } from "lucide-react";
+import type { Chapters, Question, QuestionGroup, TableData } from "@/lib/types";
+import { ArrowLeft, Search, Code, Calculator } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import "katex/dist/katex.min.css";
+import { InlineMath, BlockMath } from "react-katex";
 
 const TableRenderer = ({ data }: { data: TableData }) => {
   return (
@@ -43,11 +47,104 @@ const EquationRenderer = ({ equation }: { equation: string }) => {
   );
 };
 
+const MathProblemRenderer = ({
+  problem,
+  solution,
+}: {
+  problem: string;
+  solution: string;
+}) => {
+  const renderMathText = (text: string) => {
+    // Split text into parts that contain LaTeX and parts that don't
+    const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
+
+    return parts.map((part, index) => {
+      if (part.startsWith("$$") && part.endsWith("$$")) {
+        return <BlockMath key={index} math={part.slice(2, -2)} />;
+      } else if (part.startsWith("$") && part.endsWith("$")) {
+        return <InlineMath key={index} math={part.slice(1, -1)} />;
+      } else {
+        return <span key={index}>{part}</span>;
+      }
+    });
+  };
+
+  return (
+    <>
+      <h1 className="font-bold text-blue-800 text-xl">
+        Q. {renderMathText(problem)}
+      </h1>
+
+      <div className="text-gray-700 space-y-3"></div>
+      {solution && (
+        <div className="mt-4 pt-4 border-t border-blue-200">
+          <h4 className="font-medium text-blue-700 mb-2">Solution</h4>
+          <div className="text-gray-700 space-y-3">
+            {renderMathText(solution)}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+const ProgrammingQuestionRenderer = ({
+  question,
+  answer,
+  language,
+  code,
+}: {
+  question: string;
+  language?: string;
+  answer?: string;
+  code?: string;
+}) => {
+  return (
+    <>
+      <h1 className="font-bold text-blue-800 text-xl">Q. {question}</h1>
+      <div className="mt-4 pt-4 border-t border-gray-200">
+        <h4 className="font-medium mb-2 text-green-700">Answer</h4>
+        <div className=" space-y-3">{answer}</div>
+      </div>
+      <div className="rounded-md my-4">
+        {code && (
+          <SyntaxHighlighter
+            language={language || "javascript"}
+            style={atomOneDark}
+            className="rounded-md"
+          >
+            {code}
+          </SyntaxHighlighter>
+        )}
+      </div>
+    </>
+  );
+};
+
+const GeneralQuestionRenderer = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
+  return (
+    <>
+      <h1 className="font-bold text-blue-800 text-xl">Q. {question}</h1>
+      <div className="mt-4 pt-4 border-t border-gray-200">
+        <h4 className="font-medium mb-2 text-green-700">Answer</h4>
+        <div className=" space-y-3">{answer}</div>
+      </div>
+    </>
+  );
+};
+
 const Chapter = () => {
   const { gradeId, chapterId } = useParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [chapterData, setChapterData] = useState<Chapters | null>(null);
   const [filteredGroups, setFilteredGroups] = useState<QuestionGroup[]>([]);
+  const [contentFilter, setContentFilter] = useState<string>("all");
 
   useEffect(() => {
     const fetchChapters = async (gradeId: string, chapterId: string) => {
@@ -71,17 +168,57 @@ const Chapter = () => {
       const filtered = chapterData.questions
         .map((group) => ({
           ...group,
-          questions: group.questions.filter(
-            (q) =>
+          questions: group.questions.filter((q) => {
+            // Content type filter
+            const matchesContentType =
+              contentFilter === "all" || q.content_type === contentFilter;
+
+            // Search filter
+            const matchesSearch =
               q.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              q.answer.toLowerCase().includes(searchQuery.toLowerCase())
-          ),
+              q.answer.toLowerCase().includes(searchQuery.toLowerCase());
+
+            return matchesContentType && matchesSearch;
+          }),
         }))
         .filter((group) => group.questions.length > 0);
 
       setFilteredGroups(filtered);
     }
-  }, [searchQuery, chapterData]);
+  }, [searchQuery, chapterData, contentFilter]);
+
+  const renderContent = (q: Question) => {
+    switch (q.content_type) {
+      case "text":
+        return (
+          q.question && (
+            <GeneralQuestionRenderer question={q.question} answer={q.answer} />
+          )
+        );
+      case "table":
+        return q.table_data && <TableRenderer data={q.table_data} />;
+      case "equation":
+        return q.equation && <EquationRenderer equation={q.equation} />;
+      case "math_problem":
+        return (
+          <MathProblemRenderer
+            problem={q.problem || q.question}
+            solution={q.answer}
+          />
+        );
+      case "programming":
+        return (
+          <ProgrammingQuestionRenderer
+            question={q.question}
+            answer={q.answer}
+            language={q.language}
+            code={q.code}
+          />
+        );
+      default:
+        return null;
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -89,7 +226,7 @@ const Chapter = () => {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 flex-wrap">
               <Link to={`/grade/${gradeId}`}>
                 <Button
                   variant="ghost"
@@ -118,7 +255,7 @@ const Chapter = () => {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Search */}
+        {/* Search and Filters */}
         <div className="mb-8 space-y-4">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex-1 relative">
@@ -129,6 +266,20 @@ const Chapter = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
               />
+            </div>
+            <div className="w-full sm:w-48">
+              <select
+                value={contentFilter}
+                onChange={(e) => setContentFilter(e.target.value)}
+                className="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              >
+                <option value="all">All Content Types</option>
+                <option value="text">Text Only</option>
+                <option value="table">Tables</option>
+                <option value="equation">Equations</option>
+                <option value="math_problem">Math Problems</option>
+                <option value="programming">Programming</option>
+              </select>
             </div>
           </div>
         </div>
@@ -146,29 +297,8 @@ const Chapter = () => {
                     key={`${group.question_group}-${q.id}`}
                     className="hover:shadow-lg transition-shadow"
                   >
-                    <CardHeader>
-                      <CardTitle className="text-lg">{q.question}</CardTitle>
-                    </CardHeader>
                     <CardContent>
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-green-700 mb-2">
-                          Answer:
-                        </h4>
-                        <p
-                          className="text-gray-700 leading-relaxed"
-                          style={{ whiteSpace: "pre-line" }}
-                        >
-                          {q.answer}
-                        </p>
-
-                        {q.content_type === "table" && q.table_data && (
-                          <TableRenderer data={q.table_data} />
-                        )}
-
-                        {q.content_type === "equation" && q.equation && (
-                          <EquationRenderer equation={q.equation} />
-                        )}
-                      </div>
+                      <div className="mb-4">{renderContent(q)}</div>
                     </CardContent>
                   </Card>
                 ))}

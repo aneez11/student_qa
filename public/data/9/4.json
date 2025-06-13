@@ -1,0 +1,42 @@
+{
+  "chapter_no": 4,
+  "name": "Programming Test",
+  "questions": [
+    {
+      "question_group": "Short Answers",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Scratch used for?",
+          "answer": "Scratch is used for creating interactive stories, games, animations, and simulations using block-based programming.",
+          "content_type": "text"
+        },
+        {
+          "id": 203,
+          "question": "Create a semantic HTML layout with header, nav, main, and footer sections.",
+          "answer": "Modern semantic HTML5 layout structure:",
+          "content_type": "programming",
+          "language": "html",
+          "code": "<body>\n  <header>\n<h1>Website Title</h1>\n<nav>\n  <ul>\n <li><a href=\"/\">Home</a></li>\n <li><a href=\"/about\">About</a></li>\n <li><a href=\"/contact\">Contact</a></li>\n  </ul>\n</nav>\n  </header>\n  \n  <main>\n<article>\n  <h2>Article Title</h2>\n  <p>Article content goes here...</p>\n</article>\n\n<aside>\n  <h3>Related Links</h3>\n  <ul>\n <li><a href=\"#\">Related Article 1</a></li>\n <li><a href=\"#\">Related Article 2</a></li>\n  </ul>\n</aside>\n  </main>\n  \n  <footer>\n<p>&copy; 2023 Company Name. All rights reserved.</p>\n  </footer>\n</body>"
+        },
+
+        {
+          "id": 203,
+          "question": "Create a semantic HTML layout with header, nav, main, and footer sections.",
+          "content_type": "math_problem",
+          "language": "html",
+          "problem": "Solve the quadratic equation: $$x^2 - 5x + 6 = 0$$",
+          "answer": "Factor: $$(x - 2)(x - 3) = 0$$\n\nSolutions: $$x = 2$$ or $$x = 3$$"
+        },
+        {
+          "id": 204,
+          "question": "Perform binary addition on the given numbers",
+          "content_type": "math_problem",
+          "language": "math",
+          "problem": "Add the binary numbers: 1011 and 1101",
+          "answer": "$$\\begin{array}{r} \\phantom{+}1011_2 \\\\ +\\,1101_2 \\\\ \\hline \\phantom{+}11000_2 \\end{array}$$ \\  $$\\begin{aligned}  &\\text{Steps} \\\\   &1 + 1 = 10 \\ (0 \\text{ carry } 1) \\\\   &1 + 0 + 1 \\ (\\text{carry}) = 10 \\ (0 \\text{ carry } 1) \\\\   &0 + 1 + 1 \\ (\\text{carry}) = 10 \\ (0 \\text{ carry } 1) \\\\   &1 + 1 + 1 \\ (\\text{carry}) = 11 \\ (1 \\text{ carry } 1) \\\\   &\\text{Carry over} = 1 \\\\   &\\text{Final Result: } 11000_2   \\end{aligned}$$"
+        }
+      ]
+    }
+  ]
+}

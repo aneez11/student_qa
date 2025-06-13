@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, FileText } from "lucide-react";
+import { ArrowLeft, BookOpen, FileText, Loader2 } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import type { Chapters } from "@/lib/types";
 
@@ -25,6 +25,8 @@ const gradeData = {
 const Grade = () => {
   const { gradeId } = useParams();
   const [chapterIds, setChapterIds] = useState<string[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
   const numericGradeId = Number(gradeId);
   const currentGrade =
     numericGradeId in gradeData
@@ -42,6 +44,8 @@ const Grade = () => {
 
   useEffect(() => {
     const fetchChapters = async () => {
+      setLoading(true);
+      setError(null);
       try {
         const response = await fetch(`/data/${gradeId}/index.json`);
         if (!response.ok) {
@@ -49,7 +53,6 @@ const Grade = () => {
         }
 
         const chapterFiles: string[] = await response.json();
-
         const chapterIds = chapterFiles.map((file) =>
           file.replace(/\.json$/, "")
         );
@@ -57,6 +60,9 @@ const Grade = () => {
         setChapterIds(chapterIds);
       } catch (err) {
         console.error(err);
+        setError("Failed to load chapter list. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -65,6 +71,10 @@ const Grade = () => {
 
   useEffect(() => {
     const fetchChapters = async (gradeId: string) => {
+      if (chapterIds.length === 0) return;
+
+      setLoading(true);
+      setError(null);
       try {
         const chapterPromises = chapterIds.map((id) =>
           fetch(`/data/${gradeId}/${id}.json`).then((res) => {
@@ -81,12 +91,60 @@ const Grade = () => {
         }
       } catch (err) {
         console.error("Error loading chapter list for", gradeId, err);
+        setError("Failed to load chapters. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     };
     if (gradeId) {
       fetchChapters(gradeId);
     }
   }, [gradeId, currentGrade, chapterIds]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="h-12 w-12 animate-spin text-blue-600 mx-auto mb-4" />
+          <p className="text-lg font-medium text-gray-700">
+            Loading content...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+        <div className="text-center max-w-md p-6 bg-white rounded-lg shadow-md">
+          <div className="text-red-500 mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-12 w-12 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+              />
+            </svg>
+          </div>
+          <h3 className="text-lg font-medium text-gray-900 mb-2">
+            Error loading content
+          </h3>
+          <p className="text-gray-600 mb-4">{error}</p>
+          <Button asChild>
+            <Link to="/">Back to Home</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
