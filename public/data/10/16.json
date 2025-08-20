@@ -89,6 +89,679 @@
           "content_type": "text"
         }
       ]
+    },
+    {
+      "question_group": "Skill Test - 1 ",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a C program to ask quantity and rate per unit of pen and find out the total.",
+          "content_type": "programming",
+          "language": "c",
+          "code": "#include <stdio.h>\n\nint main() {\n    int quantity;\n    float rate, total;\n    printf(\"Enter quantity of pens: \");\n    scanf(\"%d\", &quantity);\n    printf(\"Enter rate per pen: \");\n    scanf(\"%f\", &rate);\n    total = quantity * rate;\n    printf(\"Total: %.2f\\n\", total);\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask 5 subject marks and find out total marks.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the total marks of 5 subjects.",
+          "code": "#include <stdio.h>\nint main() {\n    float mark1, mark2, mark3, mark4, mark5, total;\n    printf(\"Enter marks for 5 subjects:\\n\");\n    scanf(\"%f %f %f %f %f\", &mark1, &mark2, &mark3, &mark4, &mark5);\n    total = mark1 + mark2 + mark3 + mark4 + mark5;\n    printf(\"Total marks: %.2f\", total);\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask quantity and rate per unit of pen, copy and pencil, and find out total amount.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the total amount for pen, copy, and pencil based on their quantities and rates.",
+          "code": "#include <stdio.h>\nint main() {\n    float q_pen, r_pen, q_copy, r_copy, q_pencil, r_pencil, total;\n    printf(\"Enter quantity and rate for pen: \");\n    scanf(\"%f %f\", &q_pen, &r_pen);\n    printf(\"Enter quantity and rate for copy: \");\n    scanf(\"%f %f\", &q_copy, &r_copy);\n    printf(\"Enter quantity and rate for pencil: \");\n    scanf(\"%f %f\", &q_pencil, &r_pencil);\n    total = (q_pen * r_pen) + (q_copy * r_copy) + (q_pencil * r_pencil);\n    printf(\"Total amount: %.2f\", total);\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "Write a program to enter the sides of the triangle and find out the area of the triangle. Area of the triangle = s*(s-a)*(s-b)*(s-c). Where s=(a+b+c)/2.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the area of a triangle using Heron's formula.",
+          "code": "#include <stdio.h>\n#include <math.h>\nint main() {\n    float a, b, c, s, area;\n    printf(\"Enter sides of triangle (a b c): \");\n    scanf(\"%f %f %f\", &a, &b, &c);\n    s = (a + b + c) / 2;\n    area = sqrt(s * (s - a) * (s - b) * (s - c));\n    printf(\"Area of triangle: %.2f\", area);\n    return 0;\n}"
+        },
+        {
+          "id": 5,
+          "question": "The length and breadth of a rectangle should be input through the keyboard. Write a program to calculate the area and perimeter of the rectangle. AR=L*B, PR=2*(A+B)",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the area and perimeter of a rectangle.",
+          "code": "#include <stdio.h>\nint main() {\n    float length, breadth, area, perimeter;\n    printf(\"Enter length and breadth: \");\n    scanf(\"%f %f\", &length, &breadth);\n    area = length * breadth;\n    perimeter = 2 * (length + breadth);\n    printf(\"Area: %.2f\\nPerimeter: %.2f\", area, perimeter);\n    return 0;\n}"
+        },
+        {
+          "id": 6,
+          "question": "Write a program to find the area of a square. A=L^2.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the area of a square.",
+          "code": "#include <stdio.h>\nint main() {\n    float side, area;\n    printf(\"Enter side of square: \");\n    scanf(\"%f\", &side);\n    area = side * side;\n    printf(\"Area of square: %.2f\", area);\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "SKILL TEST-2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to ask your name, name of subjects and obtained marks in the first terminal examination. The program should display your name, subject's name and obtained marks along with the total.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program asks for your name, subjects, and marks, then displays the total.",
+          "code": "#include <stdio.h>\nint main() {\n    char name[50], subject1[50], subject2[50];\n    float mark1, mark2, total;\n    printf(\"Enter your name: \");\n    scanf(\"%s\", name);\n    printf(\"Enter name of first subject: \");\n    scanf(\"%s\", subject1);\n    printf(\"Enter marks for %s: \", subject1);\n    scanf(\"%f\", &mark1);\n    printf(\"Enter name of second subject: \");\n    scanf(\"%s\", subject2);\n    printf(\"Enter marks for %s: \", subject2);\n    scanf(\"%f\", &mark2);\n    total = mark1 + mark2;\n    printf(\"Name: %s\\nSubjects and Marks: %s - %.2f, %s - %.2f\\nTotal: %.2f\", name, subject1, mark1, subject2, mark2, total);\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask 5 students name, gender and age then display the output.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program asks for details of 5 students and displays them.",
+          "code": "#include <stdio.h>\nint main() {\n    char name[5][50], gender[5][10];\n    int age[5], i;\n    for(i = 0; i < 5; i++) {\n        printf(\"Enter name of student %d: \", i+1);\n        scanf(\"%s\", name[i]);\n        printf(\"Enter gender of student %d: \", i+1);\n        scanf(\"%s\", gender[i]);\n        printf(\"Enter age of student %d: \", i+1);\n        scanf(\"%d\", &age[i]);\n    }\n    printf(\"\\nStudent Details:\\n\");\n    for(i = 0; i < 5; i++) {\n        printf(\"Student %d: Name - %s, Gender - %s, Age - %d\\n\", i+1, name[i], gender[i], age[i]);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask name of item, quantity and rate. The program should calculate the total amount and display output.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the total amount based on item name, quantity, and rate.",
+          "code": "#include <stdio.h>\nint main() {\n    char item[50];\n    float quantity, rate, total;\n    printf(\"Enter name of item: \");\n    scanf(\"%s\", item);\n    printf(\"Enter quantity: \");\n    scanf(\"%f\", &quantity);\n    printf(\"Enter rate per unit: \");\n    scanf(\"%f\", &rate);\n    total = quantity * rate;\n    printf(\"Item: %s\\nQuantity: %.2f\\nRate: %.2f\\nTotal Amount: %.2f\", item, quantity, rate, total);\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "SKILL TEST-3",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to ask marks obtained in computer science and check the marks, if marks is above 50, display message, you are passed ........ congratulation.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if marks in computer science are above 50 and displays a pass message.",
+          "code": "#include <stdio.h>\nint main() {\n    float marks;\n    printf(\"Enter marks obtained in computer science: \");\n    scanf(\"%f\", &marks);\n    if (marks > 50) {\n        printf(\"You are passed ........ congratulation.\");\n    } else {\n        printf(\"You are not passed.\");\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask age of a person and test, if age is above 18, give him congratulation message being eligible to vote in the national election and get citizenship.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a person is eligible to vote and get citizenship based on age.",
+          "code": "#include <stdio.h>\nint main() {\n    int age;\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n    if (age > 18) {\n        printf(\"Congratulation! You are eligible to vote in the national election and get citizenship.\");\n    } else {\n        printf(\"You are not eligible to vote or get citizenship.\");\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask the age and check if age is below 10, display message 'You are a child.'",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a person is a child based on age.",
+          "code": "#include <stdio.h>\nint main() {\n    int age;\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n    if (age < 10) {\n        printf(\"You are a child.\");\n    } else {\n        printf(\"You are not a child.\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "SKILL TEST-4",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to ask your computer marks and find out whether you are eligible or not to study computer. If computer marks is above 80, you are eligible otherwise you are not eligible.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if computer marks are above 80 for eligibility.",
+          "code": "#include <stdio.h>\nint main() {\n    float marks;\n    printf(\"Enter your computer marks: \");\n    scanf(\"%f\", &marks);\n    if (marks > 80) {\n        printf(\"You are eligible to study computer.\");\n    } else {\n        printf(\"You are not eligible to study computer.\");\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask any two numbers and find out smaller number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the smaller of two numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    float num1, num2;\n    printf(\"Enter two numbers: \");\n    scanf(\"%f %f\", &num1, &num2);\n    if (num1 < num2) {\n        printf(\"Smaller number: %.2f\", num1);\n    } else {\n        printf(\"Smaller number: %.2f\", num2);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask marks in maths and computer, then find out whether you can study computer or not. If any one subject marks is above 80, you can study otherwise you can not study.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks eligibility to study computer based on maths and computer marks.",
+          "code": "#include <stdio.h>\nint main() {\n    float math_marks, comp_marks;\n    printf(\"Enter marks in maths: \");\n    scanf(\"%f\", &math_marks);\n    printf(\"Enter marks in computer: \");\n    scanf(\"%f\", &comp_marks);\n    if (math_marks > 80 || comp_marks > 80) {\n        printf(\"You can study computer.\");\n    } else {\n        printf(\"You cannot study computer.\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "SKILL TEST-5",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to ask three numbers and find out smallest number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the smallest of three numbers using nested if-else.",
+          "code": "#include <stdio.h>\nint main() {\n    float num1, num2, num3;\n    printf(\"Enter three numbers: \");\n    scanf(\"%f %f %f\", &num1, &num2, &num3);\n    if (num1 <= num2) {\n        if (num1 <= num3) {\n            printf(\"Smallest number: %.2f\", num1);\n        } else {\n            printf(\"Smallest number: %.2f\", num3);\n        }\n    } else {\n        if (num2 <= num3) {\n            printf(\"Smallest number: %.2f\", num2);\n        } else {\n            printf(\"Smallest number: %.2f\", num3);\n        }\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask three numbers and print the middle number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the middle number among three numbers using nested if-else.",
+          "code": "#include <stdio.h>\nint main() {\n    float num1, num2, num3;\n    printf(\"Enter three numbers: \");\n    scanf(\"%f %f %f\", &num1, &num2, &num3);\n    if (num1 <= num2) {\n        if (num2 <= num3) {\n            printf(\"Middle number: %.2f\", num2);\n        } else if (num1 <= num3) {\n            printf(\"Middle number: %.2f\", num3);\n        } else {\n            printf(\"Middle number: %.2f\", num1);\n        }\n    } else {\n        if (num1 <= num3) {\n            printf(\"Middle number: %.2f\", num1);\n        } else if (num2 <= num3) {\n            printf(\"Middle number: %.2f\", num3);\n        } else {\n            printf(\"Middle number: %.2f\", num2);\n        }\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask value for gender [1 to 3] and find out gender. 1 is male, 2 is female and 3 is third gender.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program determines gender based on input value (1, 2, or 3) using nested if-else.",
+          "code": "#include <stdio.h>\nint main() {\n    int gender;\n    printf(\"Enter value for gender (1-3): \");\n    scanf(\"%d\", &gender);\n    if (gender >= 1) {\n        if (gender == 1) {\n            printf(\"Gender: Male\");\n        } else if (gender == 2) {\n            printf(\"Gender: Female\");\n        } else if (gender == 3) {\n            printf(\"Gender: Third gender\");\n        } else {\n            printf(\"Invalid input\");\n        }\n    } else {\n        printf(\"Invalid input\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "SKILL TEST-6",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to enter a day of the week in number [1 to 7] and display a message, if input is 1, then 'SUNDAY', if input is 2, then 'MONDAY' respectively.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the day of the week based on a number input from 1 to 7.",
+          "code": "#include <stdio.h>\nint main() {\n    int day;\n    printf(\"Enter a number (1-7) for the day of the week: \");\n    scanf(\"%d\", &day);\n    if (day == 1) {\n        printf(\"SUNDAY\");\n    } else if (day == 2) {\n        printf(\"MONDAY\");\n    } else if (day == 3) {\n        printf(\"TUESDAY\");\n    } else if (day == 4) {\n        printf(\"WEDNESDAY\");\n    } else if (day == 5) {\n        printf(\"THURSDAY\");\n    } else if (day == 6) {\n        printf(\"FRIDAY\");\n    } else if (day == 7) {\n        printf(\"SATURDAY\");\n    } else {\n        printf(\"Invalid input\");\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to ask 5 subject marks and find out total and percentage marks and find out your grade on the basis of following conditions. Percentage Grade >=90 A+ >=80 A >=60 B+ >=50 B >=40 C+ >=30 C <30 Grade less Use float data types for all the number data.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates total, percentage, and grade based on 5 subject marks using float data types.",
+          "code": "#include <stdio.h>\nint main() {\n    float mark1, mark2, mark3, mark4, mark5, total, percentage;\n    printf(\"Enter marks for 5 subjects:\\n\");\n    scanf(\"%f %f %f %f %f\", &mark1, &mark2, &mark3, &mark4, &mark5);\n    total = mark1 + mark2 + mark3 + mark4 + mark5;\n    percentage = (total / 500) * 100;\n    printf(\"Total marks: %.2f\\nPercentage: %.2f\\n\", total, percentage);\n    if (percentage >= 90) {\n        printf(\"Grade: A+\");\n    } else if (percentage >= 80) {\n        printf(\"Grade: A\");\n    } else if (percentage >= 60) {\n        printf(\"Grade: B+\");\n    } else if (percentage >= 50) {\n        printf(\"Grade: B\");\n    } else if (percentage >= 40) {\n        printf(\"Grade: C+\");\n    } else if (percentage >= 30) {\n        printf(\"Grade: C\");\n    } else {\n        printf(\"Grade: Grade less\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill-7",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to ask your name and print 10 times.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program asks for your name and prints it 10 times.",
+          "code": "#include <stdio.h>\nint main() {\n    char name[50];\n    int i;\n    printf(\"Enter your name: \");\n    scanf(\"%s\", name);\n    for(i = 0; i < 10; i++) {\n        printf(\"%s\\n\", name);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to print first 10 natural numbers in reverse form.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints the first 10 natural numbers in reverse order.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 10; i >= 1; i--) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write program to find the sum of 10 natural numbers.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the sum of the first 10 natural numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    int i, sum = 0;\n    for(i = 1; i <= 10; i++) {\n        sum += i;\n    }\n    printf(\"Sum of first 10 natural numbers: %d\", sum);\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "Write a program to display multiples of 2 up to 10th terms.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the first 10 multiples of 2.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 10; i++) {\n        printf(\"%d \", 2 * i);\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill-8",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to print the string 'SAGARMATHA' 10 times.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints 'SAGARMATHA' 10 times.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 0; i < 10; i++) {\n        printf(\"SAGARMATHA\\n\");\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to display odd numbers from 1 to 100 horizontally.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays odd numbers from 1 to 100 in a single line.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 100; i += 2) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to find the sum of even numbers from 1 to 10.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the sum of even numbers from 1 to 10.",
+          "code": "#include <stdio.h>\nint main() {\n    int i, sum = 0;\n    for(i = 2; i <= 10; i += 2) {\n        sum += i;\n    }\n    printf(\"Sum of even numbers from 1 to 10: %d\", sum);\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "Write a program to ask a number and display multiples up to 10th term.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program asks for a number and displays its first 10 multiples.",
+          "code": "#include <stdio.h>\nint main() {\n    int num, i;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n    for(i = 1; i <= 10; i++) {\n        printf(\"%d \", num * i);\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill-9",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write programs to display the following: a. 5 55 555 5555 55555",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the pattern 5, 55, 555, 5555, 55555.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 5; i++) {\n        int num = 5;\n        for(int j = 1; j < i; j++) {\n            num = num * 10 + 5;\n        }\n        printf(\"%d \", num);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "Write programs to display the following: b. 1 1 2 3 5 8 13 21 ...... up to 10th term.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the Fibonacci sequence up to the 10th term.",
+          "code": "#include <stdio.h>\nint main() {\n    int a = 1, b = 1, c, i;\n    printf(\"%d %d \", a, b);\n    for(i = 3; i <= 10; i++) {\n        c = a + b;\n        printf(\"%d \", c);\n        a = b;\n        b = c;\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "Write programs to display the following: c. 50 45 40 ......... 5",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the sequence from 50 to 5 with a step of -5.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 50; i >= 5; i -= 5) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "Write programs to display the following: d. 1 4 9 16 ........ up to 10th term.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the squares of numbers from 1 to 10.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 10; i++) {\n        printf(\"%d \", i * i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 5,
+          "question": "Write programs to display the following: e. 20 10 0 -10 ...... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the sequence starting from 20 with a step of -10 up to the 10th term.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 0; i < 10; i++) {\n        printf(\"%d \", 20 - (i * 10));\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 6,
+          "question": "Write programs to display the following: f. 11111 1111 111 11 1",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the pattern 11111, 1111, 111, 11, 1.",
+          "code": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 5; i >= 1; i--) {\n        int num = 0;\n        for(int j = 0; j < i; j++) {\n            num = num * 10 + 1;\n        }\n        printf(\"%d \", num);\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activities-1",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Type and test all the programs given in this chapter:\n   i) Example programs\n   ii) Test skill programs\n   iii) Programs given in application based questions.",
+          "content_type": "programming",
+          "language": "c"
+        },
+        {
+          "id": 2,
+          "question": "2. Ragupati Chaudhary wants to ask age of 100 people of his village and find out\n   the total number of people in the following age group.\n   Below 10\n   10 to 20\n   21 to 30\n   31 to 40\n   above 40\n   Write a program to solve this case of Ragupati Chaudhary.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program counts the number of people in different age groups.",
+          "code": "#include <stdio.h>\nint main() {\n    int age, count_below10 = 0, count_10_20 = 0, count_21_30 = 0, count_31_40 = 0, count_above40 = 0, i;\n    for(i = 0; i < 100; i++) {\n        printf(\"Enter age of person %d: \", i + 1);\n        scanf(\"%d\", &age);\n        if (age < 10) count_below10++;\n        else if (age >= 10 && age <= 20) count_10_20++;\n        else if (age >= 21 && age <= 30) count_21_30++;\n        else if (age >= 31 && age <= 40) count_31_40++;\n        else if (age > 40) count_above40++;\n    }\n    printf(\"Age Groups:\\nBelow 10: %d\\n10 to 20: %d\\n21 to 30: %d\\n31 to 40: %d\\nAbove 40: %d\", count_below10, count_10_20, count_21_30, count_31_40, count_above40);\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "3. Janbi Moktan heard about Armstrong number which is a number equal to the\n   sum of its cubes of its digits. For example: 1^3+5^3+3^3=153. So, 153 is Armstrong\n   i) To ask a number and find out whether it is Armstrong or not.\n   ii) To display all the Armstrong numbers from 1 to 500.\n   Write a program to solve this case of Janbi Moktan, test and make .exe file.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is an Armstrong number and lists all Armstrong numbers from 1 to 500.",
+          "code": "#include <stdio.h>\nint isArmstrong(int num) {\n    int originalNum, remainder, result = 0, n = 0;\n    originalNum = num;\n    while (originalNum != 0) {\n        originalNum /= 10;\n        n++;\n    }\n    originalNum = num;\n    while (originalNum != 0) {\n        remainder = originalNum % 10;\n        int power = 1;\n        for(int i = 0; i < n; i++) power *= remainder;\n        result += power;\n        originalNum /= 10;\n    }\n    return (result == num);\n}\nint main() {\n    int num;\n    printf(\"Enter a number to check if it is Armstrong: \");\n    scanf(\"%d\", &num);\n    if (isArmstrong(num)) printf(\"%d is an Armstrong number.\\n\", num);\n    else printf(\"%d is not an Armstrong number.\\n\", num);\n    printf(\"Armstrong numbers from 1 to 500: \");\n    for(int i = 1; i <= 500; i++) if (isArmstrong(i)) printf(\"%d \", i);\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "4. Uttim Lal Mandal is a mathematics teacher, he wants some programs to test\n   the followings:\n   i) To ask a number and find out it is a prime number or not\n   ii) To ask a number and display in reverse form.\n   Write programs for Uttim Lal to solve these cases.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is prime and displays another number in reverse.",
+          "code": "#include <stdio.h>\nint main() {\n    int num, rev = 0, temp, isPrime = 1, i;\n    // Check prime number\n    printf(\"Enter a number to check if it is prime: \");\n    scanf(\"%d\", &num);\n    for(i = 2; i <= num / 2; i++) {\n        if (num % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n    if (num <= 1) isPrime = 0;\n    if (isPrime) printf(\"%d is a prime number.\\n\", num);\n    else printf(\"%d is not a prime number.\\n\", num);\n    // Reverse number\n    printf(\"Enter a number to reverse: \");\n    scanf(\"%d\", &num);\n    temp = num;\n    while (temp != 0) {\n        rev = rev * 10 + temp % 10;\n        temp /= 10;\n    }\n    printf(\"Reverse of %d is %d\\n\", num, rev);\n    return 0;\n}"
+        },
+        {
+          "id": 5,
+          "question": "5. Jogindar Mahato is a class X student, he has to write some programs to solve\n   the following problems:\n   i) To ask a number and find out whether it is same from both sides or not,\n      like 151, 55 are same from both sides.\n   ii) To ask two numbers and find out their HCF and LCM.\n   How would Jogindar write programs to solve these problems?",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is a palindrome and calculates HCF and LCM of two numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    int num, rev = 0, temp;\n    // Check palindrome\n    printf(\"Enter a number to check if it is same from both sides: \");\n    scanf(\"%d\", &num);\n    temp = num;\n    while (temp != 0) {\n        rev = rev * 10 + temp % 10;\n        temp /= 10;\n    }\n    if (num == rev) printf(\"%d is same from both sides.\\n\", num);\n    else printf(\"%d is not same from both sides.\\n\", num);\n    // HCF and LCM\n    int num1, num2, hcf, lcm, a, b;\n    printf(\"Enter two numbers to find HCF and LCM: \");\n    scanf(\"%d %d\", &num1, &num2);\n    a = num1;\n    b = num2;\n    while (b != 0) {\n        int t = b;\n        b = a % b;\n        a = t;\n    }\n    hcf = a;\n    lcm = (num1 * num2) / hcf;\n    printf(\"HCF of %d and %d is %d\\n\", num1, num2, hcf);\n    printf(\"LCM of %d and %d is %d\\n\", num1, num2, lcm);\n    return 0;\n}"
+        },
+        {
+          "id": 6,
+          "question": "6. Jitini Rai saw the given patterns in a computer book, she wants programs to\n   display same patterns, but she doesn't have any idea, how would you help her?\n   a.\n      12345\n      1234\n      123\n      12\n      1\n\n   b.\n      *****\n      ****\n      ***\n      **\n      *\n\n   c.\n      1\n      12\n      123\n      1234\n      12345\n\n   d.\n      *\n      **\n      ***\n      ****\n      *****\n\n   e.\n      5\n      44\n      333\n      2222\n      11111\n\n   f.\n      12345\n      2345\n      345\n      45\n      5\n\n   g.\n      1\n      22\n      333\n      4445\n      55555\n\n   h.\n      5\n      45\n      345\n      2345\n      12345\n\n   i.\n      1\n      21\n      321\n      4321\n      54321\n\n   j.\n      54321\n      4321\n      321\n      21\n      1\n",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays various patterns as requested by Jitini Rai.",
+          "code": "#include <stdio.h>\nint main() {\n    int i, j;\n    // Pattern a\n    printf(\"Pattern a:\\n\");\n    for(i = 5; i >= 1; i--) {\n        for(j = 1; j <= i; j++) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    // Pattern b\n    printf(\"Pattern b:\\n\");\n    for(i = 5; i >= 1; i--) {\n        for(j = 1; j <= i; j++) printf(\"*\");\n        printf(\"\\n\");\n    }\n    // Pattern c\n    printf(\"Pattern c:\\n\");\n    for(i = 1; i <= 5; i++) {\n        for(j = 1; j <= i; j++) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    // Pattern d\n    printf(\"Pattern d:\\n\");\n    for(i = 1; i <= 5; i++) {\n        for(j = 1; j <= i; j++) printf(\"*\");\n        printf(\"\\n\");\n    }\n    // Pattern e\n    printf(\"Pattern e:\\n\");\n    for(i = 5; i >= 1; i--) {\n        for(j = 1; j <= 6 - i; j++) printf(\"%d\", i);\n        printf(\"\\n\");\n    }\n    // Pattern f\n    printf(\"Pattern f:\\n\");\n    for(i = 1; i <= 5; i++) {\n        for(j = i; j <= 5; j++) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    // Pattern g\n    printf(\"Pattern g:\\n\");\n    for(i = 1; i <= 5; i++) {\n        for(j = 1; j <= i; j++) printf(\"%d\", i);\n        printf(\"\\n\");\n    }\n    // Pattern h\n    printf(\"Pattern h:\\n\");\n    for(i = 5; i >= 1; i--) {\n        for(j = i; j <= 5; j++) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    // Pattern i\n    printf(\"Pattern i:\\n\");\n    for(i = 1; i <= 5; i++) {\n        for(j = i; j >= 1; j--) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    // Pattern j\n    printf(\"Pattern j:\\n\");\n    for(i = 5; i >= 1; i--) {\n        for(j = i; j >= 1; j--) printf(\"%d\", j);\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activities-2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "2a) To ask length & breadth of a room and calculate its area and perimeter.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates the area and perimeter of a room.",
+          "code": "#include <stdio.h>\nint main() {\n    float length, breadth, area, perimeter;\n    printf(\"Enter length of the room: \");\n    scanf(\"%f\", &length);\n    printf(\"Enter breadth of the room: \");\n    scanf(\"%f\", &breadth);\n    area = length * breadth;\n    perimeter = 2 * (length + breadth);\n    printf(\"Area = %.2f\\nPerimeter = %.2f\", area, perimeter);\n    return 0;\n}"
+        },
+        {
+          "id": 2,
+          "question": "2b) To ask any two numbers and display the smaller one.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program takes two numbers and displays the smaller one.",
+          "code": "#include <stdio.h>\nint main() {\n    int a, b;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d %d\", &a, &b);\n    if(a < b)\n        printf(\"Smaller number is %d\", a);\n    else\n        printf(\"Smaller number is %d\", b);\n    return 0;\n}"
+        },
+        {
+          "id": 3,
+          "question": "2c) To check whether the supplied number is divisible by 5 or not.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is divisible by 5.",
+          "code": "#include <stdio.h>\nint main() {\n    int n;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    if(n % 5 == 0)\n        printf(\"%d is divisible by 5\", n);\n    else\n        printf(\"%d is not divisible by 5\", n);\n    return 0;\n}"
+        },
+        {
+          "id": 4,
+          "question": "2d) To ask your marks in Computer Science and check whether you are passed or failed, if the pass mark is above 40, passed otherwise failed.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks pass or fail status based on marks.",
+          "code": "#include <stdio.h>\nint main() {\n    int marks;\n    printf(\"Enter your Computer Science marks: \");\n    scanf(\"%d\", &marks);\n    if(marks > 40)\n        printf(\"You are Passed\");\n    else\n        printf(\"You are Failed\");\n    return 0;\n}"
+        },
+        {
+          "id": 5,
+          "question": "2e(i) Display series 5 10 15 ..... 50",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints multiples of 5 up to 50.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i = 5; i <= 50; i += 5) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 6,
+          "question": "2e(ii) Display series 1 2 4 8 16 .... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints powers of 2 up to 10 terms.",
+          "code": "#include <stdio.h>\nint main() {\n    int term = 1;\n    for(int i = 1; i <= 10; i++) {\n        printf(\"%d \", term);\n        term *= 2;\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 7,
+          "question": "2e(iii) Display series 1000 729 512 .... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints cubes of descending numbers from 10 to 1.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i = 10; i > 0; i--) {\n        printf(\"%d \", i*i*i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 8,
+          "question": "2e(iv) Display series 1 2 3 5 8 13 21 .... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints Fibonacci series up to 10 terms.",
+          "code": "#include <stdio.h>\nint main() {\n    int a = 0, b = 1, c;\n    for(int i = 1; i <= 10; i++) {\n        printf(\"%d \", b);\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 9,
+          "question": "2e(v) Display series 2 8 18 32 .... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints series n*n*2 up to 10 terms.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i = 1; i <= 10; i++) {\n        printf(\"%d \", i*i*2);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 10,
+          "question": "2e(vi) Display series 999 72 511 .... up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This seems to be a custom sequence, printing decreasing odd numbers by pattern. Example below just decreases by 1 each time.",
+          "code": "#include <stdio.h>\nint main() {\n    int n = 999;\n    for(int i = 1; i <= 10; i++) {\n        printf(\"%d \", n);\n        n -= (i*2-1);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 11,
+          "question": "2e(vii) Display series -25 -20 -15 -10 0 up to 10th term",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints an arithmetic progression from -25 to 20.",
+          "code": "#include <stdio.h>\nint main() {\n    int n = -25;\n    for(int i = 0; i < 10; i++) {\n        printf(\"%d \", n);\n        n += 5;\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 12,
+          "question": "2f) To ask any one integer and calculate the sum of its individual digits.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the sum of digits of an integer.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, sum = 0, digit;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    while(n != 0) {\n        digit = n % 10;\n        sum += digit;\n        n /= 10;\n    }\n    printf(\"Sum of digits = %d\", sum);\n    return 0;\n}"
+        },
+        {
+          "id": 13,
+          "question": "2g) To ask any one integer and display its reverse.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program reverses a given integer.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, rev = 0, digit;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    while(n != 0) {\n        digit = n % 10;\n        rev = rev * 10 + digit;\n        n /= 10;\n    }\n    printf(\"Reverse = %d\", rev);\n    return 0;\n}"
+        },
+        {
+          "id": 14,
+          "question": "2h) To ask any one integer and check whether it is a palindrome number or not.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is palindrome.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, temp, rev = 0, digit;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    temp = n;\n    while(n != 0) {\n        digit = n % 10;\n        rev = rev * 10 + digit;\n        n /= 10;\n    }\n    if(temp == rev)\n        printf(\"Palindrome\");\n    else\n        printf(\"Not Palindrome\");\n    return 0;\n}"
+        },
+        {
+          "id": 15,
+          "question": "2i) To ask any one integer and calculate its factorial.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program calculates factorial of a number.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, fact = 1;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    for(int i = 1; i <= n; i++) {\n        fact *= i;\n    }\n    printf(\"Factorial = %d\", fact);\n    return 0;\n}"
+        },
+        {
+          "id": 16,
+          "question": "2j) To ask an integer and display its factors.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays all factors of an integer.",
+          "code": "#include <stdio.h>\nint main() {\n    int n;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    printf(\"Factors: \");\n    for(int i = 1; i <= n; i++) {\n        if(n % i == 0)\n            printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 17,
+          "question": "2k) To check whether the supplied number is prime or not.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a number is prime.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, i, isPrime = 1;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    if(n <= 1) isPrime = 0;\n    for(i = 2; i <= n/2; i++) {\n        if(n % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n    if(isPrime)\n        printf(\"Prime\");\n    else\n        printf(\"Not Prime\");\n    return 0;\n}"
+        },
+        {
+          "id": 12,
+          "question": "2l) To display square values of first 10 natural number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays square values of first 10 natural numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i=1; i<=10; i++) {\n        printf(\"%d^2 = %d\\n\", i, i*i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 13,
+          "question": "2m) To display greatest number out of three input number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the greatest number out of three inputs.",
+          "code": "#include <stdio.h>\nint main() {\n    int a, b, c;\n    printf(\"Enter three numbers: \");\n    scanf(\"%d %d %d\", &a, &b, &c);\n    if(a>=b && a>=c)\n        printf(\"Greatest = %d\", a);\n    else if(b>=a && b>=c)\n        printf(\"Greatest = %d\", b);\n    else\n        printf(\"Greatest = %d\", c);\n    return 0;\n}"
+        },
+        {
+          "id": 14,
+          "question": "2n) To print greatest number out of 10 input numbers.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program takes 10 numbers and finds the greatest among them.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, max;\n    printf(\"Enter 10 numbers: \");\n    scanf(\"%d\", &max);\n    for(int i=1; i<10; i++) {\n        scanf(\"%d\", &n);\n        if(n > max)\n            max = n;\n    }\n    printf(\"Greatest = %d\", max);\n    return 0;\n}"
+        },
+        {
+          "id": 15,
+          "question": "2o) To display first 10 natural numbers in reverse form 10 to 1.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints first 10 natural numbers in reverse order.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i=10; i>=1; i--) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 16,
+          "question": "2p) To ask a number and display its multiplication table.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays the multiplication table of a number entered by the user.",
+          "code": "#include <stdio.h>\nint main() {\n    int n;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    for(int i=1; i<=10; i++) {\n        printf(\"%d x %d = %d\\n\", n, i, n*i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 17,
+          "question": "2q) To ask three numbers and print middle number.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds the middle number among three numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    int a, b, c;\n    printf(\"Enter three numbers: \");\n    scanf(\"%d %d %d\", &a, &b, &c);\n    if((a>b && a<c) || (a<b && a>c))\n        printf(\"Middle = %d\", a);\n    else if((b>a && b<c) || (b<a && b>c))\n        printf(\"Middle = %d\", b);\n    else\n        printf(\"Middle = %d\", c);\n    return 0;\n}"
+        },
+        {
+          "id": 18,
+          "question": "2r) To ask science and computer science marks and find out whether you can study computer or not. If any one subject marks is above 80, you can study otherwise you can not study.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks if a student can study computer based on marks in science or computer science.",
+          "code": "#include <stdio.h>\nint main() {\n    int science, comp;\n    printf(\"Enter science marks: \");\n    scanf(\"%d\", &science);\n    printf(\"Enter computer science marks: \");\n    scanf(\"%d\", &comp);\n    if(science > 80 || comp > 80)\n        printf(\"You can study computer.\");\n    else\n        printf(\"You cannot study computer.\");\n    return 0;\n}"
+        },
+        {
+          "id": 19,
+          "question": "2s) To ask your gender and find out whether your male, female or third gender.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program asks gender input and displays the gender.",
+          "code": "#include <stdio.h>\nint main() {\n    char gender;\n    printf(\"Enter gender (m/f/t): \");\n    scanf(\" %c\", &gender);\n    if(gender == 'm' || gender == 'M')\n        printf(\"You are Male.\");\n    else if(gender == 'f' || gender == 'F')\n        printf(\"You are Female.\");\n    else if(gender == 't' || gender == 'T')\n        printf(\"You are Third gender.\");\n    else\n        printf(\"Invalid input.\");\n    return 0;\n}"
+        },
+        {
+          "id": 20,
+          "question": "2t) To display only prime numbers from 1 to 100.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays all prime numbers between 1 and 100.",
+          "code": "#include <stdio.h>\nint main() {\n    int i, j, isPrime;\n    for(i=2; i<=100; i++) {\n        isPrime = 1;\n        for(j=2; j<=i/2; j++) {\n            if(i%j == 0) {\n                isPrime = 0;\n                break;\n            }\n        }\n        if(isPrime)\n            printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 21,
+          "question": "2u) To display multiples up to 10th term from 1 to 10.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays multiples up to 10th term from 1 to 10.",
+          "code": "#include <stdio.h>\nint main() {\n    for(int i=1; i<=10; i++) {\n        for(int j=1; j<=10; j++) {\n            printf(\"%d \", i*j);\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "question_group": "Other Questions",
+      "questions": [
+        {
+          "id": 18,
+          "question": "2l) To display all prime numbers up to 100.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints prime numbers up to 100.",
+          "code": "#include <stdio.h>\nint main() {\n    int i, j, isPrime;\n    for(i = 2; i <= 100; i++) {\n        isPrime = 1;\n        for(j = 2; j <= i/2; j++) {\n            if(i % j == 0) {\n                isPrime = 0;\n                break;\n            }\n        }\n        if(isPrime)\n            printf(\"%d \", i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 19,
+          "question": "2m) To display multiplication table of any supplied integer.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program displays multiplication table of a number.",
+          "code": "#include <stdio.h>\nint main() {\n    int n;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    for(int i = 1; i <= 10; i++) {\n        printf(\"%d x %d = %d\\n\", n, i, n*i);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 20,
+          "question": "2n) To ask two numbers and find their HCF and LCM.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds HCF and LCM of two numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    int a, b, hcf, lcm, min;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d %d\", &a, &b);\n    min = a < b ? a : b;\n    for(int i = 1; i <= min; i++) {\n        if(a % i == 0 && b % i == 0)\n            hcf = i;\n    }\n    lcm = (a * b) / hcf;\n    printf(\"HCF = %d, LCM = %d\", hcf, lcm);\n    return 0;\n}"
+        },
+        {
+          "id": 21,
+          "question": "2o) To find sum of first 50 natural numbers.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds sum of first 50 natural numbers.",
+          "code": "#include <stdio.h>\nint main() {\n    int sum = 0;\n    for(int i = 1; i <= 50; i++)\n        sum += i;\n    printf(\"Sum = %d\", sum);\n    return 0;\n}"
+        },
+        {
+          "id": 22,
+          "question": "2p) To display sum of following series: 1 + 1/2 + 1/3 + ... + 1/50",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program finds sum of harmonic series up to 50 terms.",
+          "code": "#include <stdio.h>\nint main() {\n    double sum = 0.0;\n    for(int i = 1; i <= 50; i++)\n        sum += 1.0/i;\n    printf(\"Sum = %lf\", sum);\n    return 0;\n}"
+        },
+        {
+          "id": 23,
+          "question": "2q) To ask any integer and check whether it is Armstrong number or not.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks Armstrong number.",
+          "code": "#include <stdio.h>\n#include <math.h>\nint main() {\n    int n, temp, digit, sum = 0, count = 0;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &n);\n    temp = n;\n    while(temp != 0) {\n        count++;\n        temp /= 10;\n    }\n    temp = n;\n    while(temp != 0) {\n        digit = temp % 10;\n        sum += pow(digit, count);\n        temp /= 10;\n    }\n    if(sum == n)\n        printf(\"Armstrong Number\");\n    else\n        printf(\"Not Armstrong\");\n    return 0;\n}"
+        },
+        {
+          "id": 24,
+          "question": "2r) To display all Armstrong numbers from 100 to 500.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints Armstrong numbers between 100 and 500.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, sum, digit, temp;\n    for(n = 100; n <= 500; n++) {\n        temp = n;\n        sum = 0;\n        while(temp != 0) {\n            digit = temp % 10;\n            sum += digit*digit*digit;\n            temp /= 10;\n        }\n        if(sum == n)\n            printf(\"%d \", n);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 25,
+          "question": "2s) To check whether the supplied number is perfect number or not.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program checks perfect number.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, sum = 0;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    for(int i = 1; i <= n/2; i++) {\n        if(n % i == 0)\n            sum += i;\n    }\n    if(sum == n)\n        printf(\"Perfect Number\");\n    else\n        printf(\"Not Perfect\");\n    return 0;\n}"
+        },
+        {
+          "id": 26,
+          "question": "2t) To display all perfect numbers between 1 to 500.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints all perfect numbers up to 500.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, i, sum;\n    for(n = 1; n <= 500; n++) {\n        sum = 0;\n        for(i = 1; i <= n/2; i++) {\n            if(n % i == 0)\n                sum += i;\n        }\n        if(sum == n)\n            printf(\"%d \", n);\n    }\n    return 0;\n}"
+        },
+        {
+          "id": 27,
+          "question": "2u) To generate Fibonacci series up to n terms.",
+          "content_type": "programming",
+          "language": "c",
+          "answer": "This program prints Fibonacci series up to n terms.",
+          "code": "#include <stdio.h>\nint main() {\n    int n, a = 0, b = 1, c;\n    printf(\"Enter number of terms: \");\n    scanf(\"%d\", &n);\n    for(int i = 1; i <= n; i++) {\n        printf(\"%d \", a);\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return 0;\n}"
+        }
+      ]
     }
   ]
 }

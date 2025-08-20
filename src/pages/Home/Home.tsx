@@ -2,16 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
-const grades = [
-  { id: 9, name: "Grade 9", subjects: 8, questions: 400, color: "bg-cyan-500" },
-  {
-    id: 10,
-    name: "Grade 10",
-    subjects: 8,
-    questions: 450,
-    color: "bg-amber-500",
-  },
-];
+import { AVAILABLE_GRADES } from "@/lib/constants";
 
 function Home() {
   return (
@@ -47,7 +38,7 @@ function Home() {
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-              {grades.map((grade) => (
+              {AVAILABLE_GRADES.map((grade) => (
                 <Link key={grade.id} to={`/grade/${grade.id}`}>
                   <Card className="hover:shadow-lg transition-shadow cursor-pointer group">
                     <CardHeader className="text-center pb-2">

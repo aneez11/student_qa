@@ -10,17 +10,8 @@ import {
 import { ArrowLeft, BookOpen, FileText, Loader2 } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import type { Chapters } from "@/lib/types";
-
-const gradeData = {
-  9: {
-    name: "Grade 9",
-    subjects: ["Computer Science"],
-  },
-  10: {
-    name: "Grade 10",
-    subjects: ["Computer Science"],
-  },
-};
+import { GRADE_DATA } from "@/lib/constants";
+import { getTotalQuestions } from "@/lib/helpers";
 
 const Grade = () => {
   const { gradeId } = useParams();
@@ -29,18 +20,11 @@ const Grade = () => {
   const [error, setError] = useState<string | null>(null);
   const numericGradeId = Number(gradeId);
   const currentGrade =
-    numericGradeId in gradeData
-      ? gradeData[numericGradeId as keyof typeof gradeData]
+    numericGradeId in GRADE_DATA
+      ? GRADE_DATA[numericGradeId as keyof typeof GRADE_DATA]
       : undefined;
 
   const [chapters, setChapters] = useState<Record<string, Chapters[]>>({});
-
-  const getTotalQuestions = (chapter: Chapters) => {
-    return chapter.questions.reduce(
-      (total, group) => total + group.questions.length,
-      0
-    );
-  };
 
   useEffect(() => {
     const fetchChapters = async () => {
@@ -76,12 +60,17 @@ const Grade = () => {
       setLoading(true);
       setError(null);
       try {
-        const chapterPromises = chapterIds.map((id) =>
-          fetch(`/data/${gradeId}/${id}.json`).then((res) => {
-            if (!res.ok) throw new Error("Failed to fetch chapter");
-            return res.json();
-          })
-        );
+        // Fetch chapters with better error handling and caching
+        const chapterPromises = chapterIds.map(async (id) => {
+          const response = await fetch(`/data/${gradeId}/${id}.json`);
+          if (!response.ok) {
+            throw new Error(
+              `Failed to fetch chapter ${id}: ${response.statusText}`
+            );
+          }
+          return response.json();
+        });
+
         const chapterData = await Promise.all(chapterPromises);
 
         if (currentGrade && currentGrade.subjects.length > 0) {
@@ -91,7 +80,11 @@ const Grade = () => {
         }
       } catch (err) {
         console.error("Error loading chapter list for", gradeId, err);
-        setError("Failed to load chapters. Please try again later.");
+        setError(
+          err instanceof Error
+            ? err.message
+            : "Failed to load chapters. Please try again later."
+        );
       } finally {
         setLoading(false);
       }
@@ -190,7 +183,7 @@ const Grade = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  {currentGrade?.subjects.map((subject) => (
+                  {currentGrade?.subjects.map((subject: string) => (
                     <Button
                       key={subject}
                       variant="outline"

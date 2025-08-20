@@ -11,4 +11,39 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Optimize build output
+    target: "esnext",
+    minify: "esbuild",
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks for better caching
+          vendor: ["react", "react-dom", "react-router-dom"],
+          ui: ["@radix-ui/react-slot", "lucide-react"],
+          math: ["katex", "react-katex"],
+          syntax: ["react-syntax-highlighter"],
+        },
+      },
+    },
+  },
+  optimizeDeps: {
+    // Pre-bundle dependencies for faster dev startup
+    include: [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "katex",
+      "react-katex",
+      "react-syntax-highlighter",
+      "lucide-react",
+    ],
+  },
+  server: {
+    // Improve dev server performance
+    fs: {
+      strict: true,
+    },
+  },
 });
