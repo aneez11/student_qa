@@ -1,0 +1,335 @@
+{
+  "chapter_no": 13,
+  "name": "Review QBASIC Programming",
+  "questions": [
+    {
+      "question_group": "Test Your Skill -1",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask principal amount, time and rate then find the simple interest. SI= (P*T*R)/100.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates simple interest using the formula SI = (P * T * R) / 100.",
+          "code": "CLS\nINPUT \"Enter principal amount (P): \", P\nINPUT \"Enter time (T): \", T\nINPUT \"Enter rate (R): \", R\nSI = (P * T * R) / 100\nPRINT \"Simple Interest = \"; SI\nEND"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask a number and display its square value.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates and displays the square of a given number.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nSQUARE = N * N\nPRINT \"Square of \"; N; \" is \"; SQUARE\nEND"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask length and breadth of a rectangle and find out its area. Hint-: A=L*B.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a rectangle using the formula A = L * B.",
+          "code": "CLS\nINPUT \"Enter length (L): \", L\nINPUT \"Enter breadth (B): \", B\nAREA = L * B\nPRINT \"Area of rectangle = \"; AREA\nEND"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to ask quantity and rate of pen and find out total amount.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the total amount based on quantity and rate of pens.",
+          "code": "CLS\nINPUT \"Enter quantity of pens: \", Q\nINPUT \"Enter rate per pen: \", R\nTOTAL = Q * R\nPRINT \"Total amount = \"; TOTAL\nEND"
+        },
+        {
+          "id": "5",
+          "question": "5. Write a program to ask three numbers and find their average and sum.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the sum and average of three numbers.",
+          "code": "CLS\nINPUT \"Enter first number: \", N1\nINPUT \"Enter second number: \", N2\nINPUT \"Enter third number: \", N3\nSUM = N1 + N2 + N3\nAVERAGE = SUM / 3\nPRINT \"Sum = \"; SUM\nPRINT \"Average = \"; AVERAGE\nEND"
+        },
+        {
+          "id": 6,
+          "question": "6. Write a program to ask your name, address and telephone number and print them.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program asks for and prints name, address, and telephone number.",
+          "code": "CLS\nINPUT \"Enter your name: \", NAME$\nINPUT \"Enter your address: \", ADDRESS$\nINPUT \"Enter your telephone number: \", PHONE$\nPRINT \"Name: \"; NAME$\nPRINT \"Address: \"; ADDRESS$\nPRINT \"Telephone: \"; PHONE$\nEND"
+        },
+        {
+          "id": 7,
+          "question": "7. Write a program to ask a number and divide by 2 and print quotient.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program divides a number by 2 and displays the quotient.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nQUOTIENT = N \\ 2\nPRINT \"Quotient when divided by 2 = \"; QUOTIENT\nEND"
+        },
+        {
+          "id": 8,
+          "question": "8. Write a program to ask Kilometer and convert into meter.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts kilometers to meters (1 km = 1000 meters).",
+          "code": "CLS\nINPUT \"Enter distance in kilometers: \", KM\nMETERS = KM * 1000\nPRINT KM; \" kilometers = \"; METERS; \" meters\"\nEND"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill -2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "9. Write a program to ask any two numbers and find out smaller number.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program compares two numbers and displays the smaller one.",
+          "code": "CLS\nINPUT \"Enter first number: \", A\nINPUT \"Enter second number: \", B\nIF A < B THEN\n    PRINT \"Smaller number is: \"; A\nELSE\n    PRINT \"Smaller number is: \"; B\nEND IF\nEND"
+        },
+        {
+          "id": 2,
+          "question": "10. Write a program to ask three numbers and find out middle value.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the middle value among three numbers.",
+          "code": "CLS\nINPUT \"Enter first number: \", A\nINPUT \"Enter second number: \", B\nINPUT \"Enter third number: \", C\nIF (A >= B AND A <= C) OR (A >= C AND A <= B) THEN\n    PRINT \"Middle value is: \"; A\nELSEIF (B >= A AND B <= C) OR (B >= C AND B <= A) THEN\n    PRINT \"Middle value is: \"; B\nELSE\n    PRINT \"Middle value is: \"; C\nEND IF\nEND"
+        },
+        {
+          "id": 3,
+          "question": "11. Write a program to ask maths and computer marks and find out you can study computer or not. If any one subject is not below 80, you can study computer, otherwise you can not study.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if both maths and computer marks are 80 or above to determine if you can study computer.",
+          "code": "CLS\nINPUT \"Enter maths marks: \", MATHS\nINPUT \"Enter computer marks: \", COMPUTER\nIF MATHS >= 80 AND COMPUTER >= 80 THEN\n    PRINT \"You can study computer.\"\nELSE\n    PRINT \"You cannot study computer.\"\nEND IF\nEND"
+        },
+        {
+          "id": 4,
+          "question": "12. Write a program to ask a number [1 to 7] and print the day of a week. 1 =SUNDAY, 2-MONDAY respectively. Using SELECT CASE.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program uses SELECT CASE to display the day of the week based on a number input.",
+          "code": "CLS\nINPUT \"Enter a number (1-7): \", DAY\nSELECT CASE DAY\n    CASE 1\n        PRINT \"SUNDAY\"\n    CASE 2\n        PRINT \"MONDAY\"\n    CASE 3\n        PRINT \"TUESDAY\"\n    CASE 4\n        PRINT \"WEDNESDAY\"\n    CASE 5\n        PRINT \"THURSDAY\"\n    CASE 6\n        PRINT \"FRIDAY\"\n    CASE 7\n        PRINT \"SATURDAY\"\n    CASE ELSE\n        PRINT \"Invalid day number\"\nEND SELECT\nEND"
+        },
+        {
+          "id": 5,
+          "question": "13. Write a program to ask quantity of pen, copy and pencil and find out, gross total, discount and net total. NT-GT-discount. The discount is calculated on the basis of the following conditions. GT <10000 Discount no discount <20000 <50000 >=50000 5% of GT 8% of GT 10% of GT",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates gross total, discount, and net total for stationery items with discount rates based on gross total.",
+          "code": "CLS\nINPUT \"Enter quantity of pens: \", QP\nINPUT \"Enter rate of pen: \", RP\nINPUT \"Enter quantity of copies: \", QC\nINPUT \"Enter rate of copy: \", RC\nINPUT \"Enter quantity of pencils: \", QPY\nINPUT \"Enter rate of pencil: \", RPY\nGT = (QP * RP) + (QC * RC) + (QPY * RPY)\nPRINT \"Gross Total = \"; GT\nIF GT < 10000 THEN\n    DISCOUNT = 0\nELSEIF GT < 20000 THEN\n    DISCOUNT = GT * 0.05\nELSEIF GT < 50000 THEN\n    DISCOUNT = GT * 0.08\nELSE\n    DISCOUNT = GT * 0.10\nEND IF\nPRINT \"Discount = \"; DISCOUNT\nNT = GT - DISCOUNT\nPRINT \"Net Total = \"; NT\nEND"
+        },
+        {
+          "id": 6,
+          "question": "14. Write a program to ask your obtained marks in major five subjects and find out your result. If all the subject marks above 80, you are passed otherwise failed.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if marks in all five subjects are above 80 to determine pass/fail status.",
+          "code": "CLS\nINPUT \"Enter marks in subject 1: \", S1\nINPUT \"Enter marks in subject 2: \", S2\nINPUT \"Enter marks in subject 3: \", S3\nINPUT \"Enter marks in subject 4: \", S4\nINPUT \"Enter marks in subject 5: \", S5\nIF S1 > 80 AND S2 > 80 AND S3 > 80 AND S4 > 80 AND S5 > 80 THEN\n    PRINT \"PASSED\"\nELSE\n    PRINT \"FAILED\"\nEND IF\nEND"
+        },
+        {
+          "id": 7,
+          "question": "15. Write a program to ask a number and find out whether it is even or odd.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program determines if a number is even or odd using modulo operation.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nIF N MOD 2 = 0 THEN\n    PRINT N; \" is EVEN\"\nELSE\n    PRINT N; \" is ODD\"\nEND IF\nEND"
+        },
+        {
+          "id": 8,
+          "question": "16. Write a program to ask a number and find out whether it is multiple of both 5 and 3 or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is divisible by both 5 and 3 (i.e., a multiple of 15).",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nIF N MOD 5 = 0 AND N MOD 3 = 0 THEN\n    PRINT N; \" is a multiple of both 5 and 3\"\nELSE\n    PRINT N; \" is not a multiple of both 5 and 3\"\nEND IF\nEND"
+        },
+        {
+          "id": 9,
+          "question": "17. Write program to ask a number and find out whether it is negative, positive or zero number.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program determines if a number is positive, negative, or zero.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nIF N > 0 THEN\n    PRINT N; \" is POSITIVE\"\nELSEIF N < 0 THEN\n    PRINT N; \" is NEGATIVE\"\nELSE\n    PRINT \"The number is ZERO\"\nEND IF\nEND"
+        },
+        {
+          "id": 10,
+          "question": "18. Write a program to ask three sides of a triangle and find out whether the triangle is scalar or not. If all the three sides are not equal, then the triangle is scalar.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a triangle is scalene (all sides unequal) or not.",
+          "code": "CLS\nINPUT \"Enter first side: \", A\nINPUT \"Enter second side: \", B\nINPUT \"Enter third side: \", C\nIF A <> B AND B <> C AND A <> C THEN\n    PRINT \"The triangle is SCALENE\"\nELSE\n    PRINT \"The triangle is not scalene\"\nEND IF\nEND"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill -3",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. To print the word \"WELCOME\" 10 times.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program prints the word \"WELCOME\" ten times using a loop.",
+          "code": "CLS\nFOR I = 1 TO 10\n    PRINT \"WELCOME\"\nNEXT I\nEND"
+        },
+        {
+          "id": 2,
+          "question": "2. To display only even numbers from 2 to 20.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays even numbers from 2 to 20 using a loop with step 2.",
+          "code": "CLS\nFOR I = 2 TO 20 STEP 2\n    PRINT I\nNEXT I\nEND"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to display 20, 18, 16, 14, 12.......................2 up to 10th term.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays the sequence 20, 18, 16, ..., 2 (10 terms) using a decreasing loop.",
+          "code": "CLS\nFOR I = 20 TO 2 STEP -2\n    PRINT I\nNEXT I\nEND"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to display 100, 81, 64................. 1.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays squares of numbers from 10 down to 1 (100, 81, 64, ..., 1).",
+          "code": "CLS\nFOR I = 10 TO 1 STEP -1\n    PRINT I * I\nNEXT I\nEND"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to display 1, 9, 25, 49........",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays squares of odd numbers: 1^2, 3^2, 5^2, 7^2 (1, 9, 25, 49).",
+          "code": "CLS\nFOR I = 1 TO 7 STEP 2\n    PRINT I * I\nNEXT I\nEND"
+        },
+        {
+          "id": 6,
+          "question": "6. Write a program to display 1, 1, 2, 3 5, 8, 13............... up to 10th term.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays the first 10 terms of the Fibonacci sequence.",
+          "code": "CLS\nA = 1\nB = 1\nPRINT A\nPRINT B\nFOR I = 3 TO 10\n    C = A + B\n    PRINT C\n    A = B\n    B = C\nNEXT I\nEND"
+        },
+        {
+          "id": 7,
+          "question": "7. Write programs to display the following patterns:\na. 12345\n1234\n123\n12\n1\nb.\n*\n* * *\nC. 1\nd. *\n*\n*\n21\n321\n4321\n54321",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays various patterns as specified.",
+          "code": "CLS\nPRINT \"Pattern a:\"\nFOR I = 5 TO 1 STEP -1\n    FOR J = 1 TO I\n        PRINT J;\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern b:\"\nFOR I = 1 TO 3\n    FOR J = 1 TO I\n        PRINT \"*\";\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern c:\"\nFOR I = 1 TO 1\n    PRINT I\nNEXT I\nPRINT\nPRINT \"Pattern d:\"\nFOR I = 1 TO 3\n    PRINT \"*\"\nNEXT I\nFOR I = 2 TO 5\n    FOR J = I TO 5\n        PRINT J;\n    NEXT J\n    PRINT\nNEXT I\nEND"
+        }
+      ]
+    },
+    {
+      "question_group": "Test Your Skill -4",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write programs to display the following patterns:\na)\nNEPAL\nNEPA\nNEP\nNE\nN\nb)\nN\nE\nP\nA\nL\nc)\nN\nNE\nNEP\nNEPA\nNEPAL\nd)\nNEPAL\nEPAL\nPAL\nAL\nL\ne)\nL\nAL\nPAL\nEPAL\nNEPAL\nf)\nL\nA\nP\nE\nN",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays various string patterns using loops and MID$ function.",
+          "code": "CLS\nPRINT \"Pattern a:\"\nFOR I = 5 TO 1 STEP -1\n    FOR J = 1 TO I\n        PRINT MID$(\"NEPAL\", J, 1);\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern b:\"\nFOR I = 1 TO 5\n    PRINT MID$(\"NEPAL\", I, 1)\nNEXT I\nPRINT\nPRINT \"Pattern c:\"\nFOR I = 1 TO 5\n    FOR J = 1 TO I\n        PRINT MID$(\"NEPAL\", J, 1);\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern d:\"\nFOR I = 1 TO 5\n    FOR J = I TO 5\n        PRINT MID$(\"NEPAL\", J, 1);\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern e:\"\nFOR I = 5 TO 1 STEP -1\n    FOR J = I TO 5\n        PRINT MID$(\"NEPAL\", J, 1);\n    NEXT J\n    PRINT\nNEXT I\nPRINT\nPRINT \"Pattern f:\"\nFOR I = 5 TO 1 STEP -1\n    PRINT MID$(\"NEPAL\", I, 1)\nNEXT I\nEND"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask a word and display in reverse order.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program takes a word input and displays it in reverse order using a loop.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nFOR I = LEN(W$) TO 1 STEP -1\n    PRINT MID$(W$, I, 1);\nNEXT I\nPRINT\nEND"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask a word and find out whether it is a palindrome or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if the input word is a palindrome by comparing it with its reverse.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nREV$ = \"\"\nFOR I = LEN(W$) TO 1 STEP -1\n    REV$ = REV$ + MID$(W$, I, 1)\nNEXT I\nIF W$ = REV$ THEN\n    PRINT \"Palindrome\"\nELSE\n    PRINT \"Not palindrome\"\nEND IF\nEND"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to ask a word and display value of each character.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays the ASCII value of each character in the input word.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nFOR I = 1 TO LEN(W$)\n    CH$ = MID$(W$, I, 1)\n    PRINT CH$; \" = \"; ASC(CH$)\nNEXT I\nEND"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to display the ASCII code character of each number from 0 to 255.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays the ASCII character for each code from 0 to 255.",
+          "code": "CLS\nFOR I = 0 TO 255\n    PRINT I; \" = \"; CHR$(I)\nNEXT I\nEND"
+        },
+        {
+          "id": 6,
+          "question": "6. Write a program to ask a number and find out sum of digits. Using STR$(), VAL() function.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts the number to string, extracts each digit, and sums them using VAL().",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nS$ = STR$(N)\nSUM = 0\nFOR I = 1 TO LEN(S$)\n    D$ = MID$(S$, I, 1)\n    IF D$ <> \"-\" THEN SUM = SUM + VAL(D$)\nNEXT I\nPRINT \"Sum of digits = \"; SUM\nEND"
+        },
+        {
+          "id": 7,
+          "question": "7. Write a program to ask a word and find out total vowels and consonants.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program counts the vowels and consonants in the input word.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nV = 0\nC = 0\nFOR I = 1 TO LEN(W$)\n    CH$ = UCASE$(MID$(W$, I, 1))\n    IF CH$ = \"A\" OR CH$ = \"E\" OR CH$ = \"I\" OR CH$ = \"O\" OR CH$ = \"U\" THEN\n        V = V + 1\n    ELSEIF CH$ >= \"A\" AND CH$ <= \"Z\" THEN\n        C = C + 1\n    END IF\nNEXT I\nPRINT \"Vowels: \"; V\nPRINT \"Consonants: \"; C\nEND"
+        }
+      ]
+    },
+    {
+      "question_group": "Short Answer Questions",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is QBASIC?",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "QBASIC is a programming language developed by Microsoft. It stands for Quick Beginners All-purpose Symbolic Instruction Code. It is an interpreted language used for writing simple programs with a user-friendly interface.",
+          "code": ""
+        },
+        {
+          "id": 2,
+          "question": "b. What is program control structure?",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "Program control structures are constructs that control the flow of execution in a program. They determine the order in which statements are executed and include sequential, selection, and loop structures.",
+          "code": ""
+        },
+        {
+          "id": 3,
+          "question": "c. Write short note on:\ni) Sequential structure\nii) Selection Structure\niii) Loop Structure",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "i) Sequential structure: This is the simplest control structure where statements are executed one after another in the order they appear in the program. There is no branching, looping, or decision-making involved. The program flows linearly from top to bottom, executing each statement in sequence until the end of the program is reached.\nii) Selection structure: Also known as decision-making or branching structure, it allows the program to choose between different paths based on conditions or criteria. If the condition is true, one set of statements is executed; if false, another set may be executed. Common constructs include IF-THEN-ELSE for simple conditions and SELECT CASE for multiple choices.\niii) Loop structure: This structure enables repetition of a block of code multiple times based on a condition or counter. It helps in performing repetitive tasks efficiently without writing the same code multiple times. Types include FOR loops (counter-controlled), WHILE loops (condition-controlled), and DO-UNTIL loops (executes until condition becomes true).",
+          "code": ""
+        },
+        {
+          "id": 4,
+          "question": "d. What is library function?",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "Library functions are pre-written functions provided by the programming language or external libraries. They perform common tasks such as mathematical calculations, string manipulations, input/output operations, and more, saving programmers from writing code from scratch.",
+          "code": ""
+        },
+        {
+          "id": 5,
+          "question": "e. What is string function?",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "String functions are built-in functions that manipulate strings. Examples include LEN() to get string length, MID$() to extract substrings, LEFT$() and RIGHT$() for partial strings, UCASE$() and LCASE$() for case conversion, and INSTR() to find substrings.",
+          "code": ""
+        },
+        {
+          "id": 6,
+          "question": "f. What is mathematical function?",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "Mathematical functions perform mathematical operations and calculations. Examples include SIN(), COS(), TAN() for trigonometric functions, SQRT() for square root, ABS() for absolute value, INT() for integer part, and LOG() for logarithm.",
+          "code": ""
+        }
+      ]
+    }
+  ]
+}
