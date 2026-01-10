@@ -1,0 +1,518 @@
+{
+  "chapter_no": 14,
+  "name": "Modular Programming",
+  "questions": [
+    {
+      "question_group": "Test your Skill -1:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask any two numbers and find their product using SUB-END SUB procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the product of two numbers using a SUB procedure with DECLARE statement.",
+          "code": "CLS\nDECLARE SUB Product(X, Y)\nINPUT \"Enter first number: \", A\nINPUT \"Enter second number: \", B\nCALL Product(A, B)\nEND\n\nSUB Product(X, Y)\n    PRINT \"Product of\"; X; \"and\"; Y; \"is\"; X * Y\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Janak Lal Giri has been assigned a task to write a program to ask quantity and rate of pen then find the total amount using SUB procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates total amount for pens using a SUB procedure with DECLARE statement.",
+          "code": "CLS\nDECLARE SUB TotalAmount(Q, R)\nINPUT \"Enter quantity of pens: \", QTY\nINPUT \"Enter rate per pen: \", RATE\nCALL TotalAmount(QTY, RATE)\nEND\n\nSUB TotalAmount(Q, R)\n    PRINT \"Total amount is: \"; Q * R\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask principal amount, time and rate and find out simple interest.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates simple interest using a SUB procedure with DECLARE statement.",
+          "code": "CLS\nDECLARE SUB SimpleInterest(P, T, R)\nINPUT \"Enter principal amount: \", P\nINPUT \"Enter time in years: \", T\nINPUT \"Enter rate of interest: \", R\nCALL SimpleInterest(P, T, R)\nEND\n\nSUB SimpleInterest(P, T, R)\n    SI = (P * T * R) / 100\n    PRINT \"Simple Interest is: \"; SI\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to ask 5 subjects marks out of 100 marks each, and find out total and percentage marks, using SUB procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates total and percentage marks using a SUB procedure with DECLARE statement.",
+          "code": "CLS\nDIM MARKS(5) AS INTEGER\nDECLARE SUB CalculateTotal(M())\nFOR I = 1 TO 5\n    INPUT \"Enter marks for subject\"; I; \": \", MARKS(I)\nNEXT I\nCALL CalculateTotal(MARKS())\nEND\n\nSUB CalculateTotal(M())\n    TOTAL = 0\n    FOR I = 1 TO 5\n        TOTAL = TOTAL + M(I)\n    NEXT I\n    PERCENT = TOTAL / 5\n    PRINT \"Total marks: \"; TOTAL\n    PRINT \"Percentage: \"; PERCENT\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to ask temperature on Fahrenheit scale and convert into Celsius using SUB procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts temperature from Fahrenheit to Celsius using a SUB procedure with DECLARE statement.",
+          "code": "CLS\nDECLARE SUB ConvertToCelsius(F)\nINPUT \"Enter temperature in Fahrenheit: \", F\nCALL ConvertToCelsius(F)\nEND\n\nSUB ConvertToCelsius(F)\n    C = (F - 32) * 5 / 9\n    PRINT \"Temperature in Celsius: \"; C\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-2:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to print your name 10 times.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program prints your name 10 times using a SUB procedure without passing arguments. The name is stored in a global variable, so it uses call by reference implicitly.",
+          "code": "CLS\nDECLARE SUB PrintName()\nINPUT \"Enter your name: \", NAME$\nCALL PrintName()\nEND\n\nSUB PrintName()\n    FOR I = 1 TO 10\n        PRINT NAME$\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to display first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays first 10 natural numbers using a SUB procedure without arguments. The loop variable is local to the SUB.",
+          "code": "CLS\nDECLARE SUB DisplayNumbers()\nCALL DisplayNumbers()\nEND\n\nSUB DisplayNumbers()\n    FOR I = 1 TO 10\n        PRINT I\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to find the sum of first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the sum of first 10 natural numbers using a SUB procedure without arguments. The sum is calculated locally inside the SUB (call by value concept for I, but SUM is local).",
+          "code": "CLS\nDECLARE SUB SumNumbers()\nCALL SumNumbers()\nEND\n\nSUB SumNumbers()\n    SUM = 0\n    FOR I = 1 TO 10\n        SUM = SUM + I\n    NEXT I\n    PRINT \"Sum of first 10 natural numbers is: \"; SUM\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to display first 10 natural numbers in reverse order along with their square value.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays numbers 10 to 1 and their squares using a SUB procedure without arguments. The loop variable I is local to the SUB.",
+          "code": "CLS\nDECLARE SUB DisplayReverseSquares()\nCALL DisplayReverseSquares()\nEND\n\nSUB DisplayReverseSquares()\n    FOR I = 10 TO 1 STEP -1\n        PRINT \"Number: \"; I; \" Square: \"; I * I\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to find the sum of only odd numbers from 1 to 10.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the sum of odd numbers from 1 to 10 using a SUB procedure without arguments. The SUM variable is local (call by value for loop, sum stored locally).",
+          "code": "CLS\nDECLARE SUB SumOddNumbers()\nCALL SumOddNumbers()\nEND\n\nSUB SumOddNumbers()\n    SUM = 0\n    FOR I = 1 TO 10\n        IF I MOD 2 <> 0 THEN SUM = SUM + I\n    NEXT I\n    PRINT \"Sum of odd numbers from 1 to 10 is: \"; SUM\nEND SUB"
+        },
+        {
+          "id": 6,
+          "question": "6. Write a program to ask your name and print it 10 times without passing arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program uses a global variable NAME$ and prints it 10 times using a SUB procedure without arguments. It simulates call by reference as the SUB uses the global variable directly.",
+          "code": "CLS\nDECLARE SUB PrintName10Times()\nINPUT \"Enter your name: \", NAME$\nCALL PrintName10Times()\nEND\n\nSUB PrintName10Times()\n    FOR I = 1 TO 10\n        PRINT NAME$\n    NEXT I\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-3:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask a number and find the square and the cube value using multiple SUB procedures. The SUB procedure names should be SQUARE(N) and CUBE(N).",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the square and cube of a number using two separate SUB procedures.",
+          "code": "CLS\nDECLARE SUB SQUARE(N)\nDECLARE SUB CUBE(N)\nINPUT \"Enter a number: \", NUM\nCALL SQUARE(NUM)\nCALL CUBE(NUM)\nEND\n\nSUB SQUARE(N)\n    PRINT \"Square of\"; N; \"is\"; N * N\nEND SUB\n\nSUB CUBE(N)\n    PRINT \"Cube of\"; N; \"is\"; N * N * N\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask Nepali currency and convert into Indian currency and US dollar using multiple SUB procedures. (1 NC = 1.6 IC, 1 NC = 110 USD)",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts Nepali currency into Indian currency and US dollars using two SUB procedures.",
+          "code": "CLS\nDECLARE SUB ToINR(NC)\nDECLARE SUB ToUSD(NC)\nINPUT \"Enter amount in Nepali currency: \", NC\nCALL ToINR(NC)\nCALL ToUSD(NC)\nEND\n\nSUB ToINR(NC)\n    IC = NC * 1.6\n    PRINT \"Amount in Indian currency: \"; IC\nEND SUB\n\nSUB ToUSD(NC)\n    USD = NC / 110\n    PRINT \"Amount in US dollars: \"; USD\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask length and breadth of a rectangle and calculate perimeter and area using multiple SUB procedures.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the perimeter and area of a rectangle using two separate SUB procedures.",
+          "code": "CLS\nDECLARE SUB Perimeter(L, B)\nDECLARE SUB Area(L, B)\nINPUT \"Enter length: \", L\nINPUT \"Enter breadth: \", B\nCALL Perimeter(L, B)\nCALL Area(L, B)\nEND\n\nSUB Perimeter(L, B)\n    P = 2 * (L + B)\n    PRINT \"Perimeter of rectangle: \"; P\nEND SUB\n\nSUB Area(L, B)\n    A = L * B\n    PRINT \"Area of rectangle: \"; A\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to ask distance in meter and convert into kilometer and centimeter. The SUB procedure names should be MtoKM(M) and MtoCM(M).",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts distance in meters to kilometers and centimeters using two SUB procedures.",
+          "code": "CLS\nDECLARE SUB MtoKM(M)\nDECLARE SUB MtoCM(M)\nINPUT \"Enter distance in meters: \", M\nCALL MtoKM(M)\nCALL MtoCM(M)\nEND\n\nSUB MtoKM(M)\n    KM = M / 1000\n    PRINT \"Distance in kilometers: \"; KM\nEND SUB\n\nSUB MtoCM(M)\n    CM = M * 100\n    PRINT \"Distance in centimeters: \"; CM\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to ask time in minutes and convert into hour and seconds using multiple SUB procedures. The SUB procedure names should be MINtoHR(M) and MINtoSEC(M).",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program converts time in minutes to hours and seconds using two SUB procedures.",
+          "code": "CLS\nDECLARE SUB MINtoHR(M)\nDECLARE SUB MINtoSEC(M)\nINPUT \"Enter time in minutes: \", M\nCALL MINtoHR(M)\nCALL MINtoSEC(M)\nEND\n\nSUB MINtoHR(M)\n    HR = M / 60\n    PRINT \"Time in hours: \"; HR\nEND SUB\n\nSUB MINtoSEC(M)\n    SEC = M * 60\n    PRINT \"Time in seconds: \"; SEC\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-4:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to find whether 5 is divisible by both 2 and 3 or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is divisible by both 2 and 3 using a SUB procedure with formal parameter N. 5 is passed as actual parameter.",
+          "code": "CLS\nDECLARE SUB CheckDivisible(N)\nCALL CheckDivisible(5)\nEND\n\nSUB CheckDivisible(N)\n    IF N MOD 2 = 0 AND N MOD 3 = 0 THEN\n        PRINT N; \"is divisible by both 2 and 3\"\n    ELSE\n        PRINT N; \"is not divisible by both 2 and 3\"\n    END IF\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to find the cube value of 5.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the cube of a number using a SUB procedure with formal parameter N. 5 is passed as actual parameter.",
+          "code": "CLS\nDECLARE SUB CubeValue(N)\nCALL CubeValue(5)\nEND\n\nSUB CubeValue(N)\n    CUBE = N * N * N\n    PRINT \"Cube of\"; N; \"is\"; CUBE\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to find the simple interest. The principal amount is 500000, time is 3 years and rate is 13%.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates simple interest using a SUB procedure with formal parameters P, T, R. The values 500000, 3, 13 are passed as actual parameters.",
+          "code": "CLS\nDECLARE SUB SimpleInterest(P, T, R)\nCALL SimpleInterest(500000, 3, 13)\nEND\n\nSUB SimpleInterest(P, T, R)\n    SI = (P * T * R) / 100\n    PRINT \"Simple Interest is: \"; SI\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to display multiplication table of 9.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program prints multiplication table of a number using a SUB procedure with formal parameter N. 9 is passed as actual parameter.",
+          "code": "CLS\nDECLARE SUB MultiplicationTable(N)\nCALL MultiplicationTable(9)\nEND\n\nSUB MultiplicationTable(N)\n    FOR I = 1 TO 10\n        PRINT N; \"x\"; I; \"=\"; N * I\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to find the cube root of 125.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the cube root of a number using a SUB procedure with formal parameter N. 125 is passed as actual parameter.",
+          "code": "CLS\nDECLARE SUB CubeRoot(N)\nCALL CubeRoot(125)\nEND\n\nSUB CubeRoot(N)\n    CR = N ^ (1/3)\n    PRINT \"Cube root of\"; N; \"is\"; CR\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-5:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask sales amount and find out 12% sales commission.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates 12% sales commission using a SUB procedure. The sales amount entered by the user is passed as an argument (variable) to the SUB.",
+          "code": "CLS\nDECLARE SUB SalesCommission(Sales)\nINPUT \"Enter sales amount: \", SALES\nCALL SalesCommission(SALES)\nEND\n\nSUB SalesCommission(Sales)\n    COMM = Sales * 12 / 100\n    PRINT \"Sales commission (12%): \"; COMM\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask a number and find out whether it is prime or composite.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks whether a number is prime or composite using a SUB procedure. The number entered by the user is passed as a variable to the SUB.",
+          "code": "CLS\nDECLARE SUB PrimeCheck(N)\nINPUT \"Enter a number: \", NUM\nCALL PrimeCheck(NUM)\nEND\n\nSUB PrimeCheck(N)\n    IF N <= 1 THEN\n        PRINT N; \"is not prime\"\n        EXIT SUB\n    END IF\n    ISPRIME = -1\n    FOR I = 2 TO N - 1\n        IF N MOD I = 0 THEN ISPRIME = 0: EXIT FOR\n    NEXT I\n    IF ISPRIME = -1 THEN\n        PRINT N; \"is prime\"\n    ELSE\n        PRINT N; \"is composite\"\n    END IF\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask a number and find out whether it is divisible by both 2 and 3 or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is divisible by both 2 and 3 using a SUB procedure. The number entered by the user is passed as a variable argument.",
+          "code": "CLS\nDECLARE SUB DivisibleCheck(N)\nINPUT \"Enter a number: \", NUM\nCALL DivisibleCheck(NUM)\nEND\n\nSUB DivisibleCheck(N)\n    IF N MOD 2 = 0 AND N MOD 3 = 0 THEN\n        PRINT N; \"is divisible by both 2 and 3\"\n    ELSE\n        PRINT N; \"is not divisible by both 2 and 3\"\n    END IF\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to ask quantity and rate of pen, copy and pencil and find out total amount.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates total amount using a SUB procedure. Quantities and rates are entered by the user and passed as variables to the SUB.",
+          "code": "CLS\nDECLARE SUB TotalAmount(Q1, R1, Q2, R2, Q3, R3)\nINPUT \"Enter quantity of pens: \", QP\nINPUT \"Enter rate of pens: \", RP\nINPUT \"Enter quantity of copies: \", QC\nINPUT \"Enter rate of copies: \", RC\nINPUT \"Enter quantity of pencils: \", QPC\nINPUT \"Enter rate of pencils: \", RPC\nCALL TotalAmount(QP, RP, QC, RC, QPC, RPC)\nEND\n\nSUB TotalAmount(Q1, R1, Q2, R2, Q3, R3)\n    TOTAL = Q1*R1 + Q2*R2 + Q3*R3\n    PRINT \"Total amount is: \"; TOTAL\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to ask marks obtained in 5 subjects, find out total and percentage marks. Each subject holds 100 full marks.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates total and percentage marks using a SUB procedure. Marks entered by the user are passed as variable arguments.",
+          "code": "CLS\nDECLARE SUB TotalAndPercentage(M1, M2, M3, M4, M5)\nINPUT \"Enter marks of subject 1: \", S1\nINPUT \"Enter marks of subject 2: \", S2\nINPUT \"Enter marks of subject 3: \", S3\nINPUT \"Enter marks of subject 4: \", S4\nINPUT \"Enter marks of subject 5: \", S5\nCALL TotalAndPercentage(S1, S2, S3, S4, S5)\nEND\n\nSUB TotalAndPercentage(M1, M2, M3, M4, M5)\n    TOTAL = M1 + M2 + M3 + M4 + M5\n    PERCENT = TOTAL / 5\n    PRINT \"Total marks: \"; TOTAL\n    PRINT \"Percentage: \"; PERCENT\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-6:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask principal amount, time and rate then find the simple interest using SUB with expressions as arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates simple interest using a SUB procedure. The expression (P*T*R)/100 is passed to the SUB.",
+          "code": "CLS\nDECLARE SUB SimpleInterest(SI)\nINPUT \"Enter principal amount: \", P\nINPUT \"Enter time (years): \", T\nINPUT \"Enter rate (%): \", R\nCALL SimpleInterest((P*T*R)/100)\nEND\n\nSUB SimpleInterest(SI)\n    PRINT \"Simple Interest is: \"; SI\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask height and breadth of a triangle and find the area using SUB with expressions as arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a triangle using a SUB procedure. The expression 0.5*B*H is passed directly to the SUB.",
+          "code": "CLS\nDECLARE SUB TriangleArea(AREA)\nINPUT \"Enter height of triangle: \", H\nINPUT \"Enter breadth of triangle: \", B\nCALL TriangleArea(0.5*B*H)\nEND\n\nSUB TriangleArea(AREA)\n    PRINT \"Area of the triangle: \"; AREA\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask length and breadth of a rectangle and find the perimeter using SUB with expressions as arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the perimeter of a rectangle using a SUB procedure. The expression 2*(L+B) is passed as an argument.",
+          "code": "CLS\nDECLARE SUB RectanglePerimeter(P)\nINPUT \"Enter length of rectangle: \", L\nINPUT \"Enter breadth of rectangle: \", B\nCALL RectanglePerimeter(2*(L+B))\nEND\n\nSUB RectanglePerimeter(P)\n    PRINT \"Perimeter of rectangle: \"; P\nEND SUB"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to calculate area of a circle using SUB with expressions as arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a circle using a SUB procedure. The expression 22/7*R^2 is passed directly to the SUB.",
+          "code": "CLS\nDECLARE SUB CircleArea(AREA)\nINPUT \"Enter radius of circle: \", R\nCALL CircleArea(22/7*R^2)\nEND\n\nSUB CircleArea(AREA)\n    PRINT \"Area of circle: \"; AREA\nEND SUB"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to find the area of a square using SUB with expressions as arguments.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a square using a SUB procedure. The expression L^2 is passed as an argument.",
+          "code": "CLS\nDECLARE SUB SquareArea(AREA)\nINPUT \"Enter side length of square: \", L\nCALL SquareArea(L^2)\nEND\n\nSUB SquareArea(AREA)\n    PRINT \"Area of square: \"; AREA\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-7:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask and store 10 numbers in an array and display them in ascending order using SUB with array as argument.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program takes 10 numbers from the user, stores them in an array, and uses a SUB procedure to sort and display them in ascending order.",
+          "code": "CLS\nDIM NUMS(10) AS INTEGER\nDECLARE SUB AscendingOrder(ARR())\nFOR I = 1 TO 10\n    INPUT \"Enter number\"; I; \": \", NUMS(I)\nNEXT I\nCALL AscendingOrder(NUMS)\nEND\n\nSUB AscendingOrder(ARR())\n    FOR I = 1 TO 10 - 1\n        FOR J = I + 1 TO 10\n            IF ARR(I) > ARR(J) THEN\n                TEMP = ARR(I)\n                ARR(I) = ARR(J)\n                ARR(J) = TEMP\n            END IF\n        NEXT J\n    NEXT I\n    PRINT \"Numbers in ascending order: \";\n    FOR I = 1 TO 10\n        PRINT ARR(I); \" \";\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask and store 10 numbers in an array and display them in descending order using SUB with array as argument.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program stores 10 numbers in an array and uses a SUB procedure to sort and display them in descending order.",
+          "code": "CLS\nDIM NUMS(10) AS INTEGER\nDECLARE SUB DescendingOrder(ARR())\nFOR I = 1 TO 10\n    INPUT \"Enter number\"; I; \": \", NUMS(I)\nNEXT I\nCALL DescendingOrder(NUMS)\nEND\n\nSUB DescendingOrder(ARR())\n    FOR I = 1 TO 10 - 1\n        FOR J = I + 1 TO 10\n            IF ARR(I) < ARR(J) THEN\n                TEMP = ARR(I)\n                ARR(I) = ARR(J)\n                ARR(J) = TEMP\n            END IF\n        NEXT J\n    NEXT I\n    PRINT \"Numbers in descending order: \";\n    FOR I = 1 TO 10\n        PRINT ARR(I); \" \";\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to ask and store 10 numbers in an array and find out whether your roll number is in the list or not using SUB with array as argument.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program stores 10 numbers in an array and checks whether a given roll number exists in the array using a SUB procedure.",
+          "code": "CLS\nDIM NUMS(10) AS INTEGER\nDECLARE SUB FindRoll(ARR(), ROLL)\nFOR I = 1 TO 10\n    INPUT \"Enter number\"; I; \": \", NUMS(I)\nNEXT I\nINPUT \"Enter your roll number to search: \", ROLL\nCALL FindRoll(NUMS, ROLL)\nEND\n\nSUB FindRoll(ARR(), ROLL)\n    FOUND = 0\n    FOR I = 1 TO 10\n        IF ARR(I) = ROLL THEN FOUND = 1: EXIT FOR\n    NEXT I\n    IF FOUND = 1 THEN\n        PRINT \"Your roll number is in the list.\"\n    ELSE\n        PRINT \"Your roll number is not in the list.\"\n    END IF\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-8:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask and store 10 students' names in an array and display them in alphabetical order (Using DIM SHARED statement).",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program demonstrates a **global array** using DIM SHARED for storing student names. The sorting and display are done inside a SUB procedure using **local variables**.",
+          "code": "CLS\nDIM SHARED NAMES$(10)\nDECLARE SUB SortNames()\nFOR I = 1 TO 10\n    INPUT \"Enter name of student \"; I; \": \", NAMES$(I)\nNEXT I\nCALL SortNames()\nEND\n\nSUB SortNames()\n    DIM TEMP$ AS STRING\n    FOR I = 1 TO 10 - 1\n        FOR J = I + 1 TO 10\n            IF NAMES$(I) > NAMES$(J) THEN\n                TEMP$ = NAMES$(I)\n                NAMES$(I) = NAMES$(J)\n                NAMES$(J) = TEMP$\n            END IF\n        NEXT J\n    NEXT I\n    PRINT \"Students in alphabetical order:\"\n    FOR I = 1 TO 10\n        PRINT NAMES$(I)\n    NEXT I\nEND SUB"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to ask and store 10 numbers in an array and display all the values along with their square values (Using DIM SHARED statement).",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program demonstrates **global array** using DIM SHARED for storing numbers. The square of each number is calculated inside a SUB procedure using **local variables**.",
+          "code": "CLS\nDIM SHARED NUMS(10)\nDECLARE SUB DisplaySquares()\nFOR I = 1 TO 10\n    INPUT \"Enter number\"; I; \": \", NUMS(I)\nNEXT I\nCALL DisplaySquares()\nEND\n\nSUB DisplaySquares()\n    DIM SQUARE AS INTEGER\n    PRINT \"Number\"; TAB(15); \"Square\"\n    FOR I = 1 TO 10\n        SQUARE = NUMS(I) ^ 2\n        PRINT NUMS(I); TAB(15); SQUARE\n    NEXT I\nEND SUB"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-9:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to calculate simple interest where P=20000, T=2 and R=12 using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates simple interest using a FUNCTION procedure. The values of P, T, and R are passed as arguments, and the function returns the simple interest.",
+          "code": "CLS\nDECLARE FUNCTION SimpleInterest(P, T, R)\nP = 20000\nT = 2\nR = 12\nSI = SimpleInterest(P, T, R)\nPRINT \"Simple Interest is: \"; SI\nEND\n\nFUNCTION SimpleInterest(P, T, R)\n    SimpleInterest = (P * T * R) / 100\nEND FUNCTION"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to find the area of a triangle A = 1/2 * (B * H) where B=5 and H=8 using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a triangle using a FUNCTION procedure. The base and height are passed as arguments, and the function returns the area.",
+          "code": "CLS\nDECLARE FUNCTION TriangleArea(B, H)\nB = 5\nH = 8\nAREA = TriangleArea(B, H)\nPRINT \"Area of the triangle: \"; AREA\nEND\n\nFUNCTION TriangleArea(B, H)\n    TriangleArea = 0.5 * B * H\nEND FUNCTION"
+        },
+        {
+          "id": 3,
+          "question": "3. Write a program to find the perimeter of a rectangle P = 2*(L+B) where L=5 and B=3 using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the perimeter of a rectangle using a FUNCTION procedure. The length and breadth are passed as arguments, and the function returns the perimeter.",
+          "code": "CLS\nDECLARE FUNCTION RectanglePerimeter(L, B)\nL = 5\nB = 3\nP = RectanglePerimeter(L, B)\nPRINT \"Perimeter of the rectangle: \"; P\nEND\n\nFUNCTION RectanglePerimeter(L, B)\n    RectanglePerimeter = 2 * (L + B)\nEND FUNCTION"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to calculate the area of a circle A = 22/7 * R^2 where R=10 using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the area of a circle using a FUNCTION procedure. The radius is passed as an argument, and the function returns the area.",
+          "code": "CLS\nDECLARE FUNCTION CircleArea(R)\nR = 10\nAREA = CircleArea(R)\nPRINT \"Area of the circle: \"; AREA\nEND\n\nFUNCTION CircleArea(R)\n    CircleArea = 22/7 * R ^ 2\nEND FUNCTION"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-10:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Write a program to ask any three numbers and find their sum using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program takes three numbers from the user and calculates their sum using a FUNCTION procedure. Variables are passed as arguments.",
+          "code": "CLS\nDECLARE FUNCTION SumThree(A, B, C)\nINPUT \"Enter first number: \", X\nINPUT \"Enter second number: \", Y\nINPUT \"Enter third number: \", Z\nTOTAL = SumThree(X, Y, Z)\nPRINT \"Sum of three numbers: \"; TOTAL\nEND\n\nFUNCTION SumThree(A, B, C)\n    SumThree = A + B + C\nEND FUNCTION"
+        },
+        {
+          "id": 2,
+          "question": "2. Write a program to find the sum of cube value of 5 and 2 using FUNCTION procedure with expression as argument.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the sum of cubes of 5 and 2 using a FUNCTION procedure. Expressions 5^3 and 2^3 are passed as arguments.",
+          "code": "CLS\nDECLARE FUNCTION SumValues(X, Y)\nTOTAL = SumValues(5 ^ 3, 2 ^ 3)\nPRINT \"Sum of cube values: \"; TOTAL\nEND\n\nFUNCTION SumValues(X, Y)\n    SumValues = X + Y\nEND FUNCTION"
+        },
+        {
+          "id": 3,
+          "question": "3. Janak Lal Yadav sells products of Rs. 500000 in a week. He gets 5% commission. Write a program to calculate commission using FUNCTION procedure.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates commission using a FUNCTION procedure. The sales amount and commission rate are passed as arguments.",
+          "code": "CLS\nDECLARE FUNCTION Commission(AMT, RATE)\nSALES = 500000\nRATE = 5\nCOM = Commission(SALES, RATE)\nPRINT \"Commission amount: Rs. \"; COM\nEND\n\nFUNCTION Commission(AMT, RATE)\n    Commission = AMT * RATE / 100\nEND FUNCTION"
+        },
+        {
+          "id": 4,
+          "question": "4. Write a program to find the remainder of cube value of 9 divided by 5 using FUNCTION procedure with expression.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the remainder of 9^3 divided by 5 using a FUNCTION procedure. Expression (9^3) MOD 5 is passed as argument.",
+          "code": "CLS\nDECLARE FUNCTION Remainder(X)\nREM = Remainder(9 ^ 3 MOD 5)\nPRINT \"Remainder: \"; REM\nEND\n\nFUNCTION Remainder(X)\n    Remainder = X\nEND FUNCTION"
+        },
+        {
+          "id": 5,
+          "question": "5. Write a program to ask a number and find the square root of 25 using FUNCTION procedure with constant argument.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program calculates the square root using a FUNCTION procedure. Constant 25 is passed as argument.",
+          "code": "CLS\nDECLARE FUNCTION SquareRoot(X)\nSQ = SquareRoot(25)\nPRINT \"Square root of 25: \"; SQ\nEND\n\nFUNCTION SquareRoot(X)\n    SquareRoot = SQR(X)\nEND FUNCTION"
+        }
+      ]
+    },
+    {
+      "question_group": "Test your Skill-11:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "1. Check if a number is a perfect square using FUNCTION.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is a perfect square using a simple FUNCTION.",
+          "code": "CLS\nDECLARE FUNCTION IsSquare(N)\nINPUT \"Enter a number: \", NUM\nIF IsSquare(NUM) THEN PRINT NUM; \" is a perfect square\" ELSE PRINT NUM; \" is not a perfect square\"\nEND\n\nFUNCTION IsSquare(N)\n    ROOT = SQR(N)\n    IF ROOT = INT(ROOT) THEN IsSquare = -1 ELSE IsSquare = 0\nEND FUNCTION"
+        },
+        {
+          "id": 2,
+          "question": "2. Find the greater of two numbers using FUNCTION.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program returns the greater number simply using IF.",
+          "code": "CLS\nDECLARE FUNCTION Greater(A,B)\nINPUT \"Enter first number: \", X\nINPUT \"Enter second number: \", Y\nPRINT \"Greater number: \"; Greater(X,Y)\nEND\n\nFUNCTION Greater(A,B)\n    IF A>B THEN Greater=A ELSE Greater=B\nEND FUNCTION"
+        },
+        {
+          "id": 3,
+          "question": "3. Find the greatest of three numbers using FUNCTION.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the largest number using simple comparisons.",
+          "code": "CLS\nDECLARE FUNCTION Max3(A,B,C)\nINPUT \"Enter three numbers: \", X, Y, Z\nPRINT \"Greatest number: \"; Max3(X,Y,Z)\nEND\n\nFUNCTION Max3(A,B,C)\n    Max3 = A\n    IF B>Max3 THEN Max3=B\n    IF C>Max3 THEN Max3=C\nEND FUNCTION"
+        },
+        {
+          "id": 4,
+          "question": "4. Find the middle number of three numbers using FUNCTION.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the middle number in a simpler way using addition and min/max.",
+          "code": "CLS\nDECLARE FUNCTION Middle(A,B,C)\nINPUT \"Enter three numbers: \", X, Y, Z\nPRINT \"Middle number: \"; Middle(X,Y,Z)\nEND\n\nFUNCTION Middle(A,B,C)\n    TOTAL = A + B + C\n    MAX = A\n    IF B>MAX THEN MAX=B\n    IF C>MAX THEN MAX=C\n    MIN = A\n    IF B<MIN THEN MIN=B\n    IF C<MIN THEN MIN=C\n    Middle = TOTAL - MAX - MIN\nEND FUNCTION"
+        }
+      ]
+    },
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is modular programming?",
+          "answer": "Modular programming is a method of dividing a program into smaller, manageable modules for easier development and debugging.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. Write the advantages of modular programming",
+          "answer": "The advantages of modular programming are: <ol><li>Easier maintenance</li><li>Reusability of code</li><li>Better organization</li><li>Faster debugging</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What is the main module in modular programming?",
+          "answer": "The main module is the primary part of the program that controls the flow and calls other modules.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. What is the sub module in modular programming?",
+          "answer": "A sub module is a smaller part of the program that performs a specific task and is called by the main module.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. What is SUB procedure?",
+          "answer": "A SUB procedure is a block of code that performs a task but does not return a value.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. Differentiate between call by value and call by reference",
+          "answer": "Call by value sends a copy of the data to a procedure, while call by reference sends the actual variable allowing changes in the original data.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. Differentiate between local variable and global variable",
+          "answer": "A local variable is used only within a module, while a global variable can be accessed by all modules in the program.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. Differentiate between SUB and FUNCTION procedure",
+          "answer": "SUB procedure performs tasks without returning a value, while FUNCTION procedure performs tasks and returns a value.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. What is FUNCTION procedure?",
+          "answer": "A FUNCTION procedure is a block of code that performs a task and returns a result or value.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. Differentiate between COMMON SHARED and DIM SHARED",
+          "answer": "COMMON SHARED declares variables accessible across modules, while DIM SHARED declares variables shared across procedures within a module.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

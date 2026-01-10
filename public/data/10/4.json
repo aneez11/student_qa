@@ -1,0 +1,280 @@
+{
+  "chapter_no": 4,
+  "name": "Computer Security",
+  "questions": [
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is computer security?",
+          "answer": "Computer security is the process of protecting computer systems and data from theft, damage, or unauthorized access.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. What is information security?",
+          "answer": "Information security is the practice of protecting information and its critical elements from unauthorized access and use.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What is hacking?",
+          "answer": "Hacking is the act of identifying and exploiting weaknesses in a computer system or network to gain unauthorized access.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. Who is hacker?",
+          "answer": "A hacker is a person who uses technical knowledge to gain unauthorized access to data or computer systems.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. Define the term 'ethical hacker.'",
+          "answer": "An ethical hacker is a security expert who legally penetrates a system to find and fix vulnerabilities to improve security.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. What is phishing attack?",
+          "answer": "Phishing is a fraudulent attempt to obtain sensitive information like passwords by pretending as a trustworthy entity.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. What is keylogger?",
+          "answer": "A keylogger is a type of surveillance software or hardware used to record every keystroke made on a computer keyboard.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. What is botnet?",
+          "answer": "A botnet is a network of private computers infected with malicious software and controlled as a group without the owners' knowledge.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. What is rootkit?",
+          "answer": "A rootkit is a collection of software tools that enable an unauthorized user to gain control of a computer system without being detected.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. What is malicious code?",
+          "answer": "Malicious code (malware) is any code in any part of a software system intended to cause undesired effects or damage.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. What is social engineering?",
+          "answer": "Social engineering is a technique where attackers use psychological tricks to manipulate people into revealing confidential information or performing unauthorized actions.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. What is biometric system?",
+          "answer": "A biometric system is a security mechanism that identifies people based on physical traits like fingerprints or facial recognition.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m. What is cryptography?",
+          "answer": "Cryptography is a method of protecting information by converting it into an unreadable form using mathematical techniques so that only authorized people can read it.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "n. What is hardware security?",
+          "answer": "Hardware security means protecting physical parts of a computer from theft, damage, or harm caused by the environment.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "o. What are logical threats?",
+          "answer": "Logical threats are attacks on software or data, like viruses, malware, or hacking, that don’t involve damaging the physical hardware.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. Why is information security needed?",
+          "answer": "Information security is needed to protect important and sensitive data from unauthorized access, theft, or misuse. It ensures that information remains confidential, accurate, and available when required, helping individuals and organizations maintain trust and prevent losses.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. Why is computer security important?",
+          "answer": "Computer security is important to protect computer systems and data from attacks, viruses, and unauthorized access. It helps prevent data loss, keeps systems running smoothly, and ensures that personal and organizational information is safe from misuse.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. Why are ethical hackers hired by well-known companies?",
+          "answer": "Well-known companies hire ethical hackers to test their computer systems for security weaknesses. These hackers try to find vulnerabilities that real hackers could exploit, so the company can fix them and protect sensitive data and resources.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. Why is phishing called a social engineering fraud?",
+          "answer": "Phishing is called social engineering fraud because it tricks people using psychological manipulation. Attackers often pretend to be trusted sources to make people reveal passwords, bank details, or other private information.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. Why are malicious codes developed?",
+          "answer": "Malicious codes, like viruses and malware, are developed to harm computer systems, steal information, or disrupt normal operations. They can cause data loss, damage software, or allow unauthorized access to sensitive information.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. Why is social engineering attack technique developed?",
+          "answer": "Social engineering attacks are developed to manipulate people into giving away confidential information or performing actions that compromise security. Instead of targeting computers directly, these attacks exploit human trust and behavior.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. What is firewall? Why is it used?",
+          "answer": "A firewall is a security system that monitors and controls network traffic between computers or networks. It is used to block unauthorized access, prevent attacks, and allow only safe and trusted data to pass through.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. Why is cryptography important?",
+          "answer": "Cryptography is important because it protects information by converting it into a secret code. Only authorized people can read it, which helps prevent unauthorized access, data theft, or misuse, ensuring confidentiality and privacy.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. Why is antivirus software developed?",
+          "answer": "Antivirus software is developed to detect, prevent, and remove harmful programs like viruses, malware, and spyware. It helps protect computer systems and data from being damaged or stolen.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. How does an updated operating system software protect from harmful activities?",
+          "answer": "An updated operating system protects computers by fixing security vulnerabilities, patching bugs, and adding new safety features. Updates help prevent hackers and malware from exploiting weaknesses in the system.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. Why is hardware important?",
+          "answer": "Hardware is important because it forms the physical parts of a computer, like the CPU, memory, and storage, which are necessary for the computer to function. Without hardware, software cannot operate.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. Why is insurance of computer systems important?",
+          "answer": "Insurance of computer systems is important to protect against financial loss caused by theft, damage, or natural disasters. It helps organizations recover quickly if the systems are harmed.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m. Why are fire detectors and fire extinguishers important for hardware security?",
+          "answer": "Fire detectors and fire extinguishers are important to protect computer hardware from fire damage. They detect fire early and allow immediate action to prevent loss of expensive equipment.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "n. Why is an air-conditioned room ideal for computers?",
+          "answer": "An air-conditioned room is ideal because computers generate heat and can overheat. A controlled temperature prevents damage, improves performance, and increases the lifespan of the hardware.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "o. List down the types of computer security and explain them briefly.",
+          "answer": "The main types of computer security are : <ol><li><strong>Information Security:</strong> It deals with securing data, information, and software from unauthorized access, modification, and deletion.</li>  <li><strong>Application Security:</strong> It deals with securing an application by building security features to withstand cyber threats such as SQL (Standard Query Language) injection, DoS (Denial of Service) attacks, data breaches, etc.</li>  <li><strong>Hardware Security:</strong> It means securing a standalone computer hardware by keeping it updated and patched.</li>  <li><strong>Network Security:</strong> It deals with securing both the software and hardware technologies from the networking infrastructure.</li>  <li><strong>Cyber Security:</strong> It deals with the protection of computer systems which communicate over the internet.</li> </ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "p. Give brief explanation of computer threats.",
+          "answer": "Computer threats are potential dangers that can harm computer systems or data. They include viruses, malware, hacking, phishing, and physical risks like theft or fire.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "q. Differentiate between physical and logical threats.",
+          "answer": "Physical threats affect hardware and include theft, fire, or damage. Logical threats affect software and data, such as viruses, malware, and hacking.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "r. What are the common types of logical threats? Explain briefly.",
+          "answer": "Common logical threats include viruses, worms, trojans, spyware, <br/> and phishing attacks. They can steal, delete, or alter data and disrupt computer systems.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "s. What are the information security mechanisms?",
+          "answer": "Information security mechanisms include passwords, encryption, firewalls, antivirus software, and access controls. They protect data from unauthorized access and attacks.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "t. What is password? Write the characteristics of a strong password.",
+          "answer": "A password is a secret word or phrase used to access a system. A strong password should be long, contain letters, numbers, and symbols, and be hard to guess.",
+          "content_type": "text"
+        },
+        {
+          "id": 21,
+          "question": "u. What are encryption and decryption?",
+          "answer": "Encryption is the process of converting data into a secret code to prevent unauthorized access. Decryption is converting the coded data back into its original form so it can be read.",
+          "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "v. Briefly explain 'antivirus software'.",
+          "answer": "Antivirus software is a program that detects, prevents, and removes harmful programs like viruses, malware, and spyware to keep the computer safe and running properly.",
+          "content_type": "text"
+        },
+        {
+          "id": 23,
+          "question": "w. What are the common techniques and tools used for hardware security?",
+          "answer": "Common hardware security techniques include locks, surveillance cameras, fire detectors, air-conditioning, UPS, and secure storage. These protect hardware from theft, damage, or environmental hazards.",
+          "content_type": "text"
+        },
+        {
+          "id": 24,
+          "question": "x. Why should a computer system be regularly maintained?",
+          "answer": "Regular maintenance keeps the system running smoothly, prevents hardware failure, removes unnecessary files, updates software, and protects against security threats.",
+          "content_type": "text"
+        },
+        {
+          "id": 25,
+          "question": "y. Why is cleanliness an important factor for the well functioning of a computer system?",
+          "answer": "Cleanliness prevents dust, dirt, and moisture from damaging hardware, overheating, or slowing down the system. A clean environment increases performance and hardware lifespan.",
+          "content_type": "text"
+        },
+        {
+          "id": 26,
+          "question": "z. What is physical security mechanism?",
+          "answer": "Physical security mechanisms protect computer hardware from theft, fire, water, or environmental damage. Examples include locks, CCTV cameras, fire extinguishers, and air-conditioned rooms.",
+          "content_type": "text"
+        },
+        {
+          "id": 27,
+          "question": "za. What is the role of power protection devices in the computer system?",
+          "answer": "Power protection devices like UPS and surge protectors prevent damage from sudden power cuts, voltage fluctuations, or electrical surges, keeping computers safe and running properly.",
+          "content_type": "text"
+        },
+        {
+          "id": 28,
+          "question": "zb. What is malware? What is its purpose?",
+          "answer": "Malware is harmful software designed to damage, steal, or disrupt computer systems. Its purpose is usually to gain unauthorized access, steal data, or harm the system.",
+          "content_type": "text"
+        },
+        {
+          "id": 29,
+          "question": "zc. Define computer virus and briefly explain common types of computer viruses.",
+          "answer": "A computer virus is a type of malware that spreads by attaching itself to files or programs. Common types include boot sector viruses, file-infecting viruses, macro viruses, and worms, all of which can damage data and slow down systems.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

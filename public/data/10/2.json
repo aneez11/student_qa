@@ -1,0 +1,136 @@
+{
+  "chapter_no": 2,
+  "name": "Internet and Services",
+  "questions": [
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is Internet?",
+          "answer": "The Internet is a global network of interconnected computers that share information.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. What is meant by going online?",
+          "answer": "Going online means connecting a device to the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What is the World Wide Web?",
+          "answer": "The World Wide Web is a collection of web pages accessed through the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. What is e-mail?",
+          "answer": "E-mail is an electronic method of sending and receiving messages over the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. What is Telnet?",
+          "answer": "Telnet is a protocol used to access a remote computer over a network.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. What is meant by file transfer?",
+          "answer": "File transfer is the process of sending or receiving files through the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. What is IRC?",
+          "answer": "IRC is Internet Relay Chat used for real-time text communication.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. What is video-conferencing?",
+          "answer": "Video-conferencing allows people to communicate using live video and audio over the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. What is meant by e-commerce?",
+          "answer": "E-commerce is buying and selling goods and services through the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. What is news group?",
+          "answer": "A news group is an online discussion forum for sharing messages on specific topics.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. What is Internet Telephony?",
+          "answer": "Internet Telephony is making voice calls using the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. What do you mean by Internet connection?",
+          "answer": "Internet connection is the link that allows a device to access the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m. What is an ISP?",
+          "answer": "An ISP is a company that provides Internet access to users.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write short answer of the following questions:",
+      "questions": [
+        {
+          "id": 14,
+          "question": "a. Why is Internet mandatory for day-to-day activities?",
+          "answer": "The Internet is mandatory for day-to-day activities because it helps in communication, education, banking, shopping, and entertainment. It saves time and increases efficiency by providing instant access to information and services.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "b. Why do you use search engine?",
+          "answer": "Search engines are used to find information quickly and easily on the Internet. They help users locate websites, images, videos, and documents related to a specific topic by entering keywords.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "c. Why do you use online banking?",
+          "answer": "Online banking is used to perform banking activities such as fund transfer, balance inquiry, and bill payment through the Internet. It provides convenience, saves time, and allows users to access banking services anytime.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "d. Why is Internet Telephony more efficient than traditional PSTN?",
+          "answer": "Internet Telephony is more efficient than traditional PSTN because it is cheaper and uses the Internet for communication. It supports voice, video, and multimedia communication with better flexibility and lower cost.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "e. Why is ISP needed?",
+          "answer": "ISP is needed because it provides the necessary infrastructure and services required to access the Internet. Without an ISP, users cannot connect their devices to the global Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "f. Write the features of online banking.",
+          "answer": "The features of online banking include fund transfer, bill payment, balance inquiry, transaction history, and account management. It also provides security features such as passwords and OTP verification.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "g. What are the resources and medium of online banking?",
+          "answer": "The resources of online banking include a computer or mobile device, Internet connection, and banking software or app. The medium of online banking is the Internet, which connects users to banking servers.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

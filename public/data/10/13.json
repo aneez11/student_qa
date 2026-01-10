@@ -7,7 +7,7 @@
       "questions": [
         {
           "id": 1,
-          "question": "1. Write a program to ask principal amount, time and rate then find the simple interest. SI= (P*T*R)/100.",
+          "question": "a. Write a program to ask principal amount, time and rate then find the simple interest. SI= (P*T*R)/100.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates simple interest using the formula SI = (P * T * R) / 100.",
@@ -15,7 +15,7 @@
         },
         {
           "id": 2,
-          "question": "2. Write a program to ask a number and display its square value.",
+          "question": "b. Write a program to ask a number and display its square value.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates and displays the square of a given number.",
@@ -23,7 +23,7 @@
         },
         {
           "id": 3,
-          "question": "3. Write a program to ask length and breadth of a rectangle and find out its area. Hint-: A=L*B.",
+          "question": "c. Write a program to ask length and breadth of a rectangle and find out its area. Hint-: A=L*B.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates the area of a rectangle using the formula A = L * B.",
@@ -31,7 +31,7 @@
         },
         {
           "id": 4,
-          "question": "4. Write a program to ask quantity and rate of pen and find out total amount.",
+          "question": "d. Write a program to ask quantity and rate of pen and find out total amount.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates the total amount based on quantity and rate of pens.",
@@ -39,7 +39,7 @@
         },
         {
           "id": "5",
-          "question": "5. Write a program to ask three numbers and find their average and sum.",
+          "question": "e. Write a program to ask three numbers and find their average and sum.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates the sum and average of three numbers.",
@@ -47,7 +47,7 @@
         },
         {
           "id": 6,
-          "question": "6. Write a program to ask your name, address and telephone number and print them.",
+          "question": "f. Write a program to ask your name, address and telephone number and print them.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program asks for and prints name, address, and telephone number.",
@@ -55,7 +55,7 @@
         },
         {
           "id": 7,
-          "question": "7. Write a program to ask a number and divide by 2 and print quotient.",
+          "question": "g. Write a program to ask a number and divide by 2 and print quotient.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program divides a number by 2 and displays the quotient.",
@@ -63,7 +63,7 @@
         },
         {
           "id": 8,
-          "question": "8. Write a program to ask Kilometer and convert into meter.",
+          "question": "h. Write a program to ask Kilometer and convert into meter.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program converts kilometers to meters (1 km = 1000 meters).",
@@ -76,7 +76,7 @@
       "questions": [
         {
           "id": 1,
-          "question": "9. Write a program to ask any two numbers and find out smaller number.",
+          "question": "a. Write a program to ask any two numbers and find out smaller number.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program compares two numbers and displays the smaller one.",
@@ -84,7 +84,7 @@
         },
         {
           "id": 2,
-          "question": "10. Write a program to ask three numbers and find out middle value.",
+          "question": "b. Write a program to ask three numbers and find out middle value.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program finds the middle value among three numbers.",
@@ -92,7 +92,7 @@
         },
         {
           "id": 3,
-          "question": "11. Write a program to ask maths and computer marks and find out you can study computer or not. If any one subject is not below 80, you can study computer, otherwise you can not study.",
+          "question": "c. Write a program to ask maths and computer marks and find out you can study computer or not. If any one subject is not below 80, you can study computer, otherwise you can not study.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program checks if both maths and computer marks are 80 or above to determine if you can study computer.",
@@ -100,7 +100,7 @@
         },
         {
           "id": 4,
-          "question": "12. Write a program to ask a number [1 to 7] and print the day of a week. 1 =SUNDAY, 2-MONDAY respectively. Using SELECT CASE.",
+          "question": "d. Write a program to ask a number [1 to 7] and print the day of a week. 1 =SUNDAY, 2-MONDAY respectively. Using SELECT CASE.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program uses SELECT CASE to display the day of the week based on a number input.",
@@ -108,7 +108,7 @@
         },
         {
           "id": 5,
-          "question": "13. Write a program to ask quantity of pen, copy and pencil and find out, gross total, discount and net total. NT-GT-discount. The discount is calculated on the basis of the following conditions. GT <10000 Discount no discount <20000 <50000 >=50000 5% of GT 8% of GT 10% of GT",
+          "question": "e. Write a program to ask quantity of pen, copy and pencil and find out, gross total, discount and net total. NT-GT-discount. The discount is calculated on the basis of the following conditions. GT <10000 Discount no discount <20000 <50000 >=50000 5% of GT 8% of GT 10% of GT",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program calculates gross total, discount, and net total for stationery items with discount rates based on gross total.",
@@ -116,7 +116,7 @@
         },
         {
           "id": 6,
-          "question": "14. Write a program to ask your obtained marks in major five subjects and find out your result. If all the subject marks above 80, you are passed otherwise failed.",
+          "question": "f. Write a program to ask your obtained marks in major five subjects and find out your result. If all the subject marks above 80, you are passed otherwise failed.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program checks if marks in all five subjects are above 80 to determine pass/fail status.",
@@ -124,7 +124,7 @@
         },
         {
           "id": 7,
-          "question": "15. Write a program to ask a number and find out whether it is even or odd.",
+          "question": "g. Write a program to ask a number and find out whether it is even or odd.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program determines if a number is even or odd using modulo operation.",
@@ -132,7 +132,7 @@
         },
         {
           "id": 8,
-          "question": "16. Write a program to ask a number and find out whether it is multiple of both 5 and 3 or not.",
+          "question": "h. Write a program to ask a number and find out whether it is multiple of both 5 and 3 or not.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program checks if a number is divisible by both 5 and 3 (i.e., a multiple of 15).",
@@ -140,7 +140,7 @@
         },
         {
           "id": 9,
-          "question": "17. Write program to ask a number and find out whether it is negative, positive or zero number.",
+          "question": "i. Write program to ask a number and find out whether it is negative, positive or zero number.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program determines if a number is positive, negative, or zero.",
@@ -148,7 +148,7 @@
         },
         {
           "id": 10,
-          "question": "18. Write a program to ask three sides of a triangle and find out whether the triangle is scalar or not. If all the three sides are not equal, then the triangle is scalar.",
+          "question": "j. Write a program to ask three sides of a triangle and find out whether the triangle is scalar or not. If all the three sides are not equal, then the triangle is scalar.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program checks if a triangle is scalene (all sides unequal) or not.",
@@ -161,7 +161,7 @@
       "questions": [
         {
           "id": 1,
-          "question": "1. To print the word \"WELCOME\" 10 times.",
+          "question": "a. To print the word \"WELCOME\" 10 times.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program prints the word \"WELCOME\" ten times using a loop.",
@@ -169,7 +169,7 @@
         },
         {
           "id": 2,
-          "question": "2. To display only even numbers from 2 to 20.",
+          "question": "b. To display only even numbers from 2 to 20.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program displays even numbers from 2 to 20 using a loop with step 2.",
@@ -222,7 +222,7 @@
       "questions": [
         {
           "id": 1,
-          "question": "1. Write programs to display the following patterns:\na)\nNEPAL\nNEPA\nNEP\nNE\nN\nb)\nN\nE\nP\nA\nL\nc)\nN\nNE\nNEP\nNEPA\nNEPAL\nd)\nNEPAL\nEPAL\nPAL\nAL\nL\ne)\nL\nAL\nPAL\nEPAL\nNEPAL\nf)\nL\nA\nP\nE\nN",
+          "question": "a. Write programs to display the following patterns:\na)\nNEPAL\nNEPA\nNEP\nNE\nN\nb)\nN\nE\nP\nA\nL\nc)\nN\nNE\nNEP\nNEPA\nNEPAL\nd)\nNEPAL\nEPAL\nPAL\nAL\nL\ne)\nL\nAL\nPAL\nEPAL\nNEPAL\nf)\nL\nA\nP\nE\nN",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program displays various string patterns using loops and MID$ function.",
@@ -230,7 +230,7 @@
         },
         {
           "id": 2,
-          "question": "2. Write a program to ask a word and display in reverse order.",
+          "question": "b. Write a program to ask a word and display in reverse order.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program takes a word input and displays it in reverse order using a loop.",
@@ -238,7 +238,7 @@
         },
         {
           "id": 3,
-          "question": "3. Write a program to ask a word and find out whether it is a palindrome or not.",
+          "question": "c. Write a program to ask a word and find out whether it is a palindrome or not.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program checks if the input word is a palindrome by comparing it with its reverse.",
@@ -246,7 +246,7 @@
         },
         {
           "id": 4,
-          "question": "4. Write a program to ask a word and display value of each character.",
+          "question": "d. Write a program to ask a word and display value of each character.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program displays the ASCII value of each character in the input word.",
@@ -254,7 +254,7 @@
         },
         {
           "id": 5,
-          "question": "5. Write a program to display the ASCII code character of each number from 0 to 255.",
+          "question": "e. Write a program to display the ASCII code character of each number from 0 to 255.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program displays the ASCII character for each code from 0 to 255.",
@@ -262,7 +262,7 @@
         },
         {
           "id": 6,
-          "question": "6. Write a program to ask a number and find out sum of digits. Using STR$(), VAL() function.",
+          "question": "f. Write a program to ask a number and find out sum of digits. Using STR$(), VAL() function.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program converts the number to string, extracts each digit, and sums them using VAL().",
@@ -270,7 +270,7 @@
         },
         {
           "id": 7,
-          "question": "7. Write a program to ask a word and find out total vowels and consonants.",
+          "question": "g. Write a program to ask a word and find out total vowels and consonants.",
           "content_type": "programming",
           "language": "qbasic",
           "answer": "This program counts the vowels and consonants in the input word.",
@@ -328,6 +328,91 @@
           "language": "qbasic",
           "answer": "Mathematical functions perform mathematical operations and calculations. Examples include SIN(), COS(), TAN() for trigonometric functions, SQRT() for square root, ABS() for absolute value, INT() for integer part, and LOG() for logarithm.",
           "code": ""
+        }
+      ]
+    },
+    {
+      "question_group": "Application Based Questions",
+      "questions": [
+        {
+          "id": 1,
+          "question": "3. Write a program to ask a number and find out whether it is prime or composite.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is prime or composite by testing divisibility.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nIF N <= 1 THEN\n    PRINT \"Number is neither prime nor composite\"\nELSE\n    PRIME = -1\n    FOR I = 2 TO N - 1\n        IF N MOD I = 0 THEN\n            PRIME = 0\n            EXIT FOR\n        END IF\n    NEXT I\n    IF PRIME = -1 THEN\n        PRINT N; \" is Prime\"\n    ELSE\n        PRINT N; \" is Composite\"\n    END IF\nEND IF\nEND"
+        },
+        {
+          "id": 2,
+          "question": "4. Write a program to ask a number and find out whether it is even or odd.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks whether a number is even or odd.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nIF N MOD 2 = 0 THEN\n    PRINT N; \" is Even\"\nELSE\n    PRINT N; \" is Odd\"\nEND IF\nEND"
+        },
+        {
+          "id": 3,
+          "question": "5. Write a program to ask any two numbers and find out HCF.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the HCF of two numbers using repeated division.",
+          "code": "CLS\nINPUT \"Enter first number: \", A\nINPUT \"Enter second number: \", B\nX = A\nY = B\nWHILE Y <> 0\n    TEMP = Y\n    Y = X MOD Y\n    X = TEMP\nWEND\nPRINT \"HCF of\"; A; \"and\"; B; \"is\"; X\nEND"
+        },
+        {
+          "id": 4,
+          "question": "6. Write a program to ask a number and find out whether it is a palindrome number or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number reads the same backward and forward.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nTEMP = N\nREV = 0\nWHILE TEMP <> 0\n    DIGIT = TEMP MOD 10\n    REV = REV * 10 + DIGIT\n    TEMP = INT(TEMP / 10)\nWEND\nIF N = REV THEN\n    PRINT N; \" is a Palindrome\"\nELSE\n    PRINT N; \" is not a Palindrome\"\nEND IF\nEND"
+        },
+        {
+          "id": 5,
+          "question": "7. Write a program to ask a number and find out whether it is Armstrong or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a number is an Armstrong number where the sum of cubes of its digits equals the number.",
+          "code": "CLS\nINPUT \"Enter a number: \", N\nTEMP = N\nSUM = 0\nWHILE TEMP <> 0\n    DIGIT = TEMP MOD 10\n    SUM = SUM + DIGIT ^ 3\n    TEMP = INT(TEMP / 10)\nWEND\nIF SUM = N THEN\n    PRINT N; \" is an Armstrong number\"\nELSE\n    PRINT N; \" is not an Armstrong number\"\nEND IF\nEND"
+        },
+        {
+          "id": 6,
+          "question": "8. Write a program to ask a character and find out whether it is vowel or consonant.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks whether a character is a vowel or a consonant.",
+          "code": "CLS\nINPUT \"Enter a character: \", C$\nC$ = LCASE$(C$)\nIF C$ = \"a\" OR C$ = \"e\" OR C$ = \"i\" OR C$ = \"o\" OR C$ = \"u\" THEN\n    PRINT C$; \" is a Vowel\"\nELSE\n    PRINT C$; \" is a Consonant\"\nEND IF\nEND"
+        },
+        {
+          "id": 7,
+          "question": "9. Write a program to ask a word and find out total vowels.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program counts the total vowels in a given word.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nW$ = LCASE$(W$)\nCOUNT = 0\nFOR I = 1 TO LEN(W$)\n    C$ = MID$(W$, I, 1)\n    IF C$ = \"a\" OR C$ = \"e\" OR C$ = \"i\" OR C$ = \"o\" OR C$ = \"u\" THEN\n        COUNT = COUNT + 1\n    END IF\nNEXT I\nPRINT \"Total vowels in the word:\"; COUNT\nEND"
+        },
+        {
+          "id": 8,
+          "question": "10. Write a program to ask a word and display in reverse order.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program displays a word in reverse order.",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nREV$ = \"\"\nFOR I = LEN(W$) TO 1 STEP -1\n    REV$ = REV$ + MID$(W$, I, 1)\nNEXT I\nPRINT \"Reversed word: \"; REV$\nEND"
+        },
+        {
+          "id": 9,
+          "question": "11. Write a program to ask a word and find out whether it is palindrome or not.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program checks if a word reads the same backward and forward (palindrome).",
+          "code": "CLS\nINPUT \"Enter a word: \", W$\nW$ = LCASE$(W$)\nREV$ = \"\"\nFOR I = LEN(W$) TO 1 STEP -1\n    REV$ = REV$ + MID$(W$, I, 1)\nNEXT I\nIF W$ = REV$ THEN\n    PRINT W$; \" is a Palindrome\"\nELSE\n    PRINT W$; \" is not a Palindrome\"\nEND IF\nEND"
+        },
+        {
+          "id": 10,
+          "question": "12. Write a program to ask 10 numbers and find out greatest number.",
+          "content_type": "programming",
+          "language": "qbasic",
+          "answer": "This program finds the greatest number among ten input numbers.",
+          "code": "CLS\nGREATEST = -32768\nFOR I = 1 TO 10\n    INPUT \"Enter number\"; N\n    IF N > GREATEST THEN GREATEST = N\nNEXT I\nPRINT \"The greatest number is: \"; GREATEST\nEND"
         }
       ]
     }

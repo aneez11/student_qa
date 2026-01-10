@@ -1,0 +1,220 @@
+{
+  "chapter_no": 3,
+  "name": "Ethical & Social Issues in ICT",
+  "questions": [
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is ethics?",
+          "answer": "Ethics are moral principles that guide right and wrong behavior.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. What is ICT?",
+          "answer": "ICT stands for Information and Communication Technology used for information processing and communication.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What may happen if we don’t abide by ICT ethics?",
+          "answer": "If we don't abide by ICT ethics, it may lead to misuse of technology and legal punishment.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. What is a cyber crime?",
+          "answer": "Cyber crime is an illegal activity done using computers or the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. What does computer crime include?",
+          "answer": "Computer crime includes hacking, identity theft, and spreading viruses. It violates computer security.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. What is digital citizenship?",
+          "answer": "Digital citizenship is responsible and ethical use of digital technology.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. What is an active digital footprint?",
+          "answer": "An active digital footprint is data intentionally shared online by a user.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. What is a passive digital footprint?",
+          "answer": "A passive digital footprint is data collected without user awareness.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. What does digital citizenship include?",
+          "answer": "Digital Citizenship includes ethical behavior, online safety, and legal awareness.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. What is cyberbullying?",
+          "answer": "Cyberbullying is harassing or threatening someone using digital media.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. What is cyber law?",
+          "answer": "Cyber law governs the legal issues related to computers and the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. What is ETA?",
+          "answer": "ETA stands for Electronic Transaction Act which is also known as the cyber law of Nepal.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. Why is ICT ethics important?",
+          "answer": "ICT ethics are important because they guide users to use technology responsibly and legally. They help protect privacy, prevent misuse of digital resources, and ensure safe and respectful behavior in the digital environment.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. Why should we manage our digital footprint?",
+          "answer": "We should manage our digital footprint to protect our personal information and online reputation. A well-managed digital footprint helps prevent identity theft, misuse of data, and future social or professional problems.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. How do you create a positive digital footprint?",
+          "answer": "A positive digital footprint is created by sharing responsible and ethical content online. Respecting others, protecting privacy, and avoiding harmful posts also help maintain a good digital image.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. Why do people cyberbully others?",
+          "answer": "People cyberbully others due to lack of awareness, anonymity on the Internet, or to harm others emotionally. Sometimes it happens because of anger, jealousy, or misuse of digital freedom.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. How does cyberbullying occur?",
+          "answer": "Cyberbullying occurs through social media, emails, messages, or online games. It includes sending threatening messages, spreading rumors, or sharing embarrassing content online.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. Why is cyber law formulated?",
+          "answer": "Cyber law is formulated to control cyber crimes and protect users in the digital world. It ensures legal protection for data, privacy, and online transactions.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. Why was cyber law formulated in a separate section?",
+          "answer": "Cyber law was formulated separately because cyber crimes are different from traditional crimes. They require special legal provisions to address digital and online offenses.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. Why is the Electronic Transaction Act enacted?",
+          "answer": "The Electronic Transaction Act is enacted to regulate electronic records and online transactions. It also helps control cyber crimes and ensure secure digital communication.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. List out the components of ICT.",
+          "answer": "The main components of ICT are hardware, software, data, people, procedures, and communication networks. These components work together to process and share information.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. Write any five codes of conduct of ICT ethics.",
+          "answer": "Some codes of ICT ethics include: <ol><li>We Should not use computer to harm other people.</li><li>We should not interfere with other people's computer work.</li><li>We should not snoop around other people's files.</li><li>We should not use a computer to bear false witness.</li><li>We should not use a computer to steal.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. What are the ethical and social issues in ICT?",
+          "answer": "Ethical and social issues in ICT include privacy violation, cyber crime, digital divide, and misuse of information. These issues affect individuals and society as a whole.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. Who is a digital citizen? Write qualities.",
+          "answer": "A digital citizen is a person who uses digital technology responsibly and ethically. Good digital citizens respect others, follow cyber laws, and protect their online safety.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m. List the major themes of a digital citizen.",
+          "answer": "Major themes of digital citizenship include digital access, communication, literacy, safety, ethics, and responsibility. These themes promote safe and effective use of technology.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "n. What is a digital society? How is it created?",
+          "answer": "A digital society is one where digital technology is used in daily life activities. It is created through widespread use of ICT in communication, education, business, and governance.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "o. What information does a digital footprint contain?",
+          "answer": "A digital footprint contains information about online activities such as searches, social media posts, comments, and shared personal data. It represents a user’s online presence.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "p. What are the major components of cyber law?",
+          "answer": "The major components of cyber law include cyber crime control, data protection, privacy rights, and regulation of electronic transactions.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "q. What happens when you break cyber law?",
+          "answer": "When cyber law is broken, legal actions such as fines, punishment, or imprisonment may occur. The punishment depends on the nature of the cyber crime.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "r. What is IT policy? Write any five provisions.",
+          "answer": "IT policy is a government guideline for ICT development. It aims to improve economic conditions, promote social values, reduce poverty, and transform lifestyles through the use of ICT. Its provisions are: <ol><li>To empower and facilitate Nepal's participation in the Global Knowledge Society.</li><li>To transform Government service delivery regime by promoting transparency, efficiency, inclusiveness and participation through effective utilization of information and communication technologies.</li><li>To promote ICT to further productivity among the sectors that is key drivers of the national economy.</li><li>To foster efficient, inter-operable, secure, reliable and sustainable national ICT infrastructure in alignment with grass-root needs, and compliant with regional and international standards.</li><li>To promote research and innovation on the role of ICT on the resilience of low-income communities amid potential environmental, economic and social shocks.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "s. Define vision and mission of IT Policy 2072.",
+          "answer": "The vision of IT Policy 2072 is \"To transform Nepal into an information and knowledge-based society and economy.\" Its mission is \"To create conditions for the intensified development and growth of ICT sector as a key driver for Nepal's sustainable development and poverty reduction strategies.\"",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "t. What is the Electronic Transaction Act of Nepal?",
+          "answer": "Electronic Transaction Act (ETA) of Nepal is the cyber law of Nepal enacted in 2063 BS (2006 AD) to give legal recognition to electronic records and digital signatures. It regulates and secures electronic transactions and communications conducted through electronic means, ensuring authenticity, reliability, and legal validity.",
+          "content_type": "text"
+        },
+        {
+          "id": 21,
+          "question": "u. What opportunities are provided by social media?",
+          "answer": "Social media provides opportunities for communication, learning, business promotion, and global connectivity. It helps people share ideas and information quickly.",
+          "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "v. List the threats of social media.",
+          "answer": "Threats of social media include cyberbullying, privacy loss, addiction, and spread of false information. These threats can negatively affect users and society.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

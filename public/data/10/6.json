@@ -1,0 +1,178 @@
+{
+  "chapter_no": 6,
+  "name": "Contemporary Technology",
+  "questions": [
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is contemporary technology?",
+          "answer": "The technologies which rapidly exists at present time period are called contemporary technologies.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. What is AI?",
+          "answer": "AI (Artificial Intelligence) is the ability of machines to perform tasks that normally need human intelligence.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What can AI machine do?",
+          "answer": "AI machines can learn, reason, make decisions, recognize patterns, and solve problems.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. What is cloud computing?",
+          "answer": "Cloud computing is delivering computing services like storage and software over the internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. What is cloud service provider?",
+          "answer": "A cloud service provider is a company that offers cloud computing services to users.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. What is hybrid cloud?",
+          "answer": "A hybrid cloud combines private and public cloud services for better flexibility and security.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. What is virtual reality?",
+          "answer": "Virtual reality (VR) is a technology that creates a simulated, interactive environment for users.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. What is mobile computing?",
+          "answer": "Mobile computing is using portable devices to access and process data from anywhere.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. What is mobile computing device?",
+          "answer": "A mobile computing device is a portable device like a smartphone, tablet, or laptop.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. What is mobile computing software?",
+          "answer": "Mobile computing software is programs that help mobile devices access, manage, and process data.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. What is mobile computing network?",
+          "answer": "A mobile computing network connects mobile devices to share data and access resources remotely.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. What do you mean by IoT devices?",
+          "answer": "IoT devices are smart devices connected to the internet that can collect and share data.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m. What is 'Big Data'?",
+          "answer": "Big Data refers to very large datasets that are analyzed to find patterns and useful information.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. Why is AI becoming essential for today's time?",
+          "answer": "AI is essential today because it helps automate tasks, analyze large data, make faster decisions, and improve efficiency in industries, healthcare, and daily life.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. Why is cloud computing becoming popular?",
+          "answer": "Cloud computing is popular because it provides scalable storage, easy access to applications, cost savings, and the ability to work from anywhere using the internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. Why is mobile computing easy to access? Write the key features of Mobile computing.",
+          "answer": "Mobile computing is easy to access because portable devices can connect to networks anytime and anywhere. Key features include portability, wireless access, real-time data processing, and remote connectivity.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. How do dumb devices become intelligent?",
+          "answer": "Dumb devices become intelligent by adding sensors, processors, and connectivity, allowing them to collect data, analyze it, and perform automated actions.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. Why is IoT becoming more essential?",
+          "answer": "IoT is becoming essential because it connects everyday devices to the internet, enabling smart homes, healthcare monitoring, industrial automation, and data-driven decision making.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. Why do we need Big Data?",
+          "answer": "Big Data is needed to analyze large amounts of information, identify trends, make better decisions, and improve services in business, healthcare, and research.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. How is IoT devices possible to become intelligent?",
+          "answer": "IoT devices become intelligent by using sensors to gather data, connecting to networks, and using AI or software to process information and act automatically.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. Why is mobile computing software the fuel for this technology? Write the benefits and limitations of cloud computing.",
+          "answer": "Mobile computing software enables devices to access, process, and share data efficiently, making mobile computing work. Benefits of cloud computing include easy access, cost savings, and scalability. Limitations include internet dependency, security risks, and privacy concerns.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "j. Differentiate between public and private cloud.",
+          "answer": "Public cloud is shared among multiple users and managed by service providers, while private cloud is used by a single organization with more control and security.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "k. Differentiate between SaaS and PaaS.",
+          "answer": "SaaS (Software as a Service) provides ready-to-use applications over the internet. PaaS (Platform as a Service) provides a platform for developers to create and run applications.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "l. List out the application fields of VR.",
+          "answer": "VR is used in gaming, education, training simulations, healthcare, architecture, and virtual tours.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "m. Write the application fields of mobile computing.",
+          "answer": "Mobile computing is used in e-commerce, banking, healthcare, education, navigation, communication, and business management.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "n. What is IoT? Write the advantages and limitations of IoT.",
+          "answer": "IoT (Internet of Things) is a network of smart devices connected to the internet. Advantages include automation, remote monitoring, and efficiency. Limitations include security risks, high cost, and privacy concerns.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "o. Write the advantages and disadvantages of Big Data. List out the sources of Big Data.",
+          "answer": "Advantages of Big Data include better decision-making, identifying trends, and improving services. Disadvantages include privacy issues, data security risks, and handling complexity. Sources of Big Data include social media, sensors, online transactions, and IoT devices.",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

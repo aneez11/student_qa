@@ -1,0 +1,112 @@
+{
+  "chapter_no": 5,
+  "name": "Digital Commerce",
+  "questions": [
+    {
+      "question_group": "Write very short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. What is digital commerce?",
+          "answer": "Digital commerce is buying and selling products or services using digital platforms.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. What is e-commerce?",
+          "answer": "E-commerce is commercial transactions conducted online over the internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. What is the primary goal of G2C model?",
+          "answer": "The G2C model aims to provide government services directly to citizens efficiently.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. What is e-governance?",
+          "answer": "E-governance is using digital technology to provide government services and information to the public.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Write short answer of the following questions:",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a. Why does G2B play a crucial role in business development?",
+          "answer": "G2B (Government to Business) plays a crucial role in business development by providing services like licenses, tax information, and regulations, which help businesses operate smoothly and efficiently.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b. Why is the concept of e-governance developed?",
+          "answer": "E-governance was developed to make government services more efficient, transparent, and accessible to citizens through the use of digital technology.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c. Why is G2G model developed?",
+          "answer": "The G2G (Government to Government) model is developed to improve communication, coordination, and data sharing between different government departments and agencies.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d. How does G2G model increase the efficiency of the government processes?",
+          "answer": "G2G increases efficiency by allowing departments to share information electronically, reduce paperwork, speed up decision-making, and minimize errors.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e. How does G2E improve the knowledge of the employee?",
+          "answer": "G2E (Government to Employee) improves employee knowledge by providing online training, resources, and information, which helps employees perform their work more effectively.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f. Differentiate between e-commerce and e-business.",
+          "answer": "E-commerce involves buying and selling products or services online, while e-business includes e-commerce plus all other business processes like customer service, supply chain management, and internal operations done electronically.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g. List out the technology related to e-commerce.",
+          "answer": "Technologies related to e-commerce include the internet, websites, mobile apps, online payment systems, electronic data interchange (EDI), and cloud computing.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h. Write the features of e-commerce.",
+          "answer": "The features of e-commerce include: <ol><li>Online shopping lets customers look at and buy things from anywhere anytime without going to stores.</li><li>Electronic payments give safe and quick money transfers using digital ways like cards and online wallets.</li><li>Global reach lets businesses talk to customers all over the world, making market chances bigger.</li><li>Convenience gives customers an easy shopping experience that works all day every day with simple menus.</li><li>Faster transactions make order and payment handling quick, saving a lot of time for people.</li><li>Lower operating costs help businesses spend less on store buildings and workers.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i. Write the limitations of e-commerce.",
+          "answer": "The limitations of e-commerce include: <ol><li>Security risks can lead to data theft and fraud, making customers worry about their personal information.</li><li>Lack of personal interaction means no face-to-face talks, which can make the buying experience less fun.</li><li>Dependency on internet means if the connection fails, shopping stops completely for users.</li><li>Technical issues like website crashes or slow loading can frustrate users and stop sales.</li><li>Limited trust among some customers happens because they fear scams or poor product quality online.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j. What are the common models of e-commerce?",
+          "answer": "The common models of e-commerce are: <ol><li><strong>B2B (Business to Business):</strong> Businesses sell to other businesses online.</li><li><strong>B2C (Business to Consumer):</strong> Businesses sell directly to consumers online.</li><li><strong>C2C (Consumer to Consumer):</strong> Consumers sell to other consumers online.</li><li><strong>C2B (Consumer to Business):</strong> Consumers sell to businesses online.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k. Write the common models of e-governance.",
+          "answer": "The common models of e-governance are: <ol><li><strong>G2C (Government to Citizen):</strong> Government provides services to citizens online.</li><li><strong>G2B (Government to Business):</strong> Government interacts with businesses electronically.</li><li><strong>G2G (Government to Government):</strong> Government departments communicate digitally.</li><li><strong>G2E (Government to Employee):</strong> Government offers services to employees online.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l. Write the similarities between e-commerce and traditional commerce.",
+          "answer": "The similarities between e-commerce and traditional commerce are: <ol><li>Both involve buying and selling goods or services</li><li>Both require customer interaction</li><li>Both aim to generate profit</li><li>Both involve exchange of value through transactions</li></ol> ",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

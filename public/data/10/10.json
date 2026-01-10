@@ -7,43 +7,43 @@
       "questions": [
         {
           "id": 1,
-          "question": "What is viewing table?",
+          "question": "a. What is viewing table?",
           "answer": "Viewing table referes to displaying information stored in table.",
           "content_type": "text"
         },
         {
           "id": 2,
-          "question": "What is switching view?",
+          "question": "b. What is switching view?",
           "answer": "Switching view means changing how the table or data is displayed, like between Datasheet View and Design View.",
           "content_type": "text"
         },
         {
           "id": 3,
-          "question": "What is adding records?",
+          "question": "c. What is adding records?",
           "answer": "Adding records means entering new data into the table.",
           "content_type": "text"
         },
         {
           "id": 4,
-          "question": "What is editing records?",
+          "question": "d. What is editing records?",
           "answer": "Editing records means changing existing data in the table.",
           "content_type": "text"
         },
         {
           "id": 5,
-          "question": "What is deleting record?",
+          "question": "e. What is deleting record?",
           "answer": "Deleting record means removing data from the table permanently.",
           "content_type": "text"
         },
         {
           "id": 6,
-          "question": "What is freezing column?",
+          "question": "f. What is freezing column?",
           "answer": "Freezing column keeps a column visible while you scroll horizontally in the table.",
           "content_type": "text"
         },
         {
           "id": 7,
-          "question": "What is sorting?",
+          "question": "g. What is sorting?",
           "answer": "Sorting arranges data in ascending or descending order based on a selected field.",
           "content_type": "text"
         }
