@@ -1,40 +1,205 @@
 {
   "chapter_no": 4,
-  "name": "Programming Test",
+  "name": "4. Web Technology",
   "questions": [
     {
-      "question_group": "Short Answers",
+      "question_group": "Answer the following questions briefly.",
       "questions": [
         {
           "id": 1,
-          "question": "What is Scratch used for?",
-          "answer": "Scratch is used for creating interactive stories, games, animations, and simulations using block-based programming.",
+          "question": "a) What is web technology?",
+          "answer": "Web technology refers to the tools and techniques used to create, design, and maintain websites on the internet.",
           "content_type": "text"
         },
         {
-          "id": 203,
-          "question": "Create a semantic HTML layout with header, nav, main, and footer sections.",
-          "answer": "Modern semantic HTML5 layout structure:",
+          "id": 2,
+          "question": "b) What is the purpose of a web browser in web technology?",
+          "answer": "The purpose of a web browser is to access, view, and navigate websites on the internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c) Define the World Wide Web (WWW).",
+          "answer": "The World Wide Web is a collection of web pages and resources connected through the internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) What is the function of a web server?",
+          "answer": "The main function of a web server is to store websites and deliver web pages to users when requested.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) Name the essential tags required to structure an HTML document.",
+          "answer": "The essential tags that are required to structure an HTML document are &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt;.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f) What does the &lt;title&gt; tag in HTML define?",
+          "answer": "The &lt;title&gt; tag defines the title of the web page shown on the browser tab.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g) How is the &lt;img&gt; tag used in HTML?",
+          "answer": "The &lt;img&gt; tag is used to display images on a web page. It is implemented as follows:<b> &lt;img src=\"image.jpg\" alt=\"Description of image\"&gt;. </b>. The 'src' attribute specifies the path to the image, and the 'alt' attribute provides alternative text for the image.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h) What is the purpose of a wireframe in web design?",
+          "answer": "A wireframe is a simple blueprint or sketch of a website's layout. It shows where elements like buttons, text, and images will be placed, helping designers plan the structure before building the site.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i) How does an internal CSS differ from an external CSS?",
+          "answer": "Internal CSS is written inside the HTML file, while external CSS is written in a separate file.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j) What is the role of the &lt;form&gt; tag in HTML?",
+          "answer": "The &lt;form&gt; tag is used to collect user input and send data to a server. It can include various input elements like text fields, checkboxes, and submit buttons.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k) Define the concept of UX in web design.",
+          "answer": "UX (User Experience) refers to how users feel and interact with a website or application. It focuses on making the experience positive, easy to navigate, and enjoyable for users.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l) What does &lt;ul&gt; include?",
+          "answer": "The &lt;ul&gt; tag includes an unordered list with bullet points. Each item in the list is defined with the &lt;li&gt; tag.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "m) What is HTML tag?",
+          "answer": "An HTML tag is a keyword enclosed in angle brackets used to define elements in HTML. For example, &lt;h1&gt; is a tag used to define a heading.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "n) What is HTML element?",
+          "answer": "An HTML element consists of a start tag, content, and an end tag. For example, &lt;h1&gt;Hello&lt;/h1&gt; is an HTML element.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "o) What is HTML attribute?",
+          "answer": "An HTML attribute provides additional information about an HTML element. For example, in &lt;img src=\"image.jpg\" alt=\"Description\"&gt;, 'src' and 'alt' are attributes of the &lt;img&gt; tag.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "p) What is meant by text formatting in HTML document?",
+          "answer": "Text formatting in HTML is used to change the appearance of text like &lt;b&gt;bold&lt;/b&gt; or &lt;i&gt;italic&lt;/i&gt;.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "q) Why do you use &lt;div&gt; tag?",
+          "answer": "The &lt;div&gt; tag is used to group together parts of a web page. It helps organize content and is often used to apply styles or layouts to sections of the page.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Describe the structure of an HTML document with an example.",
+          "answer": "An HTML document has a basic structure that tells the browser how to display the page. It includes &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; tags. The &lt;head&gt; contains page information, and the &lt;body&gt; contains visible content.<br><br>Example:<br><pre>&lt;html&gt;<br>  &lt;head&gt;<br>    &lt;title&gt;My Page&lt;/title&gt;<br>  &lt;/head&gt;<br>  &lt;body&gt;<br>    &lt;h1&gt;Hello World&lt;/h1&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;</pre>",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "What are the differences between inline, internal, and external CSS?",
+          "answer": "Inline CSS is written directly inside an HTML tag and affects only that element. Internal CSS is written inside the &lt;style&gt; tag within the &lt;head&gt; section and affects one page. External CSS is written in a separate .css file and can style multiple web pages.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "How does the anchor tag &lt;a&gt; work? Provide examples of internal, external and anchor links.",
+          "answer": "The &lt;a&gt; tag is used to create hyperlinks. It uses the href attribute to specify the link destination.<br><br>External link:<br><pre>&lt;a href=\"https://www.google.com\"&gt;Google&lt;/a&gt;</pre><br><br>Internal link:<br><pre>&lt;a href=\"about.html\"&gt;About Us&lt;/a&gt;</pre><br><br>Anchor link:<br><pre>&lt;a href=\"#top\"&gt;Go to Top&lt;/a&gt;</pre>",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "Discuss the different input controls used in HTML forms.",
+          "answer": "HTML forms use different input controls to collect user data. Common input controls include:<br><br>- Text box (&lt;input type=\"text\"&gt;): For entering single-line text.<br><pre>&lt;input type=\"text\" name=\"username\" placeholder=\"Enter username\"&gt;</pre><br>- Password field (&lt;input type=\"password\"&gt;): For entering passwords, hides the input.<br><pre>&lt;input type=\"password\" name=\"password\" placeholder=\"Enter password\"&gt;</pre><br>- Radio button (&lt;input type=\"radio\"&gt;): For selecting one option from multiple choices.<br><pre>&lt;input type=\"radio\" name=\"gender\" value=\"male\"&gt; Male<br>&lt;input type=\"radio\" name=\"gender\" value=\"female\"&gt; Female</pre><br>- Checkbox (&lt;input type=\"checkbox\"&gt;): For selecting multiple options or yes/no.<br><pre>&lt;input type=\"checkbox\" name=\"interests\" value=\"sports\"&gt; Sports<br>&lt;input type=\"checkbox\" name=\"interests\" value=\"music\"&gt; Music</pre><br>- Submit button (&lt;input type=\"submit\"&gt;): For submitting the form.<br><pre>&lt;input type=\"submit\" value=\"Submit\"&gt;</pre><br>- File upload (&lt;input type=\"file\"&gt;): For uploading files.<br><pre>&lt;input type=\"file\" name=\"file\"&gt;</pre><br>These controls help users enter and submit information.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "How do different types of HTML lists (ordered, unordered) work? Write examples of each and explain their uses.",
+          "answer": "HTML lists are used to display items in list form. An ordered list (&lt;ol&gt;) shows items with numbers, while an unordered list (&lt;ul&gt;) shows items with bullet points.<br><br>Ordered list example:<br><pre>&lt;ol&gt;<br>  &lt;li&gt;Apple&lt;/li&gt;<br>  &lt;li&gt;Banana&lt;/li&gt;<br>&lt;/ol&gt;</pre><br><br>Unordered list example:<br><pre>&lt;ul&gt;<br>  &lt;li&gt;Pen&lt;/li&gt;<br>  &lt;li&gt;Pencil&lt;/li&gt;<br>&lt;/ul&gt;</pre><br>Ordered lists are used when order matters, and unordered lists are used when order does not matter.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "Explain the purpose of the &lt;table&gt; tag in HTML and demonstrate how to create a table with headers, rows, and columns.",
+          "answer": "The &lt;table&gt; tag is used to display data in rows and columns. It uses &lt;tr&gt; for rows, &lt;th&gt; for headers, and &lt;td&gt; for data cells.<br><br>Example:<br><pre>&lt;table&gt;<br>  &lt;tr&gt;<br>    &lt;th&gt;Name&lt;/th&gt;<br>    &lt;th&gt;Age&lt;/th&gt;<br>  &lt;/tr&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;Anish&lt;/td&gt;<br>    &lt;td&gt;15&lt;/td&gt;<br>  &lt;/tr&gt;<br>&lt;/table&gt;</pre>",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "HTML Codes",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write HTML code to create a simple table with headers and two rows of data.\n<table border=1>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>Jane</td>\n    <td>30</td>\n  </tr>\n</table>",
           "content_type": "programming",
           "language": "html",
-          "code": "<body>\n  <header>\n<h1>Website Title</h1>\n<nav>\n  <ul>\n <li><a href=\"/\">Home</a></li>\n <li><a href=\"/about\">About</a></li>\n <li><a href=\"/contact\">Contact</a></li>\n  </ul>\n</nav>\n  </header>\n  \n  <main>\n<article>\n  <h2>Article Title</h2>\n  <p>Article content goes here...</p>\n</article>\n\n<aside>\n  <h3>Related Links</h3>\n  <ul>\n <li><a href=\"#\">Related Article 1</a></li>\n <li><a href=\"#\">Related Article 2</a></li>\n  </ul>\n</aside>\n  </main>\n  \n  <footer>\n<p>&copy; 2023 Company Name. All rights reserved.</p>\n  </footer>\n</body>"
+          "answer": "This HTML code creates a table with headers and data rows.",
+          "code": "<table border=\"1\">\n  <tr>\n    <th rowspan=\"2\">Subject</th>\n    <th colspan=\"2\">Marks</th>\n  </tr>\n  <tr>\n    <th>Theory</th>\n    <th>Practical</th>\n  </tr>\n  <tr>\n    <td>Math</td>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Science</td>\n    <td>75</td>\n    <td>25</td>\n  </tr>\n</table>"
         },
-
         {
-          "id": 203,
-          "question": "Create a semantic HTML layout with header, nav, main, and footer sections.",
-          "content_type": "math_problem",
+          "id": 2,
+          "question": "Write HTML code to create an unordered list of three items.\n<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Cherry</li>\n</ul>",
+          "content_type": "programming",
           "language": "html",
-          "problem": "Solve the quadratic equation: $$x^2 - 5x + 6 = 0$$",
-          "answer": "Factor: $$(x - 2)(x - 3) = 0$$\n\nSolutions: $$x = 2$$ or $$x = 3$$"
+          "answer": "This HTML code creates an unordered list with three items.",
+          "code": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Cherry</li>\n</ul>"
         },
         {
-          "id": 204,
-          "question": "Perform binary addition on the given numbers",
-          "content_type": "math_problem",
-          "language": "math",
-          "problem": "Add the binary numbers: 1011 and 1101",
-          "answer": "$$\\begin{array}{r} \\phantom{+}1011_2 \\\\ +\\,1101_2 \\\\ \\hline \\phantom{+}11000_2 \\end{array}$$ \\  $$\\begin{aligned}  &\\text{Steps} \\\\   &1 + 1 = 10 \\ (0 \\text{ carry } 1) \\\\   &1 + 0 + 1 \\ (\\text{carry}) = 10 \\ (0 \\text{ carry } 1) \\\\   &0 + 1 + 1 \\ (\\text{carry}) = 10 \\ (0 \\text{ carry } 1) \\\\   &1 + 1 + 1 \\ (\\text{carry}) = 11 \\ (1 \\text{ carry } 1) \\\\   &\\text{Carry over} = 1 \\\\   &\\text{Final Result: } 11000_2   \\end{aligned}$$"
+          "id": 3,
+          "question": "Write HTML code to create an ordered list of three items.\n<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>",
+          "content_type": "programming",
+          "language": "html",
+          "answer": "This HTML code creates an ordered list with three items.",
+          "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>"
+        },
+        {
+          "id": 4,
+          "question": "Write HTML code to create a simple form with a text input and a submit button.\n<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\"><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+          "content_type": "programming",
+          "language": "html",
+          "answer": "This HTML code creates a form with a text input and submit button.",
+          "code": "<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\"><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>"
+        },
+        {
+          "id": 5,
+          "question": "Write HTML code to create a complex table with merged cells using colspan and rowspan.\n<table border=\"1\">\n  <tr>\n    <th rowspan=\"2\">Subject</th>\n    <th colspan=\"2\">Marks</th>\n  </tr>\n  <tr>\n    <th>Theory</th>\n    <th>Practical</th>\n  </tr>\n  <tr>\n    <td>Math</td>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Science</td>\n    <td>75</td>\n    <td>25</td>\n  </tr>\n</table>",
+          "content_type": "programming",
+          "language": "html",
+          "answer": "This HTML code creates a table with merged cells using rowspan and colspan for headers.",
+          "code": "<table border=\"1\">\n  <tr>\n    <th rowspan=\"2\">Subject</th>\n    <th colspan=\"2\">Marks</th>\n  </tr>\n  <tr>\n    <th>Theory</th>\n    <th>Practical</th>\n  </tr>\n  <tr>\n    <td>Math</td>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Science</td>\n    <td>75</td>\n    <td>25</td>\n  </tr>\n</table>"
+        },
+        {
+          "id": 6,
+          "question": "Write HTML code to create a complex form with various input types including text, email, select, radio buttons, checkboxes, and textarea.\n<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required><br><br>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required><br><br>\n  <label for=\"country\">Country:</label>\n  <select id=\"country\" name=\"country\">\n    <option value=\"usa\">USA</option>\n    <option value=\"canada\">Canada</option>\n    <option value=\"uk\">UK</option>\n  </select><br><br>\n  <label>Gender:</label><br>\n  <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\n  <label for=\"male\">Male</label><br>\n  <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\n  <label for=\"female\">Female</label><br><br>\n  <label>Interests:</label><br>\n  <input type=\"checkbox\" id=\"sports\" name=\"interests\" value=\"sports\">\n  <label for=\"sports\">Sports</label><br>\n  <input type=\"checkbox\" id=\"music\" name=\"interests\" value=\"music\">\n  <label for=\"music\">Music</label><br><br>\n  <label for=\"message\">Message:</label><br>\n  <textarea id=\"message\" name=\"message\" rows=\"4\" cols=\"50\"></textarea><br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+          "content_type": "programming",
+          "language": "html",
+          "answer": "This HTML code creates a comprehensive form with multiple input types for collecting user information.",
+          "code": "<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required><br><br>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required><br><br>\n  <label for=\"country\">Country:</label>\n  <select id=\"country\" name=\"country\">\n    <option value=\"usa\">USA</option>\n    <option value=\"canada\">Canada</option>\n    <option value=\"uk\">UK</option>\n  </select><br><br>\n  <label>Gender:</label><br>\n  <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\">\n  <label for=\"male\">Male</label><br>\n  <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\">\n  <label for=\"female\">Female</label><br><br>\n  <label>Interests:</label><br>\n  <input type=\"checkbox\" id=\"sports\" name=\"interests\" value=\"sports\">\n  <label for=\"sports\">Sports</label><br>\n  <input type=\"checkbox\" id=\"music\" name=\"interests\" value=\"music\">\n  <label for=\"music\">Music</label><br><br>\n  <label for=\"message\">Message:</label><br>\n  <textarea id=\"message\" name=\"message\" rows=\"4\" cols=\"50\"></textarea><br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>"
         }
       ]
     }

@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import QuestionCard from "@/components/QuestionCard";
-import type { Chapters, Question, TableData } from "@/lib/types";
+import type { Chapters, Question } from "@/lib/types";
 import { ArrowLeft, Search, ArrowUp } from "lucide-react";
-import { useEffect, useState, useMemo, useCallback, memo } from "react";
+import { useEffect, useState, useMemo, useCallback, memo, useRef } from "react";
 import { Link, useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -14,13 +14,22 @@ import { useDebouncedSearch } from "@/hooks/useDebounce";
 import { API_ENDPOINTS, SCROLL_THRESHOLD } from "@/lib/constants";
 import { filterQuestions, scrollToTop } from "@/lib/helpers";
 
-const TableRenderer = memo(({ data }: { data: TableData }) => {
+const TableRenderer = memo(({ data }: { data: Question }) => {
   return (
     <div className="overflow-x-auto mt-4">
+      <h1
+        className="font-bold text-blue-800 text-xl"
+        dangerouslySetInnerHTML={{ __html: data.question }}
+      />
+      <h4 className="font-medium mb-2 text-green-700">Answer</h4>
+      <div
+        className="space-y-3"
+        dangerouslySetInnerHTML={{ __html: data.answer }}
+      />
       <table className="min-w-full border">
         <thead>
           <tr>
-            {data.headers.map((header, index) => (
+            {data.table_data?.headers.map((header, index) => (
               <th key={index} className="border px-4 py-2 bg-gray-50">
                 {header}
               </th>
@@ -28,12 +37,14 @@ const TableRenderer = memo(({ data }: { data: TableData }) => {
           </tr>
         </thead>
         <tbody>
-          {data.rows.map((row, rowIndex) => (
+          {data.table_data?.rows.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((cell, cellIndex) => (
-                <td key={cellIndex} className="border px-4 py-2">
-                  {cell}
-                </td>
+                <td
+                  key={cellIndex}
+                  className="border px-4 py-2"
+                  dangerouslySetInnerHTML={{ __html: cell }}
+                ></td>
               ))}
             </tr>
           ))}
@@ -53,115 +64,115 @@ const EquationRenderer = memo(({ equation }: { equation: string }) => {
 });
 EquationRenderer.displayName = "EquationRenderer";
 
-const MathProblemRenderer = memo(
-  ({ problem, solution }: { problem: string; solution: string }) => {
-    const renderMathText = useCallback((text: string) => {
-      // Split text into parts that contain LaTeX and parts that don't
-      const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
+const MathProblemRenderer = memo(({ question }: { question: Question }) => {
+  const renderMathText = useCallback((text: string) => {
+    // Split text into parts that contain LaTeX and parts that don't
+    const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
 
-      return parts.map((part, index) => {
-        if (part.startsWith("$$") && part.endsWith("$$")) {
-          return <BlockMath key={index} math={part.slice(2, -2)} />;
-        } else if (part.startsWith("$") && part.endsWith("$")) {
-          return <InlineMath key={index} math={part.slice(1, -1)} />;
-        } else {
-          return <span key={index}>{part}</span>;
-        }
-      });
-    }, []);
+    return parts.map((part, index) => {
+      if (part.startsWith("$$") && part.endsWith("$$")) {
+        return <BlockMath key={index} math={part.slice(2, -2)} />;
+      } else if (part.startsWith("$") && part.endsWith("$")) {
+        return <InlineMath key={index} math={part.slice(1, -1)} />;
+      } else {
+        return <span key={index}>{part}</span>;
+      }
+    });
+  }, []);
 
-    return (
-      <>
-        <h1 className="font-bold text-blue-800 text-xl">
-          Q. {renderMathText(problem)}
-        </h1>
+  return (
+    <>
+      <h1 className="font-bold text-blue-800 text-xl">
+        Q. {renderMathText(question.question)}
+      </h1>
 
-        <div className="text-gray-700 space-y-3"></div>
-        {solution && (
-          <div className="mt-4 pt-4 border-t border-blue-200">
-            <h4 className="font-medium text-blue-700 mb-2">Solution</h4>
-            <div className="text-gray-700 space-y-3">
-              {renderMathText(solution)}
-            </div>
+      <div className="text-gray-700 space-y-3"></div>
+      {question.answer && (
+        <div className="mt-4 pt-4 border-t border-blue-200">
+          <h4 className="font-medium text-blue-700 mb-2">Solution</h4>
+          <div className="text-gray-700 space-y-3">
+            {renderMathText(question.answer)}
           </div>
-        )}
-      </>
-    );
-  }
-);
+        </div>
+      )}
+    </>
+  );
+});
 MathProblemRenderer.displayName = "MathProblemRenderer";
 
 const ProgrammingQuestionRenderer = memo(
-  ({
-    question,
-    answer,
-    language,
-    code,
-  }: {
-    question: string;
-    language?: string;
-    answer?: string;
-    code?: string;
-  }) => {
-    const formatTextWithBreaks = useCallback(
-      (text: string): { __html: string } => {
-        return {
-          __html: text
-            ?.split("\n")
-            .map((line, index) =>
-              line ? `<span key=${index}>${line}<br /></span>` : "<br />"
-            )
-            .join(""),
-        };
-      },
-      []
-    );
+  ({ question }: { question: Question }) => {
+    const questionRef = useRef<HTMLDivElement>(null);
+    const answerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      if (questionRef.current && !questionRef.current.shadowRoot) {
+        const shadow = questionRef.current.attachShadow({ mode: "open" });
+        shadow.innerHTML = question.question;
+      }
+    }, [question.question]);
+
+    useEffect(() => {
+      if (answerRef.current && !answerRef.current.shadowRoot) {
+        const shadow = answerRef.current.attachShadow({ mode: "open" });
+        shadow.innerHTML = question.answer;
+      }
+    }, [question.answer]);
+
+    // const formatTextWithBreaks = useCallback(
+    //   (text: string): { __html: string } => {
+    //     return {
+    //       __html: text
+    //         ?.split("\n")
+    //         .map((line, index) =>
+    //           line ? `<span key=${index}>${line}<br /></span>` : "<br />",
+    //         )
+    //         .join(""),
+    //     };
+    //   },
+    //   [],
+    // );
 
     return (
       <>
-        <h1
-          className="font-bold text-blue-800 text-xl"
-          dangerouslySetInnerHTML={formatTextWithBreaks(question)}
-        />
+        <div ref={questionRef} className="font-bold text-blue-800 text-xl" />
         <div className="mt-4 pt-4 border-t border-gray-200">
           <h4 className="font-medium mb-2 text-green-700">Answer</h4>
-          <div className=" space-y-3">{answer}</div>
+          <div ref={answerRef} className=" space-y-3" />
         </div>
         <div className="rounded-md my-4">
-          {code && (
+          {question.code && (
             <SyntaxHighlighter
-              language={language || "javascript"}
+              language={question.language || "javascript"}
               style={atomOneDark}
               className="rounded-md"
             >
-              {code}
+              {question.code}
             </SyntaxHighlighter>
           )}
         </div>
       </>
     );
-  }
+  },
 );
 ProgrammingQuestionRenderer.displayName = "ProgrammingQuestionRenderer";
 
-const GeneralQuestionRenderer = memo(
-  ({ question, answer }: { question: string; answer: string }) => {
-    return (
-      <>
-        <h1 className="font-bold text-blue-800 text-xl">
-          Q. <span dangerouslySetInnerHTML={{ __html: question }} />
-        </h1>
-        <div className="mt-4 pt-4 border-t border-gray-200">
-          <h4 className="font-medium mb-2 text-green-700">Answer</h4>
-          <div
-            className="space-y-3"
-            dangerouslySetInnerHTML={{ __html: answer }}
-          />
-        </div>
-      </>
-    );
-  }
-);
+const GeneralQuestionRenderer = memo(({ question }: { question: Question }) => {
+  return (
+    <>
+      <h1 className="font-bold text-blue-800 text-xl">
+        Q. <span dangerouslySetInnerHTML={{ __html: question.question }} />
+      </h1>
+      <div className="mt-4 pt-4 border-t border-gray-200">
+        <h4 className="font-medium mb-2 text-green-700">Answer</h4>
+        <div
+          className="space-y-3"
+          dangerouslySetInnerHTML={{ __html: question.answer }}
+        />
+      </div>
+    </>
+  );
+});
 GeneralQuestionRenderer.displayName = "GeneralQuestionRenderer";
 
 const Chapter = () => {
@@ -192,7 +203,7 @@ const Chapter = () => {
       chapterData.questions,
       debouncedSearchValue,
       contentFilter,
-      groupFilter
+      groupFilter,
     );
   }, [chapterData, debouncedSearchValue, contentFilter, groupFilter]);
 
@@ -268,31 +279,15 @@ const Chapter = () => {
   const renderContent = (q: Question) => {
     switch (q.content_type) {
       case "text":
-        return (
-          q.question && (
-            <GeneralQuestionRenderer question={q.question} answer={q.answer} />
-          )
-        );
+        return q.question && <GeneralQuestionRenderer question={q} />;
       case "table":
-        return q.table_data && <TableRenderer data={q.table_data} />;
+        return q.table_data && <TableRenderer data={q} />;
       case "equation":
         return q.equation && <EquationRenderer equation={q.equation} />;
       case "math_problem":
-        return (
-          <MathProblemRenderer
-            problem={q.problem || q.question}
-            solution={q.answer}
-          />
-        );
+        return <MathProblemRenderer question={q} />;
       case "programming":
-        return (
-          <ProgrammingQuestionRenderer
-            question={q.question}
-            answer={q.answer}
-            language={q.language}
-            code={q.code}
-          />
-        );
+        return <ProgrammingQuestionRenderer question={q} />;
       default:
         return null;
     }
@@ -322,7 +317,7 @@ const Chapter = () => {
                 <p className="text-sm text-gray-600">
                   {chapterData?.questions.reduce(
                     (acc, group) => acc + group.questions.length,
-                    0
+                    0,
                   )}{" "}
                   questions available
                 </p>
@@ -390,7 +385,7 @@ const Chapter = () => {
                 All Groups (
                 {chapterData.questions.reduce(
                   (acc, group) => acc + group.questions.length,
-                  0
+                  0,
                 )}
                 )
               </Button>

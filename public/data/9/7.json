@@ -1,0 +1,1269 @@
+{
+  "chapter_no": 7,
+  "name": "7. Programming Concepts (Python)",
+  "questions": [
+    {
+      "question_group": "Answer the following questions briefly.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a variable in Python?",
+          "answer": "A variable is a name used to store data values in a Python program.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "Explain the purpose of the input() function in Python.",
+          "answer": "The input() function is used to take input from the user during program execution.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "What is the significance of indentation in Python?",
+          "answer": "Indentation in Python defines the structure and blocks of code.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "Define type conversion and its types in Python.",
+          "answer": "Type conversion refers to changing one data type into another. It can be implicit or explicit.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "What is the difference between mutable and immutable data types?",
+          "answer": "The key difference between mutable and immutable data types is that mutable data types can be changed, while immutable data types cannot be changed.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "How does a flowchart help in programming?",
+          "answer": "A flowchart helps by showing the step-by-step logic of a program visually.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "What does the modulus operator % do in Python?",
+          "answer": "The modulus operator returns the remainder of a division.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "How is a list different from a tuple in Python?",
+          "answer": "A list differs from a tuple in that a list is mutable, while a tuple is immutable.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "What are the common types of errors encountered in Python programming?",
+          "answer": "The common errors that are encountered in Python programming are syntax errors, runtime errors, and logical errors.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "What is the role of garbage collection in Python?",
+          "answer": "The role of garbage collection is to automatically free unused memory in Python.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "What is a logical error?",
+          "answer": "A logical error is a type of error that causes a program to run but produce incorrect results.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "How do comments improve the readability of Python programs?",
+          "answer": "Comments improve code readability in Python programs by explaining code and making programs easier to understand.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "Explain the purpose of the len() function in Python.",
+          "answer": "The purpose of the len() function is to count and return the number of items in a sequence.",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "Why is debugging important in programming?",
+          "answer": "Debugging is important because it helps find and fix errors in a program, ensuring it runs correctly.",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "What is the purpose of the range() function in loops?",
+          "answer": "The purpose of the range() function is to generate a sequence of numbers for looping.",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "How is the type() function used in Python?",
+          "answer": "The purpose of the type() function is to check the data type of a value.",
+          "content_type": "text"
+        },
+        {
+          "id": 17,
+          "question": "What is the output of the statement print(10 // 3)?",
+          "answer": "The output of the statement print(10 // 3) is 3.",
+          "content_type": "text"
+        },
+        {
+          "id": 18,
+          "question": "What is meant by an infinite loop?",
+          "answer": "An infinite loop is a loop that runs continuously without stopping.",
+          "content_type": "text"
+        },
+        {
+          "id": 19,
+          "question": "Name two key features of Python that make it beginner-friendly.",
+          "answer": "Two key features of Python that make it beginner-friendly are its simple syntax and easy readability.",
+          "content_type": "text"
+        },
+        {
+          "id": 20,
+          "question": "How does Python handle memory management?",
+          "answer": "Python handles memory management automatically using garbage collection.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a) Describe the structure of Python's conditional statements and explain the differences between if, if-else, and if-elif-else with examples.",
+          "answer": "Conditional statements execute different code blocks based on conditions. They use comparison operators (==, !=, <, >, <=, >=) and logical operators (and, or, not).<br><br>Choose based on number of conditions: if for one, if-else for two, if-elif-else for multiple.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Aspect",
+              "If",
+              "If Else",
+              "If Elif Else"
+            ],
+            "rows": [
+              [
+                "Execution Paths",
+                "The if statement provides a single execution path that runs only when the condition is true",
+                "The if-else statement provides two execution paths: one when the condition is true, another when it is false",
+                "The if-elif-else statement provides multiple sequential execution paths, checking conditions in order until one is true"
+              ],
+              [
+                "Condition Check",
+                "Evaluates a single condition and executes code only if that condition is met",
+                "Evaluates one condition and provides an alternative action if the condition is not met",
+                "Evaluates multiple conditions sequentially, executing the first block where the condition is true"
+              ],
+              [
+                "Use Case",
+                "Best for simple yes/no decisions where you only need action when a condition is true",
+                "Ideal for binary choices where you need different actions for true and false outcomes",
+                "Perfect for multiple mutually exclusive options where only one condition should be met"
+              ],
+              [
+                "Example",
+                "<pre>age = 18\nif age >= 18:\n  print(\"You can vote\")</pre>",
+                "<pre>temperature = 25\nif temperature > 30:\n  print(\"Hot day\")\nelse:\n  print(\"Normal day\")</pre>",
+                "<pre>marks = 85\nif marks >= 90:\n  grade = 'A'\nelif marks >= 80:\n  grade = 'B'\nelse:\n  grade = 'F'\nprint(f'Grade: {grade}')</pre>"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "b) Explain the concept of loops in Python. Differentiate between for and while loops providing scenarios where each is best suited.",
+          "answer": "Loops execute a block of code multiple times. Python has two main types: for and while loops.<br><br>Choose for loops for definite iteration, while loops for indefinite iteration based on conditions.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Aspect",
+              "For Loop",
+              "While Loop"
+            ],
+            "rows": [
+              [
+                "Execution",
+                "The for loop executes a predetermined number of times based on the sequence length",
+                "The while loop continues executing as long as the condition remains true"
+              ],
+              [
+                "Use Case",
+                "Best used when you know exactly how many iterations are needed",
+                "Ideal when the number of repetitions depends on runtime conditions"
+              ],
+              [
+                "Best For",
+                "Perfect for iterating through collections like lists, strings, or tuples",
+                "Excellent for scenarios requiring continuous checking like user input"
+              ],
+              [
+                "Example",
+                "<pre>for name in ['Alice', 'Bob', 'Charlie']:\n  print(f'Hello {name}')</pre>",
+                "<pre>count = 0\nwhile count < 5:\n  print(count)\n  count += 1</pre>"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "c) Write a detailed explanation of type conversion in Python, including examples of implicit and explicit conversions.",
+          "answer": "Type conversion changes data from one type to another. Python supports two types: implicit (automatic) and explicit (manual).<br><br><b>Implicit Conversion:</b><br>Python does this automatically when mixing compatible types. No data loss occurs.<br>Examples:<br>- x = 5 + 2.5 (int + float = float)<br>- y = 10 + 3j (int + complex = complex)<br><br><b>Explicit Conversion:</b><br>You manually convert using built-in functions. May lose data if converting to smaller type.<br>Common functions:<br>- int() - to integer<br>- float() - to float<br>- str() - to string<br>- bool() - to boolean<br><br>Examples:<br>- age = int(\"25\")<br>- price = float(\"19.99\")<br>- num_str = str(123)<br>- is_valid = bool(0) (False)<br><br>Explicit conversion gives you control but requires careful handling to avoid errors.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) Discuss the various loop control techniques in Python, such as break, continue, and pass. Include examples to illustrate their use.",
+          "answer": "Loop control statements change how loops execute normally. They give you more control over loop behavior.<br><br>1. <b>break</b> - Exits the loop immediately, skipping any remaining iterations.<br>Example:<br><pre>for i in range(10):<br>  if i == 5:<br>    break<br>  print(i)</pre><br>Output: 0 1 2 3 4<br><br>2. <b>continue</b> - Skips the current iteration and moves to the next one.<br>Example:<br><pre>for i in range(5):<br>  if i == 2:<br>    continue<br>  print(i)</pre><br>Output: 0 1 3 4<br><br>3. <b>pass</b> - Does nothing, used as a placeholder when you need a statement but don't want to execute code.<br>Example:<br><pre>for i in range(3):<br>  if i == 1:<br>    pass  # Will implement later<br>  else:<br>    print(i)</pre><br><br>These statements make loops more flexible for different programming needs.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) What are library functions in Python? Provide examples of commonly used library functions and explain their importance.",
+          "answer": "Library functions are pre-written functions that come with Python or can be imported. They perform common tasks so you don't have to write the code yourself. Python has many built-in functions and modules with specialized functions.<br><br>Common examples:<br>- print() - displays output<br>- len() - gets length of sequences<br>- type() - checks data type<br>- input() - gets user input<br>- range() - creates number sequences<br><br>From math module:<br>- math.sqrt() - square root<br>- math.pow() - power function<br><br>Importance:<br>1. Saves time and effort<br>2. Reduces errors<br>3. Makes code more readable<br>4. Provides advanced functionality<br>5. Encourages code reuse<br><br>Without these functions, programming would be much harder and take longer.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f) Write a comprehensive explanation of Python's nested loops. How do they work, and what are their practical applications?",
+          "answer": "Nested loops are loops placed inside other loops. The inner loop executes completely for each iteration of the outer loop. This creates a grid-like execution pattern where the total number of iterations is the product of the iterations of both loops.<br><br><b>How they work:</b><br>In nested loops, the outer loop controls the overall structure, while the inner loop handles the detailed processing. For each single iteration of the outer loop, the entire inner loop runs from start to finish. This means if the outer loop runs n times and the inner loop runs m times for each outer iteration, the code inside the inner loop will execute a total of n × m times.<br><br>Execution flow:<br>- The outer loop begins its first iteration<br>- The inner loop starts and runs completely through all its iterations<br>- Control returns to the outer loop<br>- The outer loop proceeds to its next iteration<br>- The inner loop runs completely again<br>- This pattern continues until the outer loop finishes all its iterations<br><br><b>Practical applications:</b><br>1. <b>Printing patterns</b> - Creating visual patterns like stars, numbers, or shapes using rows and columns<br>2. <b>Working with 2D data structures</b> - Processing matrices, grids, or tables where you need to access elements by row and column<br>3. <b>Generating multiplication tables</b> - Creating tables that show the product of numbers in a systematic way<br>4. <b>Data processing in grids</b> - Analyzing or manipulating data arranged in rows and columns, such as spreadsheets or images<br><br><b>Example for multiplication table:</b><br><pre>for i in range(1, 4):<br>  for j in range(1, 4):<br>    print(i * j, end=' ')<br>  print()</pre><br><br>This code creates a 3×3 multiplication table. The outer loop (i) represents the rows, and the inner loop (j) represents the columns. For each row i, it prints the products i×1, i×2, i×3, then moves to the next line for the next row.<br><br><b>Another example - Printing a star pattern:</b><br><pre>for i in range(1, 6):<br>  for j in range(i):<br>    print('*', end='')<br>  print()</pre><br><br>This creates a right triangle pattern of stars. The outer loop controls the number of rows, and the inner loop prints the correct number of stars for each row.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g) Explain the role of the elif keyword in Python conditional statements. How does it simplify decision-making in programs?",
+          "answer": "The elif keyword stands for 'else if' and allows checking multiple conditions in a sequence. It runs only if the previous if or elif conditions were false. This makes code cleaner than using many separate if statements.<br><br>Example:<br><pre>score = 85<br>if score &gt;= 90:<br>  grade = 'A'<br>elif score &gt;= 80:<br>  grade = 'B'<br>elif score &gt;= 70:<br>  grade = 'C'<br>else:<br>  grade = 'F'</pre><br><br>Without elif, you'd need nested if-else statements, making the code harder to read and maintain.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h) Discuss the significance of Python's else clause when used with loops. Provide examples of its use with both for and while loops.",
+          "answer": "The else clause in loops runs only when the loop finishes normally (without hitting a break statement). It's useful to know if a loop completed all its iterations or was interrupted.<br><br>For loop example:<br><pre>for i in range(5):<br>  if i == 3:<br>    break<br>  print(i)<br>else:<br>  print(\"Loop completed\")</pre><br><br>While loop example:<br><pre>x = 0<br>while x &lt; 5:<br>  x += 1<br>  if x == 3:<br>    break<br>else:<br>  print(\"While loop finished\")</pre><br><br>In both cases, the else block runs only if no break occurred.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i) How do you use conditional statements to make decisions in Python? Write a program demonstrating the use of nested if statements.",
+          "answer": "Conditional statements help programs make choices based on conditions. They use keywords like if, elif, and else. Nested if statements are if statements inside other if statements, used for complex decisions.<br><br>Example program:<br><pre>marks = int(input(\"Enter marks: \"))<br>if marks &gt;= 40:<br>  if marks &gt;= 80:<br>    print(\"Distinction\")<br>  elif marks &gt;= 60:<br>    print(\"First Class\")<br>  else:<br>    print(\"Pass\")<br>else:<br>  print(\"Fail\")</pre><br><br>This checks if marks are passing, then checks the grade level.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j) Write a detailed explanation of the range() function and its various uses in Python programming.",
+          "answer": "The range() function creates a sequence of numbers that can be used in loops. It takes up to three parameters: start (optional, default 0), stop (required), and step (optional, default 1).<br><br>Syntax: range(start, stop, step)<br><br>Examples:<br>- range(5) gives 0, 1, 2, 3, 4<br>- range(1, 6) gives 1, 2, 3, 4, 5<br>- range(0, 10, 2) gives 0, 2, 4, 6, 8<br><br>It's commonly used in for loops to repeat actions a specific number of times, like printing numbers or processing lists.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "k) Explain the importance of the range() function in Python. Write examples showing its use in different scenarios.",
+          "answer": "The range() function is very important because it helps create sequences of numbers easily. It's essential for loops when you need to repeat something a certain number of times. Without range(), you'd have to write long lists of numbers manually.<br><br>Examples:<br>1. Counting from 1 to 5: <pre>for i in range(1, 6):</pre><br>2. Even numbers: <pre>for i in range(0, 11, 2):</pre><br>3. Counting backwards: <pre>for i in range(10, 0, -1):</pre><br><br>Range() makes code shorter and more efficient for repetitive tasks.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "l) Describe the significance of using the import keyword in Python. Explain how to use built-in modules and libraries in Python programs.",
+          "answer": "The import keyword is very important in Python because it allows you to use code written by others. Built-in modules and libraries provide extra functions that aren't available by default. For example, the math module gives mathematical functions like square root.<br><br>To use a module, you write <pre>import module_name</pre> at the top of your program. Then you can call functions from that module using <pre>module_name.function_name()</pre>.<br><br>Example:<br><pre>import math<br>result = math.sqrt(16)<br>print(result)  # Outputs: 4.0</pre><br><br>You can also import specific functions: <pre>from math import sqrt</pre>, then use <pre>sqrt(16)</pre> directly.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 1",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program that uses multiple print() statements to output the poem translated by Bhagirath Yogi and originally by Kamal Malla, using end= for special line endings.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints each line of the poem using separate print() statements and uses end= to control the line endings for '--' and '!!'.",
+          "code": "print(\"My country is the country of Mount Everest\")\nprint(\"Please come to view the tallest peak in the world\")\nprint(\"Please come to breathe peace\")\nprint(\"My country is the country of Gautam Buddha\", end=\"--\\n\")\nprint(\"Come, with your friends and beloved\")\nprint(\"My country is the country of Mount Everest\", end=\" !!\\n\")"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Ask the user for their name and age, then use an f-string to display a message introducing them.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program asks for the user's name and age and prints an introduction using an f-string.",
+          "code": "name = input('Enter your name: ')\nage = int(input('Enter your age: '))\nprint(f'Hello, my name is {name} and I am {age} years old.')"
+        },
+        {
+          "id": 2,
+          "question": "Create a list of three favorite items and display them using f-strings.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program stores three favorite items in a list and prints them using f-strings.",
+          "code": "favorites = ['Pizza', 'Chocolate', 'Movies']\nprint(f'My favorite items are: {favorites[0]}, {favorites[1]}, and {favorites[2]}.')"
+        },
+        {
+          "id": 3,
+          "question": "Display a number using f-string formatting to show it with two decimal places.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program formats a number to show two decimal places using an f-string.",
+          "code": "num = 12.34567\nprint(f'The number formatted to 2 decimal places is: {num:.2f}')"
+        },
+        {
+          "id": 4,
+          "question": "Format a number as a percentage using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program formats a decimal number as a percentage using an f-string.",
+          "code": "decimal = 0.875\nprint(f'The percentage is: {decimal:.2%}')"
+        },
+        {
+          "id": 5,
+          "question": "Display a name right-aligned with a width of 10 using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a name right-aligned in a field of width 10 using an f-string.",
+          "code": "name = 'Alice'\nprint(f'{name:>10}')"
+        },
+        {
+          "id": 6,
+          "question": "Convert an integer into its hexadecimal representation using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts an integer to hexadecimal format using an f-string.",
+          "code": "num = 255\nprint(f'The hexadecimal of {num} is {num:#x}')"
+        },
+        {
+          "id": 7,
+          "question": "Ask the user for the name of an item and its price, then display the information using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes item name and price from the user and displays them using an f-string.",
+          "code": "item = input('Enter item name: ')\nprice = float(input('Enter item price: '))\nprint(f'The item {item} costs {price} dollars.')"
+        },
+        {
+          "id": 8,
+          "question": "Display a name left-aligned with a width of 10 using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a name left-aligned in a field of width 10 using an f-string.",
+          "code": "name = 'Bob'\nprint(f'{name:<10}')"
+        },
+        {
+          "id": 9,
+          "question": "Display a name right-aligned with a width of 10 using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a name right-aligned in a field of width 10 using an f-string.",
+          "code": "name = 'Charlie'\nprint(f'{name:>10}')"
+        },
+        {
+          "id": 10,
+          "question": "Display a name centered within a width of 10 using an f-string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a name centered in a field of width 10 using an f-string.",
+          "code": "name = 'Diana'\nprint(f'{name:^10}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 3",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Create a variable to store your age, and another variable to store your height. Then, display them in a sentence.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program stores age and height in variables and prints a sentence using them.",
+          "code": "age = 17\nheight = 5.8\nprint(f'I am {age} years old and my height is {height} feet.')"
+        },
+        {
+          "id": 2,
+          "question": "Create a variable to store your name. Display a greeting message using this variable.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program stores a name in a variable and displays a greeting message.",
+          "code": "name = 'Anish'\nprint(f'Hello, {name}! Welcome to the Python program.')"
+        },
+        {
+          "id": 3,
+          "question": "Create a list of three of your favorite fruits and print the list.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program creates a list of fruits and prints it.",
+          "code": "fruits = ['Apple', 'Mango', 'Banana']\nprint(f'My favorite fruits are: {fruits}')"
+        },
+        {
+          "id": 4,
+          "question": "Create a tuple with three colors and display it.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program creates a tuple of colors and prints it.",
+          "code": "colors = ('Red', 'Blue', 'Green')\nprint(f'The colors are: {colors}')"
+        },
+        {
+          "id": 5,
+          "question": "Create a boolean variable that represents whether you like pizza or not, and print it.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program creates a boolean variable to represent liking pizza and prints it.",
+          "code": "likes_pizza = True\nprint(f'Do I like pizza? {likes_pizza}')"
+        },
+        {
+          "id": 6,
+          "question": "Create a set with three subjects you enjoy studying and display the set.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program creates a set of favorite subjects and prints it.",
+          "code": "subjects = {'Math', 'Computer Science', 'Physics'}\nprint(f'My favorite subjects are: {subjects}')"
+        },
+        {
+          "id": 7,
+          "question": "Create a dictionary to store your name, age, and favorite color. Then, display the dictionary.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program stores name, age, and favorite color in a dictionary and prints it.",
+          "code": "person = {'name': 'Anish', 'age': 17, 'favorite_color': 'Blue'}\nprint(f'Person info: {person}')"
+        },
+        {
+          "id": 8,
+          "question": "Write a Python program that takes two integer inputs from the user, adds them, and then calculates their average. Also, calculate the square and cube of the result.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes two integers, calculates their sum, average, square, and cube, then prints the results.",
+          "code": "num1 = int(input('Enter first number: '))\nnum2 = int(input('Enter second number: '))\nsum_result = num1 + num2\naverage = sum_result / 2\nsquare = sum_result ** 2\ncube = sum_result ** 3\nprint(f'Sum: {sum_result}, Average: {average}, Square: {square}, Cube: {cube}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 4",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program to ask an integer value, convert the integer to a floating-point number using explicit type casting, and then print the result and its data type.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts an integer input to a float using explicit type casting and prints the value and its type.",
+          "code": "num = int(input('Enter an integer: '))\nfloat_num = float(num)\nprint(f'Float value: {float_num}, Type: {type(float_num)}')"
+        },
+        {
+          "id": 2,
+          "question": "You have a string representing a number. Write a Python program to convert the string to an integer using explicit type casting. Print the integer value and its data type. num_str = '200'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts a string to an integer and prints the value and its type.",
+          "code": "num_str = '200'\nnum_int = int(num_str)\nprint(f'Integer value: {num_int}, Type: {type(num_int)}')"
+        },
+        {
+          "id": 3,
+          "question": "Write a Python program that assigns a variable with a value of 1, converts it to a boolean using bool(), and prints the result.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts an integer 1 to a boolean and prints the result.",
+          "code": "val = 1\nbool_val = bool(val)\nprint(f'Boolean value: {bool_val}, Type: {type(bool_val)}')"
+        },
+        {
+          "id": 4,
+          "question": "Using the given list of integers, write a Python program to convert the list into a tuple. Print the tuple and its data type. num_list = [10, 20, 30, 40]",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts a list to a tuple and prints it along with its type.",
+          "code": "num_list = [10, 20, 30, 40]\nnum_tuple = tuple(num_list)\nprint(f'Tuple: {num_tuple}, Type: {type(num_tuple)}')"
+        },
+        {
+          "id": 5,
+          "question": "Using the given tuple, write a Python program to convert the tuple into a list. Print the list and its data type. n_tuple = (5, 6, 7, 8)",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts a tuple to a list and prints it along with its type.",
+          "code": "n_tuple = (5, 6, 7, 8)\nnum_list = list(n_tuple)\nprint(f'List: {num_list}, Type: {type(num_list)}')"
+        },
+        {
+          "id": 6,
+          "question": "Write a Python program to illustrate implicit type casting by multiplying an integer and a float number, print the result, and its data type to show that implicit conversion has taken place.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program multiplies an integer and a float to show implicit type casting and prints the result and its type.",
+          "code": "int_num = 5\nfloat_num = 2.5\nresult = int_num * float_num\nprint(f'Result: {result}, Type: {type(result)}')"
+        },
+        {
+          "id": 7,
+          "question": "Write a Python program that asks a string and an integer. Convert the integer to a string and concatenate it with the original string.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes a string and an integer from the user, converts the integer to string, and concatenates both.",
+          "code": "text = input('Enter a string: ')\nnum = int(input('Enter an integer: '))\ncombined = text + str(num)\nprint(f'Concatenated result: {combined}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 5",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program that takes two numbers as input and calculates sum, difference (second subtracted from first), product, and quotient (first divided by second).",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes two numbers and calculates their sum, difference, product, and quotient.",
+          "code": "num1 = float(input('Enter first number: '))\nnum2 = float(input('Enter second number: '))\nsum_result = num1 + num2\ndiff = num1 - num2\nproduct = num1 * num2\nquotient = num1 / num2\nprint(f'Sum: {sum_result}, Difference: {diff}, Product: {product}, Quotient: {quotient}')"
+        },
+        {
+          "id": 2,
+          "question": "Write a Python program that takes two Boolean values and prints the result of AND, OR, and NOT.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes two Boolean inputs and performs logical AND, OR, and NOT operations.",
+          "code": "bool1 = input('Enter first Boolean (True/False): ') == 'True'\nbool2 = input('Enter second Boolean (True/False): ') == 'True'\nprint(f'{bool1} AND {bool2} = {bool1 and bool2}')\nprint(f'{bool1} OR {bool2} = {bool1 or bool2}')\nprint(f'NOT {bool1} = {not bool1}')"
+        },
+        {
+          "id": 3,
+          "question": "Write a Python program where a variable x is initialized to 30 and perform the following operations using assignment operators: i) Subtract 5 from x. ii) Multiply x by 3. iii) Divide x by 2.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program shows assignment operators applied on a variable x.",
+          "code": "x = 30\nx -= 5\nprint(f'After subtracting 5: {x}')\nx *= 3\nprint(f'After multiplying by 3: {x}')\nx /= 2\nprint(f'After dividing by 2: {x}')"
+        },
+        {
+          "id": 4,
+          "question": "Write a Python program that performs the following relational checks by comparing two numbers: i) Is the first number greater than the second? ii) Is the first number less than or equal to the second? iii) Are the two numbers equal?",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program compares two numbers using relational operators and prints the results.",
+          "code": "num1 = float(input('Enter first number: '))\nnum2 = float(input('Enter second number: '))\nprint(f'Is first number greater than second? {num1 > num2}')\nprint(f'Is first number less than or equal to second? {num1 <= num2}')\nprint(f'Are the two numbers equal? {num1 == num2}')"
+        },
+        {
+          "id": 5,
+          "question": "Write a Python program that takes three numbers as input. Calculate the sum of the first two numbers, difference from first to second, and the product of the second and third numbers. Compare if the sum is equal to the product.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program takes three numbers, performs calculations, and compares sum with product.",
+          "code": "num1 = float(input('Enter first number: '))\nnum2 = float(input('Enter second number: '))\nnum3 = float(input('Enter third number: '))\nsum_result = num1 + num2\ndiff = num1 - num2\nproduct = num2 * num3\nprint(f'Sum: {sum_result}, Difference: {diff}, Product: {product}')\nprint(f'Is sum equal to product? {sum_result == product}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 6",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program that asks the user for their marks and prints 'Failed' if the mark is below or equal to 35.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if the entered marks are below or equal to 35 and prints 'Failed' accordingly.",
+          "code": "marks = int(input('Enter your marks: '))\nif marks <= 35:\n    print('Failed')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program that asks the user to enter a number and prints 'Number is Positive' if the number is greater than zero.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a number is positive and prints a message accordingly.",
+          "code": "num = float(input('Enter a number: '))\nif num > 0:\n    print('Number is Positive')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program that asks the user to enter a number and prints 'Number is zero' if the number is equal to zero.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a number is zero and prints a message accordingly.",
+          "code": "num = float(input('Enter a number: '))\nif num == 0:\n    print('Number is zero')"
+        },
+        {
+          "id": 4,
+          "question": "Write a program that asks the user to enter a number and prints 'Number is Even' if the number is divisible by 2.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a number is even and prints a message accordingly.",
+          "code": "num = int(input('Enter a number: '))\nif num % 2 == 0:\n    print('Number is Even')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program that asks the total amount of a purchase item. If the total amount is greater than Rs. 500, adjust the discount Rs. 50 and print the amount to pay.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program applies a discount if the total amount is greater than Rs. 500 and prints the final amount to pay.",
+          "code": "total_amount = float(input('Enter total amount: Rs. '))\nif total_amount > 500:\n    total_amount -= 50\nprint(f'Amount to pay: Rs. {total_amount}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 7",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program that asks the user two integers and finds out the greater number.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program compares two integers and prints the greater one.",
+          "code": "num1 = int(input('Enter first integer: '))\nnum2 = int(input('Enter second integer: '))\nif num1 > num2:\n    print(f'The greater number is {num1}')\nelse:\n    print(f'The greater number is {num2}')"
+        },
+        {
+          "id": 2,
+          "question": "Write a Python program to ask a character in lower case and find out whether the input character is a vowel or not.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a lowercase character is a vowel.",
+          "code": "char = input('Enter a lowercase character: ')\nif char in 'aeiou':\n    print(f'{char} is a vowel')\nelse:\n    print(f'{char} is not a vowel')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask a number and find out whether it is zero or not.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if the entered number is zero.",
+          "code": "num = float(input('Enter a number: '))\nif num == 0:\n    print('The number is zero')\nelse:\n    print('The number is not zero')"
+        },
+        {
+          "id": 4,
+          "question": "Write a program that asks a person's age. If age is 13 or older, display message 'You can enter the website'; otherwise, display 'You cannot enter the website.'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a person is eligible to enter the website based on age.",
+          "code": "age = int(input('Enter your age: '))\nif age >= 13:\n    print('You can enter the website')\nelse:\n    print('You cannot enter the website')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program that asks the user to enter a number and checks if it is a single-digit number (0-9) or not.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a number is a single-digit number.",
+          "code": "num = int(input('Enter a number: '))\nif 0 <= num <= 9:\n    print('It is a single-digit number.')\nelse:\n    print('It is a multiple-digit number.')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program that asks the user to enter marks obtained on five subjects and finds the result is pass or fail.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if marks in all subjects are above 35 to determine pass/fail.",
+          "code": "maths = int(input('Enter marks in Mathematics: '))\ncs = int(input('Enter marks in Computer Science: '))\nnepali = int(input('Enter marks in Nepali: '))\nenglish = int(input('Enter marks in English: '))\nscience = int(input('Enter marks in Science: '))\nif all(mark > 35 for mark in [maths, cs, nepali, english, science]):\n    print('Your result is passed')\nelse:\n    print('Your result is failed')"
+        },
+        {
+          "id": 7,
+          "question": "Write a program that asks marks obtained on five subjects and finds whether the user is eligible to study computer science (any one mark above 80).",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if the user is eligible to study computer science.",
+          "code": "maths = int(input('Enter marks in Mathematics: '))\ncs = int(input('Enter marks in Computer Science: '))\nnepali = int(input('Enter marks in Nepali: '))\nenglish = int(input('Enter marks in English: '))\nscience = int(input('Enter marks in Science: '))\nif any(mark > 80 for mark in [maths, cs, nepali, english, science]):\n    print('You are eligible to study computer science')\nelse:\n    print('You are not eligible to study computer science')"
+        },
+        {
+          "id": 8,
+          "question": "Write a program to ask age and gender and find eligibility for admission (age ≤ 20 and gender male/female).",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks admission eligibility based on age and gender.",
+          "code": "age = int(input('Enter your age: '))\ngender = input('Enter your gender (male/female): ').lower()\nif age <= 20 and gender in ['male','female']:\n    print('You are eligible to get the admission')\nelse:\n    print('You are not eligible to get the admission')"
+        },
+        {
+          "id": 9,
+          "question": "Write a program to ask for quantity of pen, notebook, and pencil and calculate gross total, discount, and net total (5% discount if GT > 5000).",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates gross total, applies discount if eligible, and prints net total.",
+          "code": "pen_qty = int(input('Enter quantity of pens: '))\nnotebook_qty = int(input('Enter quantity of notebooks: '))\npencil_qty = int(input('Enter quantity of pencils: '))\npen_rate = 50\nnotebook_rate = 100\npencil_rate = 10\ngt = pen_qty*pen_rate + notebook_qty*notebook_rate + pencil_qty*pencil_rate\nif gt > 5000:\n    discount = gt * 0.05\nelse:\n    discount = 0\nnet_total = gt - discount\nprint(f'Gross Total: Rs. {gt}, Discount: Rs. {discount}, Net Total: Rs. {net_total}')"
+        },
+        {
+          "id": 10,
+          "question": "Write a program that asks the user to enter the length of three sides of a triangle and check if it is valid (triangle inequality theorem).",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if three sides form a valid triangle using the triangle inequality theorem.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nif a+b>c and a+c>b and b+c>a:\n    print('The triangle is valid')\nelse:\n    print('The triangle is not valid')"
+        },
+        {
+          "id": 11,
+          "question": "Write a program that asks three sides of a triangle and finds whether the triangle is equilateral.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if all three sides are equal to identify an equilateral triangle.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nif a==b==c:\n    print('The triangle is equilateral')\nelse:\n    print('The triangle is not equilateral')"
+        },
+        {
+          "id": 12,
+          "question": "Write a program that asks three sides of a triangle and finds whether the triangle is isosceles.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if any two sides are equal to identify an isosceles triangle.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nif a==b or b==c or a==c:\n    print('The triangle is isosceles')\nelse:\n    print('The triangle is not isosceles')"
+        },
+        {
+          "id": 13,
+          "question": "Write a program that asks three sides of a triangle and finds whether the triangle is scalene.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if all three sides are different to identify a scalene triangle.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nif a!=b and b!=c and a!=c:\n    print('The triangle is scalene')\nelse:\n    print('The triangle is not scalene')"
+        },
+        {
+          "id": 14,
+          "question": "Write a program that asks three sides of a triangle and finds whether the triangle is right-angled.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program uses Pythagoras theorem to check for a right-angled triangle.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nsides = sorted([a,b,c])  # smallest to largest\nif round(sides[0]**2 + sides[1]**2,2) == round(sides[2]**2,2):\n    print('The triangle is right-angled')\nelse:\n    print('The triangle is not right-angled')"
+        },
+        {
+          "id": 15,
+          "question": "Write a program that asks three sides of a triangle and finds the perimeter of the triangle.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates the perimeter of a triangle by summing all sides.",
+          "code": "a = float(input('Enter side a: '))\nb = float(input('Enter side b: '))\nc = float(input('Enter side c: '))\nperimeter = a + b + c\nprint(f'The perimeter of the triangle is: {perimeter}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 8",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program that asks the user to input a month in number form (1 to 12) and prints the corresponding season.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program determines the season based on the month number input by the user.",
+          "code": "month = int(input('Enter month number (1-12): '))\nif month in [12, 1, 2]:\n    print('Winter')\nelif month in [3, 4, 5]:\n    print('Spring')\nelif month in [6, 7, 8]:\n    print('Summer')\nelif month in [9, 10, 11]:\n    print('Fall')\nelse:\n    print('Invalid month number')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program for simulating a traffic light system. Ask to enter a color and print the appropriate action.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program simulates a traffic light by printing actions based on the input color.",
+          "code": "color = input('Enter traffic light color (Red/Yellow/Green): ').capitalize()\nif color == 'Red':\n    print('Stop')\nelif color == 'Yellow':\n    print('Get Ready')\nelif color == 'Green':\n    print('Go')\nelse:\n    print('Invalid color')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program that asks the user to enter principal amount and time in years, then calculates simple interest. The interest rate depends on time: 1 year → 6%, 2 years → 7%, 3 years → 9%, more than 3 years → 12%.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates simple interest by automatically choosing the rate based on the time input.",
+          "code": "principal = float(input('Enter principal amount: '))  # Principal\ntime = float(input('Enter time in years: '))          # Time in years\n\n# Determine rate based on time\nif time == 1:\n    rate = 6\nelif time == 2:\n    rate = 7\nelif time == 3:\n    rate = 9\nelif time > 3:\n    rate = 12\nelse:\n    rate = 0  # Optional: handle invalid time\n\n# Calculate simple interest\nsimple_interest = (principal * rate * time) / 100\n\nprint(f'Principal: {principal}')\nprint(f'Time: {time} years')\nprint(f'Rate: {rate}% per annum')\nprint(f'Simple Interest: {simple_interest}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 9",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to display the square value of the first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints squares of first 10 natural numbers.",
+          "code": "for i in range(1, 11):\n    print(f'{i}^2 = {i**2}')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program to find the sum and product of the first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates sum and product of first 10 natural numbers.",
+          "code": "sum_val = 0\nproduct_val = 1\nfor i in range(1, 11):\n    sum_val += i\n    product_val *= i\nprint(f'Sum = {sum_val}, Product = {product_val}')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to find the factorial value of 5.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates factorial of 5.",
+          "code": "factorial = 1\nfor i in range(1, 6):\n    factorial *= i\nprint(f'Factorial of 5 is {factorial}')"
+        },
+        {
+          "id": 4,
+          "question": "Write a program that asks the user to enter his name and prints it 10 times.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints the entered name 10 times.",
+          "code": "name = input('Enter your name: ')\nfor _ in range(10):\n    print(name)"
+        },
+        {
+          "id": 5,
+          "question": "Write a program that asks the user to enter a number and displays its multiples up to 10th term.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints the first 10 multiples of the entered number.",
+          "code": "num = int(input('Enter a number: '))\nfor i in range(1, 11):\n    print(f'{num} x {i} = {num*i}')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program to find the sum of 1 to n.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates the sum of numbers from 1 to n.",
+          "code": "n = int(input('Enter n: '))\nsum_val = sum(range(1, n+1))\nprint(f'Sum from 1 to {n} = {sum_val}')"
+        },
+        {
+          "id": 7,
+          "question": "Write a program that asks the user to enter 10 numbers and find their sum.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums 10 numbers entered by the user.",
+          "code": "sum_val = 0\nfor i in range(10):\n    num = float(input(f'Enter number {i+1}: '))\n    sum_val += num\nprint(f'The sum of 10 numbers is {sum_val}')"
+        },
+        {
+          "id": 8,
+          "question": "Write a program that asks the user to enter 10 numbers and find out the frequency of even and odd numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts even and odd numbers from 10 user inputs.",
+          "code": "even_count = 0\nodd_count = 0\nfor i in range(10):\n    num = int(input(f'Enter number {i+1}: '))\n    if num % 2 == 0:\n        even_count += 1\n    else:\n        odd_count += 1\nprint(f'Even numbers: {even_count}, Odd numbers: {odd_count}')"
+        },
+        {
+          "id": 9,
+          "question": "Write a program that asks the user to enter a number and finds the sum of cubes of each digit.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates the sum of cubes of digits of a number.",
+          "code": "num = int(input('Enter a number: '))\nsum_cubes = sum(int(digit)**3 for digit in str(num))\nprint(f'Sum of cubes of digits = {sum_cubes}')"
+        },
+        {
+          "id": 10,
+          "question": "Write a program to display numbers divisible by 2 and 3 from 1 to 100.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints numbers from 1 to 100 divisible by 2 and 3.",
+          "code": "for i in range(1, 101):\n    if i % 2 == 0 and i % 3 == 0:\n        print(i, end=' ')"
+        },
+        {
+          "id": 11,
+          "question": "Write programs to display the following series: <br> a) 5, 25, 125,... up to 10th terms. <br> b) -25, -20, -15,... up to 10th terms. <br> c) 1, 3, 27,... up to 10th terms. <br>  d) 1, 1, 2, 3, 5, 8,... up to 10th terms.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints various series using loops.",
+          "code": "# Series a\nval = 5\nfor i in range(10):\n    print(val, end=' ')\n    val *= 5\nprint('\\n')\n\n# Series b\nval = -25\nfor i in range(10):\n    print(val, end=' ')\n    val += 5\nprint('\\n')\n\n# Series c\nval = 1\nfor i in range(10):\n    print(val, end=' ')\n    val *= 3\nprint('\\n')\n\n# Series d (Fibonacci)\na, b = 1, 1\nfor i in range(10):\n    print(a, end=' ')\n    a, b = b, a+b"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 10",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to create a list containing five elements, then find the maximum and minimum element.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds the max and min in a list of five elements.",
+          "code": "lst = [int(input(f'Enter element {i+1}: ')) for i in range(5)]\nprint(f'List: {lst}')\nprint(f'Maximum element: {max(lst)}')\nprint(f'Minimum element: {min(lst)}')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program that creates a list containing five integer elements and displays the list with corresponding square values.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints each element and its square.",
+          "code": "lst = [int(input(f'Enter element {i+1}: ')) for i in range(5)]\nfor num in lst:\n    print(f'{num} squared = {num**2}')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program to ask a word from the user, arrange the word in reverse order, and check whether it is a palindrome.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if the entered word reads the same backward (palindrome).",
+          "code": "word = input('Enter a word: ')\nrev_word = word[::-1]\nprint(f'Reversed word: {rev_word}')\nif word == rev_word:\n    print('The word is a palindrome')\nelse:\n    print('The word is not a palindrome')"
+        },
+        {
+          "id": 4,
+          "question": "Write a program to ask a string and a character to replace. Replace all occurrences of the specified character with '*'.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program replaces all occurrences of a character with '*'.",
+          "code": "text = input('Enter a string: ')\nchar = input('Enter the character to replace: ')\nnew_text = text.replace(char, '*')\nprint(f'Result: {new_text}')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program to ask a sentence and find out the number of words.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts the number of words in a sentence.",
+          "code": "sentence = input('Enter a sentence: ')\nwords = sentence.split()\nprint(f'Number of words: {len(words)}')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program to ask a string and print characters that are in odd positions.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints characters at odd index positions (1,3,5...).",
+          "code": "text = input('Enter a string: ')\nprint('Characters in odd positions:')\nfor i in range(0, len(text), 2):\n    print(text[i], end=' ')"
+        },
+        {
+          "id": 7,
+          "question": "Write a program that counts how many times a specific element appears in a tuple containing five integer elements.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts occurrences of an element in a tuple.",
+          "code": "tup = tuple(int(input(f'Enter element {i+1}: ')) for i in range(5))\nelement = int(input('Enter element to count: '))\ncount = tup.count(element)\nprint(f'The element {element} appears {count} times in the tuple.')"
+        },
+        {
+          "id": 8,
+          "question": "Write a program to create a tuple containing five integer elements and find the sum of odd and even elements separately.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates separate sums for odd and even numbers in a tuple.",
+          "code": "tup = tuple(int(input(f'Enter element {i+1}: ')) for i in range(5))\neven_sum = sum(x for x in tup if x % 2 == 0)\nodd_sum = sum(x for x in tup if x % 2 != 0)\nprint(f'Sum of even elements: {even_sum}')\nprint(f'Sum of odd elements: {odd_sum}')"
+        },
+        {
+          "id": 9,
+          "question": "Write a program that checks if a specified element exists in a tuple or not.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks whether a given element exists in a tuple.",
+          "code": "tup = tuple(int(input(f'Enter element {i+1}: ')) for i in range(5))\nelement = int(input('Enter element to check: '))\nif element in tup:\n    print(f'{element} exists in the tuple')\nelse:\n    print(f'{element} does not exist in the tuple')"
+        },
+        {
+          "id": 10,
+          "question": "Write a program to create a tuple containing five string elements and display each element in reverse order.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints each string in a tuple reversed.",
+          "code": "tup = tuple(input(f'Enter string {i+1}: ') for i in range(5))\nfor s in tup:\n    print(s[::-1])"
+        },
+        {
+          "id": 11,
+          "question": "Write a program to create a dictionary containing marks on five subjects: Math, Computer, Science, English, and Nepali. Find the total marks and display all keys and values.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates total marks and prints all dictionary keys and values.",
+          "code": "marks = {\n    'Math': int(input('Enter marks in Math: ')),\n    'Computer': int(input('Enter marks in Computer: ')),\n    'Science': int(input('Enter marks in Science: ')),\n    'English': int(input('Enter marks in English: ')),\n    'Nepali': int(input('Enter marks in Nepali: '))\n}\ntotal = sum(marks.values())\nprint(f'Total marks: {total}')\nprint('Subject-wise marks:')\nfor subject, mark in marks.items():\n    print(f'{subject}: {mark}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 11",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program that repeatedly asks the user to enter a positive integer, sums them, and stops when the user enters zero. Finally, print the sum.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums positive integers entered by the user until zero is entered.",
+          "code": "total = 0\nwhile True:\n    num = int(input('Enter a positive integer (0 to stop): '))\n    if num == 0:\n        break\n    elif num > 0:\n        total += num\n    else:\n        print('Please enter a positive number.')\nprint(f'Sum of numbers entered: {total}')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program that asks the user to enter an integer and checks whether it is a palindrome.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if an integer reads the same backward as forward.",
+          "code": "num = int(input('Enter an integer: '))\nif str(num) == str(num)[::-1]:\n    print(f'{num} is a palindrome')\nelse:\n    print(f'{num} is not a palindrome')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program that generates the Fibonacci series up to a certain limit specified by the user.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program generates Fibonacci numbers up to the given limit.",
+          "code": "limit = int(input('Enter the limit for Fibonacci series: '))\na, b = 0, 1\nwhile a <= limit:\n    print(a, end=' ')\n    a, b = b, a+b"
+        },
+        {
+          "id": 4,
+          "question": "Write a program that asks the user to enter a number and counts how many digits it contains.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts the number of digits in an integer.",
+          "code": "num = int(input('Enter a number: '))\ndigit_count = len(str(abs(num)))\nprint(f'Number of digits: {digit_count}')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program that asks the user for a limit and calculates the sum of all even numbers up to that limit.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums all even numbers from 1 to the given limit.",
+          "code": "limit = int(input('Enter the limit: '))\neven_sum = sum(i for i in range(2, limit+1, 2))\nprint(f'Sum of even numbers up to {limit}: {even_sum}')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program that asks the user for a non-negative integer and calculates its factorial using a while loop.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates factorial of a non-negative integer using a while loop.",
+          "code": "num = int(input('Enter a non-negative integer: '))\nif num < 0:\n    print('Factorial not defined for negative numbers')\nelse:\n    factorial = 1\n    i = 1\n    while i <= num:\n        factorial *= i\n        i += 1\n    print(f'Factorial of {num} is {factorial}')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 12",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a program to find the first number greater than 50 and divisible by 6 using a while loop and break statement.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds the first number greater than 50 divisible by 6.",
+          "code": "num = 51\nwhile True:\n    if num % 6 == 0:\n        print(f'The first number greater than 50 divisible by 6 is {num}')\n        break\n    num += 1"
+        },
+        {
+          "id": 2,
+          "question": "Write a program that asks the user to enter numbers repeatedly. Stop when a negative number is entered and print the count of non-negative numbers entered.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts non-negative numbers until a negative number is entered.",
+          "code": "count = 0\nwhile True:\n    num = float(input('Enter a number: '))\n    if num < 0:\n        break\n    count += 1\nprint(f'Count of non-negative numbers entered: {count}')"
+        },
+        {
+          "id": 3,
+          "question": "Write a program that asks the user to enter a word and displays each letter individually. Skip spaces using continue statement.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints each character of a word, skipping spaces.",
+          "code": "word = input('Enter a word: ')\nfor char in word:\n    if char == ' ':\n        continue\n    print(char)"
+        },
+        {
+          "id": 4,
+          "question": "Write a program that asks the user to enter numbers and adds only odd numbers to a total sum. Stop when the user enters 0.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums only odd numbers until zero is entered.",
+          "code": "total = 0\nwhile True:\n    num = int(input('Enter a number (0 to stop): '))\n    if num == 0:\n        break\n    if num % 2 != 0:\n        total += num\nprint(f'Total sum of odd numbers: {total}')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program to display numbers from 1 to 10 excluding prime numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints numbers from 1 to 10, excluding primes.",
+          "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\n\nfor num in range(1, 11):\n    if is_prime(num):\n        continue\n    print(num, end=' ')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program that finds the first number greater than 100 that is divisible by 7.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds the first number greater than 100 divisible by 7.",
+          "code": "num = 101\nwhile True:\n    if num % 7 == 0:\n        print(f'The first number greater than 100 divisible by 7 is {num}')\n        break\n    num += 1"
+        },
+        {
+          "id": 7,
+          "question": "Write a program using for loop that allows the user to enter 10 numbers and adds them to a total variable, excluding negative numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums 10 user-entered numbers, ignoring negatives.",
+          "code": "total = 0\nfor i in range(10):\n    num = float(input(f'Enter number {i+1}: '))\n    if num < 0:\n        continue\n    total += num\nprint(f'Total sum of non-negative numbers: {total}')"
+        },
+        {
+          "id": 8,
+          "question": "Write a program to input a sequence of numbers using while-else. Stop input by typing 0. If a negative number is detected, break and display 'Negative number detected.' Otherwise, display 'All numbers are positive.'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program demonstrates while-else behavior with break on negative number.",
+          "code": "while True:\n    num = int(input('Enter a number (0 to stop): '))\n    if num == 0:\n        break\n    if num < 0:\n        print('Negative number detected.')\n        break\nelse:\n    print('All numbers are positive.')"
+        },
+        {
+          "id": 9,
+          "question": "Write a program to ask the user to input numbers until 0. If any even number is found, print 'Even number is found' and break. Use else clause to print 'All input numbers are odd.'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program demonstrates while-else to check for even numbers.",
+          "code": "while True:\n    num = int(input('Enter a number (0 to stop): '))\n    if num == 0:\n        break\n    if num % 2 == 0:\n        print('Even number is found')\n        break\nelse:\n    print('All input numbers are odd.')"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity 13",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Create a program that asks the user to enter their name and prints a greeting message centered within a 40-character line, padded with '*'. Example: 'Namaste, Ramila!'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a centered greeting with '*' padding.",
+          "code": "name = input('Enter your name: ')\ngreeting = f'Namaste, {name}!'\nprint(greeting.center(40, '*'))"
+        },
+        {
+          "id": 2,
+          "question": "Create a list of book titles, convert each title to uppercase, and print them one by one.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program converts book titles to uppercase.",
+          "code": "books = ['Python Basics', 'Data Science', 'Machine Learning']\nfor book in books:\n    print(book.upper())"
+        },
+        {
+          "id": 3,
+          "question": "Ask the user to enter a paragraph of text and print the total number of characters (including spaces) using the len() function.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts all characters including spaces.",
+          "code": "paragraph = input('Enter a paragraph: ')\nprint(f'Total number of characters: {len(paragraph)}')"
+        },
+        {
+          "id": 4,
+          "question": "Ask the user to enter a sentence and a word, then check whether the sentence contains the word (case insensitive). Print 'Word Found' or 'Word Not Found'.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks for the presence of a word in a sentence, ignoring case.",
+          "code": "sentence = input('Enter a sentence: ')\nword = input('Enter a word to search: ')\nif word.lower() in sentence.lower():\n    print('Word Found')\nelse:\n    print('Word Not Found')"
+        },
+        {
+          "id": 5,
+          "question": "Ask the user to input a quote and center it in a 50-character line using '-' as padding.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program centers a quote with '-' padding.",
+          "code": "quote = input('Enter a quote: ')\nprint(quote.center(50, '-'))"
+        },
+        {
+          "id": 6,
+          "question": "Ask the user to supply a product name, then print it in uppercase along with the number of characters it contains.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints product name in uppercase and its length.",
+          "code": "product = input('Enter a product name: ')\nprint(f'Product: {product.upper()}')\nprint(f'Number of characters: {len(product)}')"
+        },
+        {
+          "id": 7,
+          "question": "Ask the user to enter their full name and then print it in both uppercase and lowercase formats.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints the full name in both cases.",
+          "code": "full_name = input('Enter your full name: ')\nprint(f'Uppercase: {full_name.upper()}')\nprint(f'Lowercase: {full_name.lower()}')"
+        },
+        {
+          "id": 8,
+          "question": "Ask the user to input a sentence and then print those words having less than 5 characters and more than 8 characters.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program filters words by length.",
+          "code": "sentence = input('Enter a sentence: ')\nwords = sentence.split()\nfiltered = [word for word in words if len(word) < 5 or len(word) > 8]\nprint('Filtered words:', filtered)"
+        },
+        {
+          "id": 9,
+          "question": "Find both the smallest and largest string in a list of strings using the len() function.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds strings with minimum and maximum lengths.",
+          "code": "strings = ['apple', 'banana', 'kiwi', 'strawberry', 'fig']\nsmallest = min(strings, key=len)\nlargest = max(strings, key=len)\nprint(f'Smallest string: {smallest}')\nprint(f'Largest string: {largest}')"
+        },
+        {
+          "id": 10,
+          "question": "Ask the user to enter 10 strings, then count how many strings have more than eight characters.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts long strings (more than 8 characters).",
+          "code": "strings = [input(f'Enter string {i+1}: ') for i in range(10)]\ncount = sum(1 for s in strings if len(s) > 8)\nprint(f'Number of strings with more than 8 characters: {count}')"
+        }
+      ]
+    },
+    {
+      "question_group": "important for exam",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a Python program that asks the user for their marks and prints 'Failed' if the mark is below or equal to 35.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if the entered marks are below or equal to 35 and prints 'Failed' accordingly.",
+          "code": "marks = int(input('Enter your marks: '))\nif marks <= 35:\n    print('Failed')"
+        },
+        {
+          "id": 2,
+          "question": "Write a program that asks the user to enter a number and prints 'Number is Positive' if the number is greater than zero.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a number is positive and prints a message accordingly.",
+          "code": "num = float(input('Enter a number: '))\nif num > 0:\n    print('Number is Positive')"
+        },
+        {
+          "id": 3,
+          "question": "Write a Python program that asks the user two integers and finds out the greater number.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program compares two integers and prints the greater one.",
+          "code": "num1 = int(input('Enter first integer: '))\nnum2 = int(input('Enter second integer: '))\nif num1 > num2:\n    print(f'The greater number is {num1}')\nelse:\n    print(f'The greater number is {num2}')"
+        },
+        {
+          "id": 4,
+          "question": "Write a Python program to ask a character in lower case and find out whether the input character is a vowel or not.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if a lowercase character is a vowel.",
+          "code": "char = input('Enter a lowercase character: ')\nif char in 'aeiou':\n    print(f'{char} is a vowel')\nelse:\n    print(f'{char} is not a vowel')"
+        },
+        {
+          "id": 5,
+          "question": "Write a program that asks the user to input a month in number form (1 to 12) and prints the corresponding season.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program determines the season based on the month number input by the user.",
+          "code": "month = int(input('Enter month number (1-12): '))\nif month in [12, 1, 2]:\n    print('Winter')\nelif month in [3, 4, 5]:\n    print('Spring')\nelif month in [6, 7, 8]:\n    print('Summer')\nelif month in [9, 10, 11]:\n    print('Fall')\nelse:\n    print('Invalid month number')"
+        },
+        {
+          "id": 6,
+          "question": "Write a program for simulating a traffic light system. Ask to enter a color and print the appropriate action.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program simulates a traffic light by printing actions based on the input color.",
+          "code": "color = input('Enter traffic light color (Red/Yellow/Green): ').capitalize()\nif color == 'Red':\n    print('Stop')\nelif color == 'Yellow':\n    print('Get Ready')\nelif color == 'Green':\n    print('Go')\nelse:\n    print('Invalid color')"
+        },
+        {
+          "id": 7,
+          "question": "Write a program to display the square value of the first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints squares of first 10 natural numbers.",
+          "code": "for i in range(1, 11):\n    print(f'{i}^2 = {i**2}')"
+        },
+        {
+          "id": 8,
+          "question": "Write a program to find the sum and product of the first 10 natural numbers.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program calculates sum and product of first 10 natural numbers.",
+          "code": "sum_val = 0\nproduct_val = 1\nfor i in range(1, 11):\n    sum_val += i\n    product_val *= i\nprint(f'Sum = {sum_val}, Product = {product_val}')"
+        },
+        {
+          "id": 9,
+          "question": "Write a program to create a list containing five elements, then find the maximum and minimum element.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds the max and min in a list of five elements.",
+          "code": "lst = [int(input(f'Enter element {i+1}: ')) for i in range(5)]\nprint(f'List: {lst}')\nprint(f'Maximum element: {max(lst)}')\nprint(f'Minimum element: {min(lst)}')"
+        },
+        {
+          "id": 10,
+          "question": "Write a program that creates a list containing five integer elements and displays the list with corresponding square values.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints each element and its square.",
+          "code": "lst = [int(input(f'Enter element {i+1}: ')) for i in range(5)]\nfor num in lst:\n    print(f'{num} squared = {num**2}')"
+        },
+        {
+          "id": 11,
+          "question": "Write a program that repeatedly asks the user to enter a positive integer, sums them, and stops when the user enters zero. Finally, print the sum.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program sums positive integers entered by the user until zero is entered.",
+          "code": "total = 0\nwhile True:\n    num = int(input('Enter a positive integer (0 to stop): '))\n    if num == 0:\n        break\n    elif num > 0:\n        total += num\n    else:\n        print('Please enter a positive number.')\nprint(f'Sum of numbers entered: {total}')"
+        },
+        {
+          "id": 12,
+          "question": "Write a program that asks the user to enter an integer and checks whether it is a palindrome.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program checks if an integer reads the same backward as forward.",
+          "code": "num = int(input('Enter an integer: '))\nif str(num) == str(num)[::-1]:\n    print(f'{num} is a palindrome')\nelse:\n    print(f'{num} is not a palindrome')"
+        },
+        {
+          "id": 13,
+          "question": "Write a program to find the first number greater than 50 and divisible by 6 using a while loop and break statement.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program finds the first number greater than 50 divisible by 6.",
+          "code": "num = 51\nwhile True:\n    if num % 6 == 0:\n        print(f'The first number greater than 50 divisible by 6 is {num}')\n        break\n    num += 1"
+        },
+        {
+          "id": 14,
+          "question": "Write a program that asks the user to enter numbers repeatedly. Stop when a negative number is entered and print the count of non-negative numbers entered.",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program counts non-negative numbers until a negative number is entered.",
+          "code": "count = 0\nwhile True:\n    num = float(input('Enter a number: '))\n    if num < 0:\n        break\n    count += 1\nprint(f'Count of non-negative numbers entered: {count}')"
+        },
+        {
+          "id": 15,
+          "question": "Create a program that asks the user to enter their name and prints a greeting message centered within a 40-character line, padded with '*'. Example: 'Namaste, Ramila!'",
+          "content_type": "programming",
+          "language": "python",
+          "answer": "This program prints a centered greeting with '*' padding.",
+          "code": "name = input('Enter your name: ')\ngreeting = f'Namaste, {name}!'\nprint(greeting.center(40, '*'))"
+        }
+      ]
+    }
+  ]
+}

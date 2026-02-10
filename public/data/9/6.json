@@ -1,0 +1,106 @@
+{
+  "chapter_no": 6,
+  "name": "6. Cyber Security and Digital Citizenship",
+  "questions": [
+    {
+      "question_group": "Answer the following questions briefly.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a) What is cyber security?",
+          "answer": "Cyber security is the practice of protecting computers, networks, and data from digital attacks.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b) How can phishing affect us?",
+          "answer": "Phishing can steal personal information like passwords and bank details by tricking users.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c) Why is it important to use strong passwords?",
+          "answer": "It is important to use strong passwords because they protect accounts from hacking and unauthorized access.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) What is a digital footprint?",
+          "answer": "A digital footprint is the record of activities and information left online by a user.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) Name two ways to secure your browsing experience.",
+          "answer": "We can secure our browsing experience by using HTTPS websites and installing antivirus software.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f) What is the purpose of using antivirus software?",
+          "answer": "The purpose of using antivirus software is to protect a computer from viruses and malicious programs.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g) How does two-factor authentication work?",
+          "answer": "Two-factor authentication works by adding an extra security step that requires a code along with a password.",
+          "content_type": "text"
+        },
+        {
+          "id": 8,
+          "question": "h) Define netiquette.",
+          "answer": "Netiquette refers to proper and polite behavior while using the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "i) Why should public Wi-Fi be avoided for sensitive tasks?",
+          "answer": "We should avoid using public Wi-Fi for sensitive tasks because it is insecure and can expose personal or financial information.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "j) What is the role of privacy settings on social media?",
+          "answer": "The role of privacy settings on social media is to control who can see and access personal information online. They help users protect their data and maintain control over their online presence.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a) Explain the concept of cyber security and its importance.",
+          "answer": "The concept of cyber security and its importance are:<br><ol><li>Cyber security involves protecting computers, networks, programs, and data from digital attacks, unauthorized access, and damage</li><li>It prevents various threats like viruses, hacking, phishing, and data breaches that can compromise personal information</li><li>Cyber security is crucial for individuals to protect their personal data, financial information, and privacy online</li><li>For organizations, it safeguards sensitive business data, maintains customer trust, and ensures compliance with laws</li><li>Overall, cyber security enables safe and secure use of digital technology in our daily lives and global economy</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b) Discuss the methods to prevent cyber crime.",
+          "answer": "The methods to prevent cyber crime are:<br><ol><li>Use strong and unique passwords</li><li>Install and update antivirus software</li><li>Keep systems and software updated</li><li>Avoid suspicious links and emails</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c) What are safe web browsing techniques?",
+          "answer": "The safe web browsing techniques are:<br><ol><li>Visit only trusted and reputable websites</li><li>Check for HTTPS in the URL</li><li>Avoid downloading from unknown sources</li><li>Use updated browsers and security software</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) Describe the importance of digital citizenship.",
+          "answer": "The importance of digital citizenship is:<br><ol><li><b>Responsible Behavior:</b> Digital citizenship teaches individuals to behave responsibly and respectfully when using digital devices and online platforms.</li><li><b>Ethical Decision-Making:</b> It promotes ethical decision-making and proper use of technology in daily life.</li><li><b>Online Safety:</b> Digital citizenship ensures safety by helping users understand how to protect themselves from online threats and respect others' privacy.</li><li><b>Preventing Misuse:</b> It helps prevent issues like cyberbullying, misinformation, and illegal activities by encouraging positive online interactions.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) How can you manage and reduce your digital footprint?",
+          "answer": "Ways to manage and reduce your digital footprint are:<br><ol><li><b>Limit Sharing:</b> Limit sharing personal information online to reduce the amount of data available about you.</li><li><b>Use Privacy Settings:</b> Use privacy settings on social media to control who can see your posts and information.</li><li><b>Delete Old Content:</b> Delete unused accounts and old posts to remove outdated information from your digital footprint.</li><li><b>Think Before Posting:</b> Think carefully before posting content to ensure it aligns with your desired online presence.</li></ol>",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

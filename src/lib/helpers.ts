@@ -6,7 +6,7 @@ import type { Question, QuestionGroup, Chapters } from "./types";
 export function getTotalQuestions(chapter: Chapters): number {
   return chapter.questions.reduce(
     (total, group) => total + group.questions.length,
-    0
+    0,
   );
 }
 
@@ -17,7 +17,7 @@ export function filterQuestions(
   questions: QuestionGroup[],
   searchQuery: string,
   contentFilter: string,
-  groupFilter: string
+  groupFilter: string,
 ): QuestionGroup[] {
   return questions
     .filter((group) => {
@@ -31,8 +31,8 @@ export function filterQuestions(
         const matchesContentType =
           contentFilter === "all" || q.content_type === contentFilter;
         const matchesSearch =
-          q.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          q.answer.toLowerCase().includes(searchQuery.toLowerCase());
+          q.question?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          q.answer?.toLowerCase().includes(searchQuery.toLowerCase());
         return matchesContentType && matchesSearch;
       }),
     }))
@@ -47,7 +47,7 @@ export function formatTextWithBreaks(text: string): { __html: string } {
     __html: text
       ?.split("\n")
       .map((line, index) =>
-        line ? `<span key=${index}>${line}<br /></span>` : "<br />"
+        line ? `<span key=${index}>${line}<br /></span>` : "<br />",
       )
       .join(""),
   };
@@ -57,7 +57,7 @@ export function formatTextWithBreaks(text: string): { __html: string } {
  * Render math text with LaTeX support
  */
 export function parseMathText(
-  text: string
+  text: string,
 ): Array<{ type: "text" | "inline" | "block"; content: string }> {
   const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
 
@@ -121,7 +121,7 @@ export function scrollToTop(behavior: ScrollBehavior = "smooth"): void {
  */
 export function generateQuestionKey(
   groupName: string,
-  questionId: number
+  questionId: number,
 ): string {
   return `${groupName}-${questionId}`;
 }

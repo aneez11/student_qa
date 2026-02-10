@@ -1,0 +1,147 @@
+{
+  "chapter_no": 5,
+  "name": "5. Internet and Social Media",
+  "questions": [
+    {
+      "question_group": "Answer the following questions briefly.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a) What is the Internet?",
+          "answer": "The Internet is a global network of computers that allows users to share information worldwide.",
+          "content_type": "text"
+        },
+        {
+          "id": 2,
+          "question": "b) What is WWW?",
+          "answer": "The World Wide Web (WWW) is a collection of web pages accessed through the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c) Write the key functions of a web browser.",
+          "answer": "The key functions of a web browser are to open, view, and navigate websites on the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) What is URL?",
+          "answer": "URL stands for Uniform Resource Locator and it is the address of a website.",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) What do you mean by remote login?",
+          "answer": "Remote login allows a user to access a computer or system from another location through the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 6,
+          "question": "f) What is protocol?",
+          "answer": "A protocol is a set of rules that governs data communication over a network.",
+          "content_type": "text"
+        },
+        {
+          "id": 7,
+          "question": "g) What is e-mail?",
+          "answer": "E-mail is an electronic method of sending and receiving messages over the Internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 9,
+          "question": "h) What is social media?",
+          "answer": "Social media refers to websites and apps that allow users to interact and share content online.",
+          "content_type": "text"
+        },
+        {
+          "id": 10,
+          "question": "i) Write the appropriate use of social media.",
+          "answer": "Social media should be used for learning, communication, and sharing useful information responsibly.",
+          "content_type": "text"
+        },
+        {
+          "id": 11,
+          "question": "j) How can you secure your online accounts?",
+          "answer": "Online accounts can be secured by using strong passwords and not sharing login details.",
+          "content_type": "text"
+        },
+        {
+          "id": 12,
+          "question": "k) What are the risks of clicking unknown links online?",
+          "answer": "Clicking unknown links can lead to viruses, hacking, or theft of personal information.",
+          "content_type": "text"
+        },
+        {
+          "id": 13,
+          "question": "l) What is the role of HTTPS in web security?",
+          "answer": "HTTPS secures data by encrypting information between the user and the website.",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "a) Explain the key differences between HTTP and HTTPS.",
+          "answer": "The key differences between HTTP and HTTPS are:",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Aspect",
+              "HTTP",
+              "HTTPS"
+            ],
+            "rows": [
+              [
+                "Security",
+                "Not secure, data can be seen by others",
+                "Secure, data is encrypted and protected"
+              ],
+              [
+                "URL starts with",
+                "http://",
+                "https://"
+              ],
+              [
+                "Data protection",
+                "No encryption",
+                "Uses encryption"
+              ],
+              [
+                "Common use",
+                "General websites",
+                "Secure websites like login pages"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "b) Describe how remote login works and its importance in technical support.",
+          "answer": "Remote login allows a user or technician to access a computer from another location using the Internet. It is important in technical support because problems can be diagnosed and fixed without being physically present.",
+          "content_type": "text"
+        },
+        {
+          "id": 3,
+          "question": "c) What are the best practices for safely accessing websites?",
+          "answer": "The best practices for safely accessing websites are:<br><ol><li>Visit only trusted websites</li><li>Check for HTTPS in the URL</li><li>Avoid clicking unknown links</li><li>Use updated browsers and antivirus software</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 4,
+          "question": "d) Discuss the features and benefits of using blogs for online content sharing.",
+          "answer": "The features and benefits of using blogs for online content sharing are:<br><ol><li>Allow publishing articles, images, and videos online</li><li>Help in sharing knowledge and ideas</li><li>Improve writing skills through regular posting</li><li>Reach a wide audience easily</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 5,
+          "question": "e) Explain the appropriate usage of social media and how to maintain privacy.",
+          "answer": "The appropriate usage of social media and ways to maintain privacy are:<br><ol><li>Use for communication and learning</li><li>Share only useful and appropriate information</li><li>Maintain privacy by not sharing personal details</li><li>Use privacy settings and avoid unknown requests</li></ol>",
+          "content_type": "text"
+        }
+      ]
+    }
+  ]
+}

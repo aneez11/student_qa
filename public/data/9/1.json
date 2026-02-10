@@ -1,6 +1,6 @@
 {
   "chapter_no": 1,
-  "name": "Computer System",
+  "name": "1. Computer System",
   "questions": [
     {
       "question_group": "Answer the following questions briefly.",
@@ -214,9 +214,15 @@
           "answer": "Here are the fields that the computer system is used:",
           "content_type": "table",
           "table_data": {
-            "headers": ["Field", "Usage"],
+            "headers": [
+              "Field",
+              "Usage"
+            ],
             "rows": [
-              ["Education", "Used for e-learning, research, and teaching"],
+              [
+                "Education",
+                "Used for e-learning, research, and teaching"
+              ],
               [
                 "Business and Commerce",
                 "Essential for managing operations, e-commerce, and CRM"
@@ -290,7 +296,11 @@
           "answer": "Differences between primary memory and secondary memory are as follows:",
           "content_type": "table",
           "table_data": {
-            "headers": ["Aspect", "Primary Memory", "Secondary Memory"],
+            "headers": [
+              "Aspect",
+              "Primary Memory",
+              "Secondary Memory"
+            ],
             "rows": [
               [
                 "Definition",
@@ -368,7 +378,11 @@
           "answer": "Differences between system software and application software:",
           "content_type": "table",
           "table_data": {
-            "headers": ["Aspect", "System Software", "Application Software"],
+            "headers": [
+              "Aspect",
+              "System Software",
+              "Application Software"
+            ],
             "rows": [
               [
                 "Definition",
