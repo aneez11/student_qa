@@ -1,0 +1,15 @@
+# Redirect all requests to the single-page app entry point
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files and directories directly
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Fallback to index.html for client-side routing
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
