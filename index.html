@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,41 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Quick deploy-version checker to avoid serving stale cached assets.
+      // Fetches /version.json with no-cache and forces a cache-bypassing reload
+      // when a new version is detected.
+      (function () {
+        try {
+          fetch("/version.json", { cache: "no-store" })
+            .then(function (r) {
+              if (!r.ok) return;
+              return r.json();
+            })
+            .then(function (data) {
+              if (!data || !data.version) return;
+              var cur = localStorage.getItem("app_version");
+              if (cur !== data.version) {
+                // Avoid reload loop if already using a cache-busting query
+                var qs = new URLSearchParams(window.location.search || "");
+                if (qs.get("_v") !== data.version) {
+                  localStorage.setItem("app_version", data.version);
+                  // Replace location with a cache-busting query param to force reload
+                  var target =
+                    window.location.pathname +
+                    "?_v=" +
+                    encodeURIComponent(data.version) +
+                    window.location.hash;
+                  window.location.replace(target);
+                }
+              }
+            })
+            .catch(function () {
+              /* ignore errors */
+            });
+        } catch (e) {}
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

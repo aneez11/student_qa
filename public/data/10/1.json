@@ -1,146 +1,140 @@
 {
   "chapter_no": 1,
-  "name": "Network and Telecommunication",
+  "name": "Computer Network and Telecommunication",
   "questions": [
     {
       "question_group": "Very Short Answers",
       "questions": [
         {
           "id": 1,
-          "question": "a. What is communication?",
-          "answer": "Communication is the process of exchanging information between two or more people.",
+          "question": "a) What is telecommunication? Give two examples of telecommunication.",
+          "answer": "Telecommunication refers to the passing of information over a distance via electronic devices such as a telephone, cell phone, or computer through wired or wireless data transmission media without being physically present.. Two examples are telephone communication and radio broadcasting.",
           "content_type": "text"
         },
         {
           "id": 2,
-          "question": "b. What is telecommunication?",
-          "answer": "Telecommunication is the transmission of information over a distance using electronic means.",
+          "question": "b) What is broadband? State two differences between broadband and dial-up technology.",
+          "answer": "Broadband is a high-speed, continuous internet connection technology that can carry huge amounts of data quickly over wired or wireless networks.  Differences: 1. Broadband is much faster than dial-up. 2. Broadband allows using the phone and internet simultaneously, while dial-up does not.",
           "content_type": "text"
         },
         {
           "id": 3,
-          "question": "c. What is data communication?",
-          "answer": "Data communication is the exchange of data between devices through a transmission medium.",
+          "question": "c) What is bandwidth? How is it measured?",
+          "answer": "Bandwidth is the maximum amount of data that a network connection can carry in one second.  Bandwidth is measured in bps (bits per second), such as Kbps (kilobits per second), Mbps (megabits per second), and Gbps (gigabits per second). ",
           "content_type": "text"
         },
         {
           "id": 4,
-          "question": "d. What is transmission signal?",
-          "answer": "A transmission signal is an electrical or electromagnetic signal used to transmit data.",
+          "question": "d) What is throughput? How is it different from bandwidth?",
+          "answer": "Throughput is the actual amount of data packets that passes successfully in one second through a given network connection.  It differs from bandwidth because bandwidth is the theoretical maximum capacity, whereas throughput is the real-world speed achieved.",
           "content_type": "text"
         },
         {
           "id": 5,
-          "question": "e. What is bandwidth?",
-          "answer": "Bandwidth is the capacity of a communication channel to carry data, measured in bits per second (bps).",
+          "question": "e) What is data packet? How does it help in computer network?",
+          "answer": "A data packet is a small unit of data broken down from a larger message for transmission. It helps in networking by allowing data to travel through different routes and ensuring efficient error correction and retransmission.",
           "content_type": "text"
         },
         {
           "id": 6,
-          "question": "f. What is communication media?",
-          "answer": "Communication media is the physical or wireless path used to transmit data between devices.",
+          "question": "f) What is frequency in telecommunication? How is it measured?",
+          "answer": "Frequency is the number of times the signal wave goes up and down in one second. It is measured in Hertz (Hz)  as (kHz, MHz, and GHz).",
           "content_type": "text"
         },
         {
           "id": 7,
-          "question": "g. What is twisted pair cable?",
-          "answer": "A twisted pair cable is a type of cable with pairs of wires twisted together to reduce interference.",
+          "question": "g) What is mode of data transmission?",
+          "answer": "Mode of data transmission refers to the direction of signal flow between two devices. The three modes are Simplex (one-way), Half-duplex (both ways, but one at a time), and Full-duplex (both ways simultaneously).",
           "content_type": "text"
         },
         {
           "id": 8,
-          "question": "h. What is coaxial cable?",
-          "answer": "A coaxial cable is a type of cable with a central conductor, insulating layer, and metallic shield used for high-frequency signals.",
+          "question": "h) What is wireless technology? Why is it more popular?",
+          "answer": "Wireless technology is a method of data transmission without using physical wires or cables. It is popular because it provides mobility, is easy to install, and allows multiple devices to connect without physical constraints.",
           "content_type": "text"
         },
         {
           "id": 9,
-          "question": "i. What is fiber optic?",
-          "answer": "Fiber optic is a high-speed transmission medium that uses light to transmit data through glass or plastic fibers.",
+          "question": "i) What is media converter? Write it's function.",
+          "answer": "A media converter is a networking device used to connect two different types of media, such as fiber optic and copper cables. Its function is to convert signals from one media type to another to extend network distances.",
           "content_type": "text"
         },
         {
           "id": 10,
-          "question": "j. What is wireless transmission media?",
-          "answer": "Wireless transmission media transmits data through the air using radio, microwave, or infrared signals.",
+          "question": "j) How does Wi-Fi transmit data?",
+          "answer": "Wi-Fi uses radio waves to transmit data between wireless devices and a network through an access point, which is often built into a Wi-Fi router.",
           "content_type": "text"
         },
         {
           "id": 11,
-          "question": "k. What is satellite communication technology?",
-          "answer": "It is a communication method that uses satellites to send and receive signals over long distances.",
+          "question": "k) How does data transmit in computer network?",
+          "answer": "Data is transmitted in a network by being broken into packets, converted into electronic, light, or radio signals, and sent through a transmission medium (wired or wireless) following a specific protocol.",
           "content_type": "text"
         },
         {
           "id": 12,
-          "question": "l. What is a computer network?",
-          "answer": "A computer network is a group of interconnected computers that share data and resources.",
+          "question": "l) How is switch different from hub?",
+          "answer": "A hub broadcasts data to all connected devices, whereas a switch is an 'intelligent' device that sends data only to the specific destination device by using its MAC address.",
           "content_type": "text"
         },
         {
           "id": 13,
-          "question": "m. What is a router?",
-          "answer": "A router is a device that forwards data packets between computer networks.",
+          "question": "m) What is bridge?",
+          "answer": "A bridge is a networking device that connects two separate local area networks (LANs) or network segments that use the same protocol to make them function as a single network.",
           "content_type": "text"
         },
         {
           "id": 14,
-          "question": "n. What is a gateway?",
-          "answer": "A gateway is a device that connects different networks using different protocols.",
+          "question": "n) What is router? How is it different from switch?",
+          "answer": "A router is a device that connects different networks and directs data packets between them. A router connects networks (like LAN to WAN), whereas a switch connects devices within a single network (LAN).",
           "content_type": "text"
         },
         {
           "id": 15,
-          "question": "o. What is protocol?",
-          "answer": "A protocol is a set of rules for transmitting data over a network.",
+          "question": "o) What is network topology?",
+          "answer": "Network topology is the physical or logical arrangement of computers, cables, and other components in a network. Common types include Bus, Star, and Ring topologies.",
           "content_type": "text"
         },
         {
           "id": 16,
-          "question": "p. What is LAN?",
-          "answer": "LAN (Local Area Network) is a network that connects computers within a small area like a home, school, or office.",
+          "question": "p) Write the data flow technique of ring topology.",
+          "answer": "In a ring topology, data flows from one computer to the next in a circular manner, usually in one direction (unidirectional). Each computer acts as a repeater to boost the signal until it reaches the destination.",
           "content_type": "text"
         },
         {
           "id": 17,
-          "question": "q. What is MAN?",
-          "answer": "MAN (Metropolitan Area Network) is a network that covers a city or a large campus.",
+          "question": "q) What is LAN? Write its features.",
+          "answer": "LAN (Local Area Network) is a network that covers a small geographical area like a room or building. Features: 1. High data transfer speed. 2. Lower cost and easy maintenance.",
           "content_type": "text"
         },
         {
           "id": 18,
-          "question": "r. What is WAN?",
-          "answer": "WAN (Wide Area Network) is a network that spans a large geographical area, such as a country or the world.",
+          "question": "r) Write the features of client-server architecture.",
+          "answer": "Some Features of Client-Server Architecture Are: 1. Centralized control where the server manages resources. 2. High security and easy backup since data is stored on the server. 3. Better performance for large networks.",
           "content_type": "text"
         },
         {
           "id": 19,
-          "question": "s. What is network topology?",
-          "answer": "Network topology is the arrangement or layout of computers in a network.",
+          "question": "s) What is default gateway?",
+          "answer": "AA default gateway is a network device, usually a router, that connects a local network to other networks or the Internet.",
           "content_type": "text"
         },
         {
           "id": 20,
-          "question": "t. What is bus topology?",
-          "answer": "Bus topology connects all devices to a single central cable called the bus.",
+          "question": "t) What is internet? Mention its merits and demerits.",
+          "answer": "The internet is a global network of interconnected networks. Merits: Easy access to information and fast communication. Demerits: Security risks (hacking/viruses) and possibility of addiction or misinformation.",
           "content_type": "text"
         },
         {
           "id": 21,
-          "question": "u. What is star topology?",
-          "answer": "Star topology connects all devices to a central device like a switch or hub.",
+          "question": "u) What is IP address?",
+          "answer": "An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.",
           "content_type": "text"
         },
         {
           "id": 22,
-          "question": "v. What is ring topology?",
-          "answer": "Ring topology connects devices in a circular fashion where each device is connected to two others.",
-          "content_type": "text"
-        },
-        {
-          "id": 23,
-          "question": "w. What is packet or datagram?",
-          "answer": "A packet or datagram is a small unit of data sent over a network.",
+          "question": "v) What is protocol?",
+          "answer": "A protocol is a set of formal rules and standards that govern how data is transmitted and received between devices in a computer network.",
           "content_type": "text"
         }
       ]
@@ -423,6 +417,327 @@
           "question": "h. Infrared wave.",
           "answer": "Infrared waves are electromagnetic waves with frequencies lower than visible light but higher than radio waves. They are commonly used for short-range wireless communication and sensing applications.\n\nInfrared technology is widely used in remote controls, allowing devices like TVs and air conditioners to receive commands without wires. It is also used in thermal imaging to detect heat signatures for medical, military, and industrial purposes.\n\nInfrared waves cannot penetrate walls, which makes them secure for close-range communication but limits their range. They also have minimal interference with other wireless technologies.\n\nDue to these properties, infrared remains a popular choice for certain communication tasks and sensing applications, despite the rise of radio frequency wireless technologies.",
           "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Answer the following questions comprehensively:",
+      "questions": [
+        {
+          "id": 23,
+          "question": "a. Explain the differences between wired and wireless communication media with examples.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Basis of Comparison",
+              "Wired Communication Media",
+              "Wireless Communication Media"
+            ],
+            "rows": [
+              [
+                "Definition",
+                "Uses physical cables or wires to transmit data signals.",
+                "Uses electromagnetic waves to transmit data through the air."
+              ],
+              [
+                "Mobility",
+                "Devices are fixed in one place because of cable connections.",
+                "Devices can move around freely within the signal range."
+              ],
+              [
+                "Examples",
+                "Twisted-pair cable, Coaxial cable, Fiber-optic cable.",
+                "Wi-Fi, Bluetooth, Cellular networks (3G/4G/5G)."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "b. Explain the optical fiber working principle through the total internal reflection.",
+          "answer": "Optical fiber works on the principle of Total Internal Reflection (TIR). When digital data converted into light pulses enters the glass core at a specific angle, it bounces repeatedly off the core-cladding boundary and travels forward through the tube without escaping, allowing super-fast data transmission over long distances.",
+          "content_type": "text"
+        },
+        {
+          "id": 25,
+          "question": "c. Compare structure, advantages, and disadvantages of bus topology, star topology and ring topology.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Topology Type",
+              "Physical Structure",
+              "Main Advantage",
+              "Main Disadvantage"
+            ],
+            "rows": [
+              [
+                "Bus Topology",
+                "All computers connect directly to a single central cable (backbone).",
+                "It is cheap and very easy to set up in small rooms.",
+                "If the central backbone cable breaks, the whole network fails completely."
+              ],
+              [
+                "Star Topology",
+                "Every computer connects to a central device like a hub or switch.",
+                "Easy to add new devices and find faults without stopping others.",
+                "If the central hub or switch breaks down, the entire network stops."
+              ],
+              [
+                "Ring Topology",
+                "Computers are connected in a circle, forming a closed loop.",
+                "Data flows in an orderly way, so there are no data collisions.",
+                "If even one computer or link breaks, the entire network fails."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "d. Define the term bandwidth and throughput in data communication.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Term",
+              "Simple Definition for Grade 10 Students"
+            ],
+            "rows": [
+              [
+                "Bandwidth",
+                "The maximum theoretical data carrying capacity of a network link measured in bits per second (bps)."
+              ],
+              [
+                "Throughput",
+                "The actual, real-world speed at which data is successfully sent and received during everyday use."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "e. Explain the key characteristics and applications of 3G, 4G, and 5G mobile communication technology.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Generation",
+              "Key Characteristics",
+              "Common Applications"
+            ],
+            "rows": [
+              [
+                "3G",
+                "Digital digital mobile internet with speeds up to a few Mbps.",
+                "Basic mobile web browsing, sending emails, and video calling."
+              ],
+              [
+                "4G",
+                "High-speed mobile broadband with much better data rates.",
+                "Watching high-definition (HD) YouTube videos and online gaming."
+              ],
+              [
+                "5G",
+                "Ultra-high speed data rates and super low latency (no delay).",
+                "Smart city sensors, self-driving cars, and virtual reality (VR)."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "f. Define the function of repeaters, hubs, and switches in computer network.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Network Device",
+              "Core Function in a Network"
+            ],
+            "rows": [
+              [
+                "Repeater",
+                "It amplifies and cleans up weak electrical signals so data can travel longer distances without loss."
+              ],
+              [
+                "Hub",
+                "It is a non-intelligent device that takes data from one port and broadcasts it to all other ports."
+              ],
+              [
+                "Switch",
+                "It is an intelligent device that reads the destination address and sends data only to that specific computer."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "g. Describe the process of data transmission with radio waves, microwaves, and infrared in wireless communication technology.",
+          "answer": "1. Radio Waves: Data is turned into radio frequencies that spread in all directions and can pass through solid walls (used in Wi-Fi). 2. Microwaves: Data travels over long distances via straight line-of-sight paths between tall towers or satellites. 3. Infrared: Data is sent using light pulses over short distances and requires a clear, unblocked path (used in TV remotes).",
+          "content_type": "text"
+        },
+        {
+          "id": 30,
+          "question": "h. Describe the application of satellites in telecommunication, and the concept of geostationary orbit.",
+          "answer": "Satellites are used to relay television channels, telephone calls, and internet services to remote locations across the earth. A geostationary orbit is a fixed path 36,000 km above Earth's equator where the satellite moves at the exact speed of Earth's rotation, making it look completely still from a ground antenna.",
+          "content_type": "text"
+        },
+        {
+          "id": 31,
+          "question": "i. Compare LAN, MAN and WAN based on the coverage area, speed and cost.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Network Type",
+              "Geographical Coverage Area",
+              "Data Transfer Speed",
+              "Setup and Hardware Cost"
+            ],
+            "rows": [
+              [
+                "LAN",
+                "Small area like a room, school, or building.",
+                "Very high speed.",
+                "Low cost."
+              ],
+              [
+                "MAN",
+                "Medium area like a town or an entire city.",
+                "Moderate speed.",
+                "Medium cost."
+              ],
+              [
+                "WAN",
+                "Large country, continent, or the whole planet.",
+                "Lower real-world speed.",
+                "Very high cost."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 32,
+          "question": "j. Write the function of RJ45 connectors and media converters in networking.",
+          "answer": "The function of an RJ45 connector is to serve as the physical plug at the end of a twisted-pair cable to link computers to wall jacks, switches, or routers. The function of a media converter is to change signals from one cable type to another, such as translating light signals from a fiber optic cable into electrical signals for a regular copper network cable.",
+          "content_type": "text"
+        },
+        {
+          "id": 33,
+          "question": "k. Explain the differences between a client and a server in a network setup.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Feature",
+              "Client Computer",
+              "Server Computer"
+            ],
+            "rows": [
+              [
+                "Role",
+                "Requests files, web pages, or services from the network.",
+                "Processes and provides the requested files or services."
+              ],
+              [
+                "Hardware",
+                "Regular personal computer or mobile phone used by a student.",
+                "Highly powerful computer with massive storage that runs 24/7."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 34,
+          "question": "l. Explain how physical barriers and interference affect wireless communication.",
+          "answer": "Physical barriers like concrete walls, metal sheets, and trees absorb or reflect wireless signals, causing weak connectivity or dead zones. Radio interference from devices like microwave ovens or neighboring wireless routers mixes up the signals, causing slow download speeds and dropped network connections.",
+          "content_type": "text"
+        },
+        {
+          "id": 35,
+          "question": "m. What is router? Explain the function of a router in a computer network.",
+          "answer": "A router is an intelligent networking device used to join different networks together. Its main functions are to read incoming data packet addresses, determine the fastest and safest digital path available, and route those packets correctly from your local home network out to the global internet.",
+          "content_type": "text"
+        },
+        {
+          "id": 36,
+          "question": "n. Explain IPv4 addressing system and its use in computer networks.",
+          "answer": "An IPv4 address is a unique 32-bit numerical identity address given to every device on a network, usually written as four numbers separated by dots (e.g., 192.168.1.1). Its main use is to act like a digital mailing address so that network packets can find and reach the correct computer without getting lost.",
+          "content_type": "text"
+        },
+        {
+          "id": 37,
+          "question": "o. Explain the importance of protocols in data communication.",
+          "answer": "Protocols are incredibly important because they act as a common set of digital rules for communication. Without protocols like HTTP or TCP/IP, computers made by different companies or running different operating systems would not be able to format, transmit, or understand each other's data correctly.",
+          "content_type": "text"
+        },
+        {
+          "id": 38,
+          "question": "p. Write the key features of each type of network.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Network Category",
+              "Key Identifying Features"
+            ],
+            "rows": [
+              [
+                "LAN (Local Area Network)",
+                "Owned privately, operates inside a small school or building, and runs at extremely fast data speeds."
+              ],
+              [
+                "MAN (Metropolitan Area Network)",
+                "Connects multiple local networks across a city district, often owned by city councils or cable companies."
+              ],
+              [
+                "WAN (Wide Area Network)",
+                "Spans across vast national or international boundaries, combines multiple media types, and includes the global Internet."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "question": "q. Explain each type of topology with key features.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Topology Type",
+              "Key Design Features"
+            ],
+            "rows": [
+              [
+                "Bus Topology",
+                "Uses a single linear backbone wire with terminators at both ends; simple layout but prone to data collisions."
+              ],
+              [
+                "Star Topology",
+                "Features a central point of connection using a switch; highly stable because a broken node cable doesn't ruin the whole network."
+              ],
+              [
+                "Ring Topology",
+                "Forms a complete token-passing circular ring pathway where data bits travel token-style in one set direction."
+              ]
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "question": "r. Write the differences between Client-server architecture and Peer-to-Peer network architecture.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Comparison Feature",
+              "Client-Server Architecture",
+              "Peer-to-Peer (P2P) Architecture"
+            ],
+            "rows": [
+              [
+                "Central Control",
+                "Data and security are managed completely by a single central server.",
+                "Every computer has equal power and manages its own files and security."
+              ],
+              [
+                "Cost and Setup",
+                "More expensive and difficult to set up, requiring special server software.",
+                "Cheaper and very easy to set up using standard computer options."
+              ]
+            ]
+          }
         }
       ]
     }
