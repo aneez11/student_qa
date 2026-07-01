@@ -1,134 +1,777 @@
 {
   "chapter_no": 2,
-  "name": "Internet and Services",
+  "name": "Database Management System",
   "questions": [
     {
-      "question_group": "Write very short answer of the following questions:",
+      "question_group": "Answer the following questions briefly:",
       "questions": [
         {
           "id": 1,
-          "question": "a. What is Internet?",
-          "answer": "The Internet is a global network of interconnected computers that share information.",
+          "question": "a. What is the main difference between data and information?",
+          "answer": "<p>Data is raw, unorganized facts and figures, whereas information is processed, meaningful data that helps in decision-making.</p>",
           "content_type": "text"
         },
         {
           "id": 2,
-          "question": "b. What is meant by going online?",
-          "answer": "Going online means connecting a device to the Internet.",
+          "question": "b. Define DBMS with one clear example.",
+          "answer": "<p>A DBMS (Database Management System) is software used to create, manage, and retrieve data from a database efficiently.</p><p>Example: MySQL.</p>",
           "content_type": "text"
         },
         {
           "id": 3,
-          "question": "c. What is the World Wide Web?",
-          "answer": "The World Wide Web is a collection of web pages accessed through the Internet.",
+          "question": "c. What is RDBMS?",
+          "answer": "<p>An RDBMS (Relational Database Management System) is a database system that stores data in the form of related tables consisting of rows and columns.</p>",
           "content_type": "text"
         },
         {
           "id": 4,
-          "question": "d. What is e-mail?",
-          "answer": "E-mail is an electronic method of sending and receiving messages over the Internet.",
+          "question": "d. Why is a primary key important in a database table?",
+          "answer": "<p>A primary key is important because it uniquely identifies each record in a database table and prevents duplicate entries.</p>",
           "content_type": "text"
         },
         {
           "id": 5,
-          "question": "e. What is Telnet?",
-          "answer": "Telnet is a protocol used to access a remote computer over a network.",
+          "question": "e. Write the use of the FOREIGN KEY in relational databases.",
+          "answer": "<p>A foreign key is used to link two tables together by referencing the primary key of another table to create a relationship between them.</p>",
           "content_type": "text"
         },
         {
           "id": 6,
-          "question": "f. What is meant by file transfer?",
-          "answer": "File transfer is the process of sending or receiving files through the Internet.",
+          "question": "f. What is the purpose of the CREATE command in MySQL?",
+          "answer": "<p>The purpose of the CREATE command is to build a new database or create a new table with specified structures in MySQL.</p>",
           "content_type": "text"
         },
         {
           "id": 7,
-          "question": "g. What is IRC?",
-          "answer": "IRC is Internet Relay Chat used for real-time text communication.",
+          "question": "g. Name any two DDL commands.",
+          "answer": "<p>Two DDL (Data Definition Language) commands are CREATE and ALTER.</p>",
           "content_type": "text"
         },
         {
           "id": 8,
-          "question": "h. What is video-conferencing?",
-          "answer": "Video-conferencing allows people to communicate using live video and audio over the Internet.",
+          "question": "h. Why do we use the SELECT command in MySQL?",
+          "answer": "<p>We use the SELECT command to retrieve and display specific data or records from one or more database tables.</p>",
           "content_type": "text"
         },
         {
           "id": 9,
-          "question": "i. What is meant by e-commerce?",
-          "answer": "E-commerce is buying and selling goods and services through the Internet.",
+          "question": "i. List any two examples of clauses used with SQL statements.",
+          "answer": "<p>Two examples of clauses used with SQL statements are the WHERE clause and the ORDER BY clause.</p>",
           "content_type": "text"
         },
         {
           "id": 10,
-          "question": "j. What is news group?",
-          "answer": "A news group is an online discussion forum for sharing messages on specific topics.",
+          "question": "j. What is the function of the ORDER BY clause in MySQL?",
+          "answer": "<p>The function of the ORDER BY clause is to sort the retrieved records in either ascending or descending order based on specified columns.</p>",
           "content_type": "text"
         },
         {
           "id": 11,
-          "question": "k. What is Internet Telephony?",
-          "answer": "Internet Telephony is making voice calls using the Internet.",
+          "question": "k. Which command is used to remove specific records from a table? Write its syntax.",
+          "answer": "<p>The DELETE command is used to remove specific records.</p><p>Syntax: <code>DELETE FROM table_name WHERE condition;</code></p>",
           "content_type": "text"
         },
         {
           "id": 12,
-          "question": "l. What do you mean by Internet connection?",
-          "answer": "Internet connection is the link that allows a device to access the Internet.",
+          "question": "l. Write any two differences between DDL and DML commands.",
+          "answer": "<ol><li>DDL commands deal with the structure of the database, while DML commands deal with the actual data.</li><li>Example of DDL is CREATE, whereas example of DML is INSERT.</li></ol>",
           "content_type": "text"
         },
         {
           "id": 13,
-          "question": "m. What is an ISP?",
-          "answer": "An ISP is a company that provides Internet access to users.",
+          "question": "m. Write any two reasons why we use a database management system (DBMS) in computing.",
+          "answer": "<p>We use a DBMS because it reduces data redundancy (duplication) and provides better data security and sharing options.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 14,
+          "question": "n. What do you mean by redundancy in a database system?",
+          "answer": "<p>Redundancy means the unnecessary duplication of the same data items in multiple files or locations within a database system.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 15,
+          "question": "o. Why should the WHERE clause be used carefully with UPDATE and DELETE commands?",
+          "answer": "<p>The WHERE clause must be used carefully because omitting it will accidentally update or delete every single record in the entire table.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 16,
+          "question": "p. What is relationship in MySQL?",
+          "answer": "<p>A relationship in MySQL is a link or association created between two or more tables using primary keys and foreign keys to avoid duplication.</p>",
           "content_type": "text"
         }
       ]
     },
     {
-      "question_group": "Write short answer of the following questions:",
+      "question_group": "Answer the following questions comprehensively:",
       "questions": [
         {
-          "id": 14,
-          "question": "a. Why is Internet mandatory for day-to-day activities?",
-          "answer": "The Internet is mandatory for day-to-day activities because it helps in communication, education, banking, shopping, and entertainment. It saves time and increases efficiency by providing instant access to information and services.",
-          "content_type": "text"
-        },
-        {
-          "id": 15,
-          "question": "b. Why do you use search engine?",
-          "answer": "Search engines are used to find information quickly and easily on the Internet. They help users locate websites, images, videos, and documents related to a specific topic by entering keywords.",
-          "content_type": "text"
-        },
-        {
-          "id": 16,
-          "question": "c. Why do you use online banking?",
-          "answer": "Online banking is used to perform banking activities such as fund transfer, balance inquiry, and bill payment through the Internet. It provides convenience, saves time, and allows users to access banking services anytime.",
-          "content_type": "text"
-        },
-        {
           "id": 17,
-          "question": "d. Why is Internet Telephony more efficient than traditional PSTN?",
-          "answer": "Internet Telephony is more efficient than traditional PSTN because it is cheaper and uses the Internet for communication. It supports voice, video, and multimedia communication with better flexibility and lower cost.",
-          "content_type": "text"
+          "question": "a. Explain the differences between a database and a DBMS with examples.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Basis of Comparison",
+              "Database",
+              "Database Management System (DBMS)"
+            ],
+            "rows": [
+              [
+                "Meaning",
+                "It is an organized collection of related data stored electronically.",
+                "It is a software application used to manage, store, and retrieve data from a database."
+              ],
+              [
+                "Purpose",
+                "It simply holds and saves the raw data values.",
+                "It provides tools to search, update, delete, and secure that data."
+              ],
+              [
+                "Examples",
+                "A school student record file, a phonebook list.",
+                "MySQL, MS Access, Oracle, PostgreSQL."
+              ]
+            ]
+          }
         },
         {
           "id": 18,
-          "question": "e. Why is ISP needed?",
-          "answer": "ISP is needed because it provides the necessary infrastructure and services required to access the Internet. Without an ISP, users cannot connect their devices to the global Internet.",
+          "question": "b. What is a primary key? List any four features or functions of a primary key in a table.",
+          "answer": "<p>A primary key is a field or combination of fields that uniquely identifies each record in a database table.</p><p>Four key features or functions of a primary key are:</p><ol><li>It cannot contain duplicate values.</li><li>It cannot accept NULL (empty) values.</li><li>It helps to automatically create an index for faster searching.</li><li>It is used to form relationships with foreign keys in other tables.</li></ol>",
           "content_type": "text"
         },
         {
           "id": 19,
-          "question": "f. Write the features of online banking.",
-          "answer": "The features of online banking include fund transfer, bill payment, balance inquiry, transaction history, and account management. It also provides security features such as passwords and OTP verification.",
+          "question": "c. What is the purpose of the FOREIGN KEY in MySQL? Explain with a suitable example.",
+          "answer": "<p>The purpose of a foreign key is to link two tables together and maintain referential integrity between them. It is a column in one table that points to the primary key of another table.</p><p>For example, in a school database, the 'Student_ID' is a primary key in the Students table, but when added to the Fees table, it acts as a foreign key to track which specific student paid the money.</p>",
           "content_type": "text"
         },
         {
           "id": 20,
-          "question": "g. What are the resources and medium of online banking?",
-          "answer": "The resources of online banking include a computer or mobile device, Internet connection, and banking software or app. The medium of online banking is the Internet, which connects users to banking servers.",
+          "question": "d. Write the differences between DDL and DML commands with any two examples each.",
+          "content_type": "table",
+          "table_data": {
+            "headers": [
+              "Feature",
+              "Data Definition Language (DDL)",
+              "Data Manipulation Language (DML)"
+            ],
+            "rows": [
+              [
+                "Main Purpose",
+                "Used to build or alter the physical structure or schema of database tables.",
+                "Used to manage and manipulate the actual data records inside the tables."
+              ],
+              [
+                "Effect",
+                "Changes affect the entire framework of the object (e.g., adding a new column).",
+                "Changes only affect the specific data rows inside the existing table columns."
+              ],
+              [
+                "Examples",
+                "CREATE, DROP, ALTER",
+                "INSERT, UPDATE, DELETE"
+              ]
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "e. Describe the function of the following SQL commands: CREATE, DROP, INSERT, and SELECT.",
+          "answer": "<ol><li><strong>CREATE:</strong> Used to construct new structures like databases or empty tables.</li><li><strong>DROP:</strong> Completely deletes an entire table or database along with all its data from the system.</li><li><strong>INSERT:</strong> Adds new data records or rows into an existing table.</li><li><strong>SELECT:</strong> Retrieves and displays specific data or records from a table based on user requests.</li></ol>",
           "content_type": "text"
+        },
+        {
+          "id": 22,
+          "question": "f. What are clauses in SQL? Explain the uses of WHERE, ORDER BY, and GROUP BY clauses.",
+          "answer": "<p>Clauses are built-in keywords used with SQL statements to filter, sort, or organize data.</p><ol><li><strong>WHERE:</strong> Used to filter data records based on a specific condition.</li><li><strong>ORDER BY:</strong> Used to sort the output rows in ascending (ASC) or descending (DESC) alphabetical or numerical order.</li><li><strong>GROUP BY:</strong> Used to gather data from multiple rows and arrange them into summary groups, often used with functions like SUM or COUNT.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 23,
+          "question": "g. Define operators in SQL. List any four relational operators with examples.",
+          "answer": "<p>Operators are special characters or keywords used in SQL conditions to perform calculations and data comparisons.</p><ol><li>Equal to (=) e.g., <code>WHERE age = 15</code>.</li><li>Greater than (&gt;) e.g., <code>WHERE marks &gt; 80</code>.</li><li>Less than (&lt;) e.g., <code>WHERE price &lt; 500</code>.</li><li>Not equal to (!= or &lt;&gt;) e.g., <code>WHERE city != 'Kathmandu'</code>.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 24,
+          "question": "h. What is a query in MySQL? Explain how queries help in managing database records.",
+          "answer": "<p>A query is a formal request or command written in SQL to retrieve, insert, modify, or remove data from a database.</p><p>Queries help in managing database records by allowing users to instantly search through millions of records, extract meaningful reports, update multiple entries at once, and keep information systematically sorted.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 25,
+          "question": "i. Explain with examples how the UPDATE and DELETE commands work with the WHERE clause.",
+          "answer": "<p>The WHERE clause tells UPDATE or DELETE exactly which rows to target. Without it, the entire table is affected.</p><p>For example, <code>UPDATE Students SET grade = 10 WHERE roll_no = 5;</code> will change the grade of only student number 5. Similarly, <code>DELETE FROM Students WHERE roll_no = 5;</code> will remove only that single student's row from the database.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 26,
+          "question": "j. Write the importance of using a DBMS in computing. Mention any four advantages of a DBMS.",
+          "answer": "<p>A DBMS is important because it replaces traditional error-prone paper filing systems with a reliable digital method.</p><ol><li>Minimizes data redundancy (unnecessary duplication).</li><li>Increases data security by using user passwords.</li><li>Makes data sharing easy among multiple users.</li><li>Ensures data consistency so that information matches everywhere.</li></ol>",
+          "content_type": "text"
+        },
+        {
+          "id": 27,
+          "question": "k. What are SQL constraints? State their importance.",
+          "answer": "<p>SQL constraints are special rules or limits applied to table columns to control what kind of data can be entered.</p><p>They are important because they protect the database from bad inputs, guarantee data accuracy, and maintain overall reliability (integrity) of information.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 28,
+          "question": "l) What do you mean by a report in MySQL? How does it help users?",
+          "answer": "<p>A report is the final processed, well-formatted output generated from database queries, meant for viewing or printing.</p><p>It helps users by turning complex raw numbers and letters into clean tables, summaries, and graphs that are easy for teachers or managers to read and understand.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 29,
+          "question": "m) Define a composite key. Explain when it is used in a database.",
+          "answer": "<p>A composite key is a primary key that is made up of two or more columns combined together to uniquely identify a row.</p><p>It is used when a single column alone is not enough to identify a record uniquely, such as in a project assignment table where a combination of Student_ID and Project_ID is required to make every row unique.</p>",
+          "content_type": "text"
+        },
+        {
+          "id": 30,
+          "question": "n) What do you mean by a relationship in DBMS? Explain its types.",
+          "answer": "<p>A relationship in a DBMS is a logical link established between two or more tables using primary and foreign keys.</p><ol><li>One-to-One (1:1), where one row in Table A links to only one row in Table B.</li><li>One-to-Many (1:M), where one row in Table A links to multiple rows in Table B.</li><li>Many-to-Many (M:M), where multiple rows in Table A link to multiple rows in Table B.</li></ol>",
+          "content_type": "text"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity-1",
+      "questions": [
+        {
+          "id": 31,
+          "question": "1. Create a table structure and modify as given:<br>a. Create a table named Book with the following columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field (Column Name)</th><th>Data Type</th></tr></thead><tbody><tr><td>BookID</td><td>Integer, Primary Key</td></tr><tr><td>Title</td><td>Varchar(50)</td></tr><tr><td>Author</td><td>Varchar(50)</td></tr><tr><td>Price</td><td>Decimal(6,2)</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This SQL statement creates a new table named Book with the specified columns and defines BookID as the primary key.",
+          "code": "CREATE TABLE Book (\n    BookID INT PRIMARY KEY,\n    Title VARCHAR(50),\n    Author VARCHAR(50),\n    Price DECIMAL(6,2)\n);"
+        },
+        {
+          "id": 32,
+          "question": "b. Add a new column Publisher (Varchar(50)) and PublishedYear (INT) to the Book table",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This alter table command adds both the Publisher and PublishedYear columns to the existing Book table structure.",
+          "code": "ALTER TABLE Book\nADD Publisher VARCHAR(50),\nADD PublishedYear INT;"
+        },
+        {
+          "id": 33,
+          "question": "c. Add a new column Publisher (Varchar(50)) and PublishedYear (INT) to the Book table. The expected table structure is as below:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field</th><th>Type</th><th>Null</th><th>Key</th></tr></thead><tbody><tr><td>BookID</td><td>int</td><td>NO</td><td>PRI</td></tr><tr><td>Title</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>Author</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>Price</td><td>decimal(6,2)</td><td>YES</td><td></td></tr><tr><td>Publisher</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>PublishedYear</td><td>int</td><td>YES</td><td></td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This structural change appends the specified layout fields into your current working database definition framework.",
+          "code": "ALTER TABLE Book\nADD Publisher VARCHAR(50),\nADD PublishedYear INT;"
+        },
+        {
+          "id": 34,
+          "question": "d. Change the data type of the Price column in the Book table from Decimal(6,2) to INT. The expected table structure is as below:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field</th><th>Type</th><th>Null</th><th>Key</th></tr></thead><tbody><tr><td>BookID</td><td>int</td><td>NO</td><td>PRI</td></tr><tr><td>Title</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>Author</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>Price</td><td>int</td><td>YES</td><td></td></tr><tr><td>Publisher</td><td>varchar(50)</td><td>YES</td><td></td></tr><tr><td>PublishedYear</td><td>int</td><td>YES</td><td></td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This modification query alters the schema definition ruleset specifically targeting data type changes on a single column.",
+          "code": "ALTER TABLE Book\nMODIFY Price INT;"
+        },
+        {
+          "id": 35,
+          "question": "e. Remove the Publisher column from the Book table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This syntax drops the specified attribute constraint along with any saved parameters directly associated with that key location item.",
+          "code": "ALTER TABLE Book\nDROP COLUMN Publisher;"
+        },
+        {
+          "id": 36,
+          "question": "f. Rename the Book table to LibraryBook, then rename the column Title to BookTitle.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This alters the name settings configuration profiles step-by-step changing first the parent table link reference item followed by individual field configurations.",
+          "code": "ALTER TABLE Book RENAME TO LibraryBook;\nALTER TABLE LibraryBook RENAME COLUMN Title TO BookTitle;"
+        },
+        {
+          "id": 37,
+          "question": "2. Create a table structure and modify as given:<br>a. Create a table named Student with the following columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field (Column Name)</th><th>Data Type</th></tr></thead><tbody><tr><td>StudentID</td><td>INT, Primary Key</td></tr><tr><td>FullName</td><td>VARCHAR(50)</td></tr><tr><td>Age</td><td>INT</td></tr><tr><td>Gender</td><td>VARCHAR(30)</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This operational block handles initial table declaration rulesets allocating correct storage space configurations across distinct attributes.",
+          "code": "CREATE TABLE Student (\n    StudentID INT PRIMARY KEY,\n    FullName VARCHAR(50),\n    Age INT,\n    Gender VARCHAR(30)\n);"
+        },
+        {
+          "id": 38,
+          "question": "b. Add two new columns ContactNumber VARCHAR(15) and Email VARCHAR(50) to the Student table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This structural tracking updates the working table layout fields updating it dynamically across schema modifications.",
+          "code": "ALTER TABLE Student\nADD ContactNumber VARCHAR(15),\nADD Email VARCHAR(50);"
+        },
+        {
+          "id": 39,
+          "question": "c. Change the column name FullName to StudentName and also change the data type of Age from INT to VARCHAR(3).",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This updates specific data elements altering layout references alongside data formatting rules constraints.",
+          "code": "ALTER TABLE Student\nRENAME COLUMN FullName TO StudentName,\nMODIFY Age VARCHAR(3);"
+        },
+        {
+          "id": 40,
+          "question": "d. Remove the ContactNumber column from the Student table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This action clears unwanted variables structural items dropped cleanly away directly tracking database schema rulesets.",
+          "code": "ALTER TABLE Student\nDROP COLUMN ContactNumber;"
+        },
+        {
+          "id": 41,
+          "question": "e. Rename the table Student to CollegeStudent.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This performs parent table identity schema changes, shifting pointer routing sets efficiently across mapping directories.",
+          "code": "ALTER TABLE Student RENAME TO CollegeStudent;"
+        },
+        {
+          "id": 42,
+          "question": "3. Create a table named Product with these columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field Name</th><th>Data Type</th><th>Description</th></tr></thead><tbody><tr><td>ProductID</td><td>INT PRIMARY KEY</td><td>Unique product ID</td></tr><tr><td>ProductName</td><td>CHAR(30)</td><td>Name of product</td></tr><tr><td>Price</td><td>FLOAT(8,2)</td><td>Price of product (2 decimal places)</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This defines a product inventory mapping standard allocating explicit index keys alongside precise pricing constraints tracking parameters.",
+          "code": "CREATE TABLE Product (\n    ProductID INT PRIMARY KEY,\n    ProductName CHAR(30),\n    Price FLOAT(8,2)\n);"
+        },
+        {
+          "id": 43,
+          "question": "4. Create a table named My_Books with these columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field Name</th><th>Data Type</th><th>Description</th></tr></thead><tbody><tr><td>BookID</td><td>INT PRIMARY KEY</td><td>Unique book ID</td></tr><tr><td>Title</td><td>VARCHAR(100)</td><td>Book title</td></tr><tr><td>Description</td><td>TEXT</td><td>Full book description</td></tr><tr><td>PublishedOn</td><td>DATE</td><td>Publication date</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This tracking builds detailed variable data arrays capable of index reference checks balancing date variables appropriately.",
+          "code": "CREATE TABLE My_Books (\n    BookID INT PRIMARY KEY,\n    Title VARCHAR(100),\n    Description TEXT,\n    PublishedOn DATE\n);"
+        },
+        {
+          "id": 44,
+          "question": "5. Create a table named Marks with these columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field Name</th><th>Data Type</th><th>Description</th></tr></thead><tbody><tr><td>StudentID</td><td>INT PRIMARY KEY</td><td>Unique student number</td></tr><tr><td>MathsMarks</td><td>DOUBLE(6,2)</td><td>Marks in Maths</td></tr><tr><td>ScienceMarks</td><td>DOUBLE(6,2)</td><td>Marks in Science</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This command provisions grade entry records arrays setting floating value tracking constraints on educational tracking tables.",
+          "code": "CREATE TABLE Marks (\n    StudentID INT PRIMARY KEY,\n    MathsMarks DOUBLE(6,2),\n    ScienceMarks DOUBLE(6,2)\n);"
+        },
+        {
+          "id": 45,
+          "question": "6. Create a table named Feedback with these columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field Name</th><th>Data Type</th><th>Description</th></tr></thead><tbody><tr><td>FeedbackID</td><td>INT PRIMARY KEY</td><td>Unique feedback number</td></tr><tr><td>CustomerName</td><td>CHAR(50)</td><td>Customer’s name</td></tr><tr><td>Comment</td><td>TEXT</td><td>Feedback text</td></tr><tr><td>IsSatisfied</td><td>TINYINT(1)</td><td>1 for yes, 0 for no</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This setup configures text fields matching it directly against binary evaluation checks for streamlined status verification rulesets.",
+          "code": "CREATE TABLE Feedback (\n    FeedbackID INT PRIMARY KEY,\n    CustomerName CHAR(50),\n    Comment TEXT,\n    IsSatisfied TINYINT(1)\n);"
+        },
+        {
+          "id": 46,
+          "question": "7. Create a table named FileStore with these columns:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Field Name</th><th>Data Type</th><th>Description</th></tr></thead><tbody><tr><td>FileID</td><td>INT PRIMARY KEY</td><td>Unique file number</td></tr><tr><td>CustomerName</td><td>CHAR(50)</td><td>Customer’s name</td></tr><tr><td>FileName</td><td>VARCHAR(100)</td><td>Name of the file</td></tr><tr><td>FileData</td><td>BLOB</td><td>Binary file data</td></tr></tbody></table>",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This configuration builds structured blob object fields tailored efficiently for handling media storage elements directly inside core structures.",
+          "code": "CREATE TABLE FileStore (\n    FileID INT PRIMARY KEY,\n    CustomerName CHAR(50),\n    FileName VARCHAR(100),\n    FileData BLOB\n);"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity-2",
+      "questions": [
+        {
+          "id": 47,
+          "question": "1. Prepare the following table and perform the given tasks:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>EmpID</th><th>EmpName</th><th>Department</th><th>Salary</th><th>City</th><th>Age</th></tr></thead><tbody><tr><td>1</td><td>Ram Bahadur</td><td>IT</td><td>55000</td><td>Kathmandu</td><td>28</td></tr><tr><td>2</td><td>Sita Kumari</td><td>HR</td><td>48000</td><td>Pokhara</td><td>26</td></tr><tr><td>3</td><td>Hari Lal</td><td>IT</td><td>60000</td><td>Lalitpur</td><td>30</td></tr><tr><td>4</td><td>Ramesh Prasad</td><td>Marketing</td><td>50000</td><td>Kathmandu</td><td>27</td></tr><tr><td>5</td><td>Shanti Devi</td><td>HR</td><td>47000</td><td>Pokhara</td><td>25</td></tr></tbody></table><br>a. Design the structure of table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This SQL query creates the Employee table with appropriate columns, data types, and defines EmpID as the Primary Key.",
+          "code": "CREATE TABLE Employee (\n    EmpID INT PRIMARY KEY,\n    EmpName VARCHAR(50),\n    Department VARCHAR(50),\n    Salary DECIMAL(10,2),\n    City VARCHAR(50),\n    Age INT\n);"
+        },
+        {
+          "id": 48,
+          "question": "b. Insert data as given in the table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This SQL query populates the Employee table with the 5 provided sample records.",
+          "code": "INSERT INTO Employee (EmpID, EmpName, Department, Salary, City, Age) VALUES\n(1, 'Ram Bahadur', 'IT', 55000.00, 'Kathmandu', 28),\n(2, 'Sita Kumari', 'HR', 48000.00, 'Pokhara', 26),\n(3, 'Hari Lal', 'IT', 60000.00, 'Lalitpur', 30),\n(4, 'Ramesh Prasad', 'Marketing', 50000.00, 'Kathmandu', 27),\n(5, 'Shanti Devi', 'HR', 47000.00, 'Pokhara', 25);"
+        },
+        {
+          "id": 49,
+          "question": "c. Display all the records from the Employee table.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Using the asterisk symbol (*) selects and prints out every row and column configuration present in the Employee table.",
+          "code": "SELECT * FROM Employee;"
+        },
+        {
+          "id": 50,
+          "question": "d. Display only the EmpName and City of all employees.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This query isolates and displays only the columns for Employee Name and their respective City location values.",
+          "code": "SELECT EmpName, City FROM Employee;"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity-3",
+      "questions": [
+        {
+          "id": 51,
+          "question": "1. On the basis of given table structure perform the given tasks:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>Column Name</th><th>Data Type</th></tr></thead><tbody><tr><td>EmpID</td><td>INT (Primary Key)</td></tr><tr><td>EmpName</td><td>VARCHAR(50)</td></tr><tr><td>Department</td><td>VARCHAR(30)</td></tr><tr><td>Salary</td><td>FLOAT</td></tr><tr><td>Age</td><td>INT</td></tr><tr><td>Gender</td><td>CHAR(1)</td></tr><tr><td>City</td><td>VARCHAR(30)</td></tr></tbody></table><br>a. Create a database name EMP and design a table structure under the EMP database.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This code creates a new database named EMP, switches to using it, and creates the required table structure inside it.",
+          "code": "CREATE DATABASE EMP;\nUSE EMP;\n\nCREATE TABLE Employee (\n    EmpID INT PRIMARY KEY,\n    EmpName VARCHAR(50),\n    Department VARCHAR(30),\n    Salary FLOAT,\n    Age INT,\n    Gender CHAR(1),\n    City VARCHAR(30)\n);"
+        },
+        {
+          "id": 52,
+          "question": "b) List all employees working in the IT department.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This filters the rows to show only the employees whose department matches exactly with 'IT'.",
+          "code": "SELECT * FROM Employee\nWHERE Department = 'IT';"
+        },
+        {
+          "id": 53,
+          "question": "c) Show EmpName and Salary of employees whose salary is more than 35000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This query uses a greater-than comparison operator to find matching income records and displays only names and salaries.",
+          "code": "SELECT EmpName, Salary FROM Employee\nWHERE Salary > 35000;"
+        },
+        {
+          "id": 54,
+          "question": "d) Display details of employees aged between 25 and 30.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The BETWEEN operator filters data records within an inclusive range of ages from 25 to 30.",
+          "code": "SELECT * FROM Employee\nWHERE Age BETWEEN 25 AND 30;"
+        },
+        {
+          "id": 55,
+          "question": "e) List employees whose city is either ‘Kathmandu’ or ‘Pokhara’.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The IN clause filters results by checking if a value matches any entry within the specified list.",
+          "code": "SELECT * FROM Employee\nWHERE City IN ('Kathmandu', 'Pokhara');"
+        },
+        {
+          "id": 56,
+          "question": "f) Show details of employees whose salary is not between 30000 and 45000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Combining NOT with BETWEEN excludes values falling within the 30000 to 45000 boundary range.",
+          "code": "SELECT * FROM Employee\nWHERE Salary NOT BETWEEN 30000 AND 45000;"
+        },
+        {
+          "id": 57,
+          "question": "g) Display employees whose name starts with ‘R’.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The % wildcard placed after the letter matches any sequence of characters following a starting capital 'R'.",
+          "code": "SELECT * FROM Employee\nWHERE EmpName LIKE 'R%';"
+        },
+        {
+          "id": 58,
+          "question": "h) List records where city is NULL.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The IS NULL operator must be used instead of an equal sign to find fields holding completely empty or unentered data values.",
+          "code": "SELECT * FROM Employee\nWHERE City IS NULL;"
+        },
+        {
+          "id": 59,
+          "question": "i) Show IT department employees with salary above 40000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "An AND operator links two conditions together, returning rows that satisfy both requirements simultaneously.",
+          "code": "SELECT * FROM Employee\nWHERE Department = 'IT' AND Salary > 40000;"
+        },
+        {
+          "id": 60,
+          "question": "j) List employees with age more than 30 OR working in the Finance department.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "An OR logical check matches entries if either the age criteria or the division criteria is true.",
+          "code": "SELECT * FROM Employee\nWHERE Age > 30 OR Department = 'Finance';"
+        },
+        {
+          "id": 61,
+          "question": "k) Show employees not working in the HR department.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The inequality operator (!=) ensures that any record explicitly belonging to 'HR' is kept out of the results list.",
+          "code": "SELECT * FROM Employee\nWHERE Department != 'HR';"
+        },
+        {
+          "id": 62,
+          "question": "l) List all employees ordered by Salary in descending order.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The DESC sorting constraint orders numerical information sequentially from the absolute highest down to the lowest.",
+          "code": "SELECT * FROM Employee\nORDER BY Salary DESC;"
+        },
+        {
+          "id": 63,
+          "question": "m) Show EmpName, Department, and Salary sorted by Department A-Z and then Salary High to Low.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This sorts the rows alphabetically by department first, and then sorts records with matching departments from highest salary to lowest.",
+          "code": "SELECT EmpName, Department, Salary FROM Employee\nORDER BY Department ASC, Salary DESC;"
+        },
+        {
+          "id": 64,
+          "question": "n) List all employees whose EmpName starts with 'A'",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The LIKE condition combines with a percentage tracking sign to trace data string entries initiated by 'A'.",
+          "code": "SELECT * FROM Employee\nWHERE EmpName LIKE 'A%';"
+        },
+        {
+          "id": 65,
+          "question": "o) Display employees whose EmpName ends with 'n'.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Placing the wildcard operator before a letter matches any preceding characters that finish up exactly on an ending letter 'n'.",
+          "code": "SELECT * FROM Employee\nWHERE EmpName LIKE '%n';"
+        },
+        {
+          "id": 66,
+          "question": "p) Find employees whose EmpName contains 'an'.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Surrounding a string pattern within two matching wildcard symbols isolates keyword subsets anywhere across fields.",
+          "code": "SELECT * FROM Employee\nWHERE EmpName LIKE '%an%';"
+        },
+        {
+          "id": 67,
+          "question": "q) Show employees with EmpName where the second letter is 'a'.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "An underscore character (_) acts as a single-character placeholder, checking for a specific letter position within text fields.",
+          "code": "SELECT * FROM Employee\nWHERE EmpName LIKE '_a%';"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity-4",
+      "questions": [
+        {
+          "id": 68,
+          "question": "1. On the basis of given table structure perform the given tasks:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>EmpID</th><th>Name</th><th>Age</th><th>City</th><th>Department</th><th>Salary</th></tr></thead><tbody><tr><td>1</td><td>Ramesh</td><td>28</td><td>Kathmandu</td><td>Sales</td><td>30000</td></tr><tr><td>2</td><td>Sita</td><td>25</td><td>Pokhara</td><td>HR</td><td>27000</td></tr><tr><td>3</td><td>Hari</td><td>30</td><td>Butwal</td><td>Marketing</td><td>35000</td></tr><tr><td>4</td><td>Gita</td><td>32</td><td>Kathmandu</td><td>Sales</td><td>32000</td></tr><tr><td>5</td><td>Ram</td><td>26</td><td>Nepalgunj</td><td>IT</td><td>40000</td></tr></tbody></table><br>a) Create a database, table, and insert data as shown in the table",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This batch of SQL commands sets up the office database environment, structures the table, and inserts the data rows.",
+          "code": "CREATE DATABASE Corporate;\n\nCREATE TABLE Employees (\n    EmpID INT PRIMARY KEY,\n    Name VARCHAR(50),\n    Age INT,\n    City VARCHAR(50),\n    Department VARCHAR(50),\n    Salary INT\n);\n\nINSERT INTO Employees (EmpID, Name, Age, City, Department, Salary) VALUES\n(1, 'Ramesh', 28, 'Kathmandu', 'Sales', 30000),\n(2, 'Sita', 25, 'Pokhara', 'HR', 27000),\n(3, 'Hari', 30, 'Butwal', 'Marketing', 35000),\n(4, 'Gita', 32, 'Kathmandu', 'Sales', 32000),\n(5, 'Ram', 26, 'Nepalgunj', 'IT', 40000);"
+        },
+        {
+          "id": 69,
+          "question": "b) Update the salary of employee with EmpID 5 to 42000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This updates the salary field to a specific value for a precise row targeted by its unique key.",
+          "code": "UPDATE Employees\nSET Salary = 42000\nWHERE EmpID = 5;"
+        },
+        {
+          "id": 70,
+          "question": "c) Change the city to Dharan for employee named Hari.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This uses text matching inside the filter expression to pinpoint the row belonging to Hari and modify his residential location data.",
+          "code": "UPDATE Employees\nSET City = 'Dharan'\nWHERE Name = 'Hari';"
+        },
+        {
+          "id": 71,
+          "question": "d) Increase the salary by 1500 for all employees whose salary is less than 30000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This uses relative arithmetic modification to add money to the current values of all matching low-income workers.",
+          "code": "UPDATE Employees\nSET Salary = Salary + 1500\nWHERE Salary < 30000;"
+        },
+        {
+          "id": 72,
+          "question": "e) Change the Department to Admin for employees whose city is Nepalgunj.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This targets rows based on a specific geographic region criteria and reassigns their operational team structure.",
+          "code": "UPDATE Employees\nSET Department = 'Admin'\nWHERE City = 'Nepalgunj';"
+        },
+        {
+          "id": 73,
+          "question": "f) Increase salary by 2000 for all employees working in the Sales department.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This statement matches team names and increments their base pay record values uniformly.",
+          "code": "UPDATE Employees\nSET Salary = Salary + 2000\nWHERE Department = 'Sales';"
+        },
+        {
+          "id": 74,
+          "question": "g) Decrease the salary by 1000 for employees older than 30.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This operation uses the subtraction symbol (-) to lower the numeric wage column properties based on age limits.",
+          "code": "UPDATE Employees\nSET Salary = Salary - 1000\nWHERE Age > 30;"
+        },
+        {
+          "id": 75,
+          "question": "h) Change the city to Biratnagar for employee named Ramesh",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This command sets the character value to a new location string for records flagged by the identity string 'Ramesh'.",
+          "code": "UPDATE Employees\nSET City = 'Biratnagar'\nWHERE Name = 'Ramesh';"
+        },
+        {
+          "id": 76,
+          "question": "i) Increase salary by 500 for employees whose salary is between 27000 and 35000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The BETWEEN filter handles inclusive boundary range processing and adds a small bonus to matching records.",
+          "code": "UPDATE Employees\nSET Salary = Salary + 500\nWHERE Salary BETWEEN 27000 AND 35000;"
+        },
+        {
+          "id": 77,
+          "question": "j) Change Department to Finance for employees earning more than 40000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This filters by high-tier salary categories and updates their structural organizational unit mapping.",
+          "code": "UPDATE Employees\nSET Department = 'Finance'\nWHERE Salary > 40000;"
+        },
+        {
+          "id": 78,
+          "question": "k) Set city to NULL for employees whose department is IT",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This wipes out existing string information values by assigning an unmapped status keyword directly to the city column for IT team entries.",
+          "code": "UPDATE Employees\nSET City = NULL\nWHERE Department = 'IT';"
+        }
+      ]
+    },
+    {
+      "question_group": "Lab Activity-5",
+      "questions": [
+        {
+          "id": 79,
+          "question": "1. On the basis of given table data perform the given tasks:<br><br><table border='1' cellpadding='5' style='border-collapse: collapse;'><thead><tr><th>ProductID</th><th>ProductName</th><th>Category</th><th>Price</th><th>Stock</th><th>Supplier</th></tr></thead><tbody><tr><td>1</td><td>Keyboard</td><td>Electronics</td><td>1500</td><td>25</td><td>TechNepal</td></tr><tr><td>2</td><td>Pen Drive</td><td>Electronics</td><td>800</td><td>50</td><td>InfoWorld</td></tr><tr><td>3</td><td>Chair</td><td>Furniture</td><td>4500</td><td>15</td><td>FurniCraft</td></tr><tr><td>4</td><td>Notebook</td><td>Stationery</td><td>100</td><td>100</td><td>PaperPlus</td></tr><tr><td>5</td><td>Water Bottle</td><td>Kitchen</td><td>500</td><td>30</td><td>DailyNeeds</td></tr><tr><td>6</td><td>Mouse</td><td>Electronics</td><td>1200</td><td>40</td><td>TechNepal</td></tr><tr><td>7</td><td>Office Table</td><td>Furniture</td><td>9500</td><td>10</td><td>FurniCraft</td></tr></tbody></table><br>a) Create a database, table, and insert data as shown in the table",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This code initializes the inventory database, constructs the product schema, and loads the provided product records.",
+          "code": "CREATE DATABASE Inventory;\nUSE Inventory;\n\nCREATE TABLE Products (\n    ProductID INT PRIMARY KEY,\n    ProductName VARCHAR(50),\n    Category VARCHAR(50),\n    Price INT,\n    Stock INT,\n    Supplier VARCHAR(50)\n);\n\nINSERT INTO Products (ProductID, ProductName, Category, Price, Stock, Supplier) VALUES\n(1, 'Keyboard', 'Electronics', 1500, 25, 'TechNepal'),\n(2, 'Pen Drive', 'Electronics', 800, 50, 'InfoWorld'),\n(3, 'Chair', 'Furniture', 4500, 15, 'FurniCraft'),\n(4, 'Notebook', 'Stationery', 100, 100, 'PaperPlus'),\n(5, 'Water Bottle', 'Kitchen', 500, 30, 'DailyNeeds'),\n(6, 'Mouse', 'Electronics', 1200, 40, 'TechNepal'),\n(7, 'Office Table', 'Furniture', 9500, 10, 'FurniCraft');"
+        },
+        {
+          "id": 80,
+          "question": "b) Delete the product whose ProductName is ‘Pen Drive’.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This targets and removes specific rows by checking an exact text matching expression on the name field.",
+          "code": "DELETE FROM Products\nWHERE ProductName = 'Pen Drive';"
+        },
+        {
+          "id": 81,
+          "question": "c) Delete products whose Price is not equal to 500.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This drops any inventory item that does not retail exactly for the targeted valuation point.",
+          "code": "DELETE FROM Products\nWHERE Price != 500;"
+        },
+        {
+          "id": 82,
+          "question": "d) Delete products where Price is greater than 5000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This purges highly expensive rows passing beyond the threshold constraint value.",
+          "code": "DELETE FROM Products\nWHERE Price > 5000;"
+        },
+        {
+          "id": 83,
+          "question": "e) Delete products whose Stock is less than or equal to 20.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This dynamic criteria drops lower quantity tracking counts using comparison logical checks.",
+          "code": "DELETE FROM Products\nWHERE Stock <= 20;"
+        },
+        {
+          "id": 84,
+          "question": "f) Delete products whose Price is between 1000 and 5000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The BETWEEN conditional keyword specifies a mid-tier price tracking boundary range for purging.",
+          "code": "DELETE FROM Products\nWHERE Price BETWEEN 1000 AND 5000;"
+        },
+        {
+          "id": 85,
+          "question": "g) Delete products from Electronics or Furniture category.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The IN collection list command checks parameters efficiently to drop target sets matching specified classes.",
+          "code": "DELETE FROM Products\nWHERE Category IN ('Electronics', 'Furniture');"
+        },
+        {
+          "id": 86,
+          "question": "h) Delete products supplied by either TechNepal or DailyNeeds.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This targets third-party items tracking matching identity string arrays for clearing operations.",
+          "code": "DELETE FROM Products\nWHERE Supplier IN ('TechNepal', 'DailyNeeds');"
+        },
+        {
+          "id": 87,
+          "question": "i) Delete products whose ProductName starts with the letter 'O'.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The wildcard parsing configuration isolates names initiated with a capital letter 'O'.",
+          "code": "DELETE FROM Products\nWHERE ProductName LIKE 'O%';"
+        },
+        {
+          "id": 88,
+          "question": "j) Delete products where Supplier is NULL. For testing: first update any one Supplier to NULL.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This operation first patches an unassigned status flag onto a chosen record to accurately demonstrate testing the IS NULL validation function.",
+          "code": "-- Step 1: Update one product for testing\nUPDATE Products SET Supplier = NULL WHERE ProductID = 1;\n\n-- Step 2: Delete records with NULL suppliers\nDELETE FROM Products\nWHERE Supplier IS NULL;"
+        },
+        {
+          "id": 89,
+          "question": "k) Delete products where Price is more than 1000 AND Stock is more than 20.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The AND check limits clearing routines strictly to high-cost rows displaying surplus volume levels simultaneously.",
+          "code": "DELETE FROM Products\nWHERE Price > 1000 AND Stock > 20;"
+        },
+        {
+          "id": 90,
+          "question": "l) Delete products where Category is ‘Furniture’ AND Stock is less than 12.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "This command enforces specific grouping standards paired with low-volume limit thresholds.",
+          "code": "DELETE FROM Products\nWHERE Category = 'Furniture' AND Stock < 12;"
+        },
+        {
+          "id": 91,
+          "question": "m) Delete products where Supplier is ‘PaperPlus’ OR Stock is less than 20.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The OR link processes evaluations flexibly, executing removals if either part satisfies the assertion.",
+          "code": "DELETE FROM Products\nWHERE Supplier = 'PaperPlus' OR Stock < 20;"
+        },
+        {
+          "id": 92,
+          "question": "n) Delete products where Category is NOT ‘Stationery’.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "The inequality operator filters out all non-matching classification strings cleanly.",
+          "code": "DELETE FROM Products\nWHERE Category != 'Stationery';"
+        },
+        {
+          "id": 93,
+          "question": "o) Delete products where Price is NOT between 500 and 5000.",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Combining NOT and BETWEEN purges outliers located outside the typical pricing bounds.",
+          "code": "DELETE FROM Products\nWHERE Price NOT BETWEEN 500 AND 5000;"
+        },
+        {
+          "id": 94,
+          "question": "q) Delete products whose ProductName contains the word ‘Bottle’",
+          "content_type": "programming",
+          "language": "sql",
+          "answer": "Double percentage symbols find targeted text snippets anywhere inside description fields to manage rows dynamically.",
+          "code": "DELETE FROM Products\nWHERE ProductName LIKE '%Bottle%';"
         }
       ]
     }
