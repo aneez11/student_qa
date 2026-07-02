@@ -16,3 +16,79 @@
 .katex {
   font-size: 1em;
 }
+
+.question-html {
+  color: inherit;
+}
+
+.question-html h1,
+.question-html h2,
+.question-html h3,
+.question-html h4,
+.question-html h5,
+.question-html h6 {
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.question-html p {
+  margin: 0 0 0.75rem;
+  line-height: 1.75;
+}
+
+.question-html ul,
+.question-html ol {
+  margin: 0.75rem 0;
+  padding-left: 1.25rem;
+}
+
+.question-html table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.question-html th,
+.question-html td {
+  border: 1px solid hsl(0 0% 0% / 0.08);
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+}
+
+.dark .question-html th,
+.dark .question-html td {
+  border-color: hsl(0 0% 100% / 0.08);
+}
+
+.question-html th {
+  background: hsl(0 0% 0% / 0.04);
+  text-align: left;
+  font-weight: 700;
+}
+
+.dark .question-html th {
+  background: hsl(0 0% 100% / 0.05);
+}
+
+.question-html pre {
+  overflow-x: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.question-html code {
+  overflow-wrap: anywhere;
+}
+
+.question-html img {
+  max-width: 100%;
+  height: auto;
+}
+
+.question-html blockquote {
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid hsl(var(--primary) / 0.45);
+  color: hsl(var(--foreground) / 0.9);
+}

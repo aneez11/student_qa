@@ -1,55 +1,54 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import QuestionCard from "@/components/QuestionCard";
-import type { Chapters, Question } from "@/lib/types";
-import { ArrowLeft, Search, ArrowUp } from "lucide-react";
-import { useEffect, useState, useMemo, useCallback, memo, useRef } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { ArrowUp, BookOpen, Filter, Layers3, Search } from "lucide-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "katex/dist/katex.min.css";
-import { InlineMath, BlockMath } from "react-katex";
+import { BlockMath, InlineMath } from "react-katex";
+
+import QuestionCard from "@/components/QuestionCard";
+import { Navbar } from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useDataFetch } from "@/hooks/useDataFetch";
 import { useDebouncedSearch } from "@/hooks/useDebounce";
 import { API_ENDPOINTS, SCROLL_THRESHOLD } from "@/lib/constants";
 import { filterQuestions, scrollToTop } from "@/lib/helpers";
+import type { Chapters, Question } from "@/lib/types";
 
 const TableRenderer = memo(({ data }: { data: Question }) => {
   return (
-    <div className="overflow-x-auto mt-4">
-      <h1
-        className="font-bold text-blue-800 text-xl"
-        dangerouslySetInnerHTML={{ __html: data.question }}
-      />
-      <h4 className="font-medium mb-2 text-green-700">Answer</h4>
-      <div
-        className="space-y-3"
-        dangerouslySetInnerHTML={{ __html: data.answer }}
-      />
-      <table className="min-w-full border">
-        <thead>
-          <tr>
-            {data.table_data?.headers.map((header, index) => (
-              <th key={index} className="border px-4 py-2 bg-gray-50">
-                {header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {data.table_data?.rows.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td
-                  key={cellIndex}
-                  className="border px-4 py-2"
-                  dangerouslySetInnerHTML={{ __html: cell }}
-                ></td>
+    <div className="question-html space-y-4">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">Q</span>
+        Question
+      </div>
+      <div className="text-lg font-semibold leading-snug" dangerouslySetInnerHTML={{ __html: data.question }} />
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-600 dark:text-emerald-400">
+        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/10">A</span>
+        Answer
+      </div>
+      <div className="space-y-3 text-sm leading-7 text-foreground/90" dangerouslySetInnerHTML={{ __html: data.answer }} />
+      <div className="overflow-x-auto rounded-2xl border border-border/60 bg-background/70">
+        <table className="min-w-full">
+          <thead>
+            <tr>
+              {data.table_data?.headers.map((header, index) => (
+                <th key={index}>{header}</th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.table_data?.rows.map((row, rowIndex) => (
+              <tr key={rowIndex}>
+                {row.map((cell, cellIndex) => (
+                  <td key={cellIndex} dangerouslySetInnerHTML={{ __html: cell }} />
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 });
@@ -57,8 +56,8 @@ TableRenderer.displayName = "TableRenderer";
 
 const EquationRenderer = memo(({ equation }: { equation: string }) => {
   return (
-    <div className="bg-gray-100 p-4 rounded-md font-mono text-center my-4">
-      {equation}
+    <div className="question-html rounded-2xl border border-border/60 bg-muted/30 p-5 text-center shadow-sm">
+      <BlockMath math={equation} />
     </div>
   );
 });
@@ -66,160 +65,143 @@ EquationRenderer.displayName = "EquationRenderer";
 
 const MathProblemRenderer = memo(({ question }: { question: Question }) => {
   const renderMathText = useCallback((text: string) => {
-    // Split text into parts that contain LaTeX and parts that don't
     const parts = text.split(/(\$\$.*?\$\$|\$.*?\$)/g);
 
     return parts.map((part, index) => {
       if (part.startsWith("$$") && part.endsWith("$$")) {
         return <BlockMath key={index} math={part.slice(2, -2)} />;
-      } else if (part.startsWith("$") && part.endsWith("$")) {
-        return <InlineMath key={index} math={part.slice(1, -1)} />;
-      } else {
-        return <span key={index}>{part}</span>;
       }
+
+      if (part.startsWith("$") && part.endsWith("$")) {
+        return <InlineMath key={index} math={part.slice(1, -1)} />;
+      }
+
+      return <span key={index}>{part}</span>;
     });
   }, []);
 
   return (
-    <>
-      <h1 className="font-bold text-blue-800 text-xl">
-        Q. {renderMathText(question.question)}
-      </h1>
-
-      <div className="text-gray-700 space-y-3"></div>
+    <div className="question-html space-y-4">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">Q</span>
+        Question
+      </div>
+      <h3 className="text-xl font-semibold leading-snug">{renderMathText(question.question)}</h3>
       {question.answer && (
-        <div className="mt-4 pt-4 border-t border-blue-200">
-          <h4 className="font-medium text-blue-700 mb-2">Solution</h4>
-          <div className="text-gray-700 space-y-3">
+        <div className="mt-5 border-t border-border/60 pt-5">
+          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-600 dark:text-emerald-400">
+            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/10">A</span>
+            Solution
+          </div>
+          <div className="mt-3 space-y-3 text-sm leading-7 text-foreground/90">
             {renderMathText(question.answer)}
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 });
 MathProblemRenderer.displayName = "MathProblemRenderer";
 
-const ProgrammingQuestionRenderer = memo(
-  ({ question }: { question: Question }) => {
-    const questionRef = useRef<HTMLDivElement>(null);
-    const answerRef = useRef<HTMLDivElement>(null);
+const ProgrammingQuestionRenderer = memo(({ question }: { question: Question }) => {
+  const questionRef = useRef<HTMLDivElement>(null);
+  const answerRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-      if (questionRef.current && !questionRef.current.shadowRoot) {
-        const shadow = questionRef.current.attachShadow({ mode: "open" });
-        shadow.innerHTML = question.question;
-      }
-    }, [question.question]);
+  useEffect(() => {
+    if (questionRef.current && !questionRef.current.shadowRoot) {
+      const shadow = questionRef.current.attachShadow({ mode: "open" });
+      shadow.innerHTML = `<style>:host { font: inherit; color: inherit; }</style>${question.question}`;
+    }
+  }, [question.question]);
 
-    useEffect(() => {
-      if (answerRef.current && !answerRef.current.shadowRoot) {
-        const shadow = answerRef.current.attachShadow({ mode: "open" });
-        shadow.innerHTML = question.answer;
-      }
-    }, [question.answer]);
+  useEffect(() => {
+    if (answerRef.current && !answerRef.current.shadowRoot) {
+      const shadow = answerRef.current.attachShadow({ mode: "open" });
+      shadow.innerHTML = `<style>:host { font: inherit; color: inherit; }</style>${question.answer}`;
+    }
+  }, [question.answer]);
 
-    // const formatTextWithBreaks = useCallback(
-    //   (text: string): { __html: string } => {
-    //     return {
-    //       __html: text
-    //         ?.split("\n")
-    //         .map((line, index) =>
-    //           line ? `<span key=${index}>${line}<br /></span>` : "<br />",
-    //         )
-    //         .join(""),
-    //     };
-    //   },
-    //   [],
-    // );
-
-    return (
-      <>
-        <div ref={questionRef} className="font-bold text-blue-800 text-xl" />
-        <div className="mt-4 pt-4 border-t border-gray-200">
-          <h4 className="font-medium mb-2 text-green-700">Answer</h4>
-          <div ref={answerRef} className=" space-y-3" />
+  return (
+    <div className="question-html space-y-4">
+      <div ref={questionRef} className="text-lg font-semibold leading-snug" />
+      <div className="border-t border-border/60 pt-5">
+        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-600 dark:text-emerald-400">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/10">A</span>
+          Answer
         </div>
-        <div className="rounded-md my-4">
-          {question.code && (
-            <SyntaxHighlighter
-              language={question.language || "javascript"}
-              style={atomOneDark}
-              className="rounded-md"
-            >
-              {question.code}
-            </SyntaxHighlighter>
-          )}
+        <div ref={answerRef} className="mt-3 space-y-3 text-sm leading-7 text-foreground/90" />
+      </div>
+      {question.code && (
+        <div className="overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+          <SyntaxHighlighter
+            language={question.language || "javascript"}
+            style={atomOneDark}
+            customStyle={{ margin: 0, padding: "1.25rem", fontSize: "0.875rem" }}
+          >
+            {question.code}
+          </SyntaxHighlighter>
         </div>
-      </>
-    );
-  },
-);
+      )}
+    </div>
+  );
+});
 ProgrammingQuestionRenderer.displayName = "ProgrammingQuestionRenderer";
 
 const GeneralQuestionRenderer = memo(({ question }: { question: Question }) => {
   return (
-    <>
-      <h1 className="font-bold text-blue-800 text-xl">
-        Q. <span dangerouslySetInnerHTML={{ __html: question.question }} />
-      </h1>
-      <div className="mt-4 pt-4 border-t border-gray-200">
-        <h4 className="font-medium mb-2 text-green-700">Answer</h4>
-        <div
-          className="space-y-3"
-          dangerouslySetInnerHTML={{ __html: question.answer }}
-        />
+    <div className="question-html space-y-4">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary/10">Q</span>
+        Question
       </div>
-    </>
+      <h3 className="text-xl font-semibold leading-snug" dangerouslySetInnerHTML={{ __html: question.question }} />
+      <div className="border-t border-border/60 pt-5">
+        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-600 dark:text-emerald-400">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/10">A</span>
+          Answer
+        </div>
+        <div className="mt-3 space-y-3 text-sm leading-7 text-foreground/90" dangerouslySetInnerHTML={{ __html: question.answer }} />
+      </div>
+    </div>
   );
 });
 GeneralQuestionRenderer.displayName = "GeneralQuestionRenderer";
 
 const Chapter = () => {
   const { gradeId, chapterId } = useParams();
-  const [contentFilter, setContentFilter] = useState<string>("all");
-  const [groupFilter, setGroupFilter] = useState<string>("all");
+  const [contentFilter, setContentFilter] = useState("all");
+  const [groupFilter, setGroupFilter] = useState("all");
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
-  // Use debounced search for better performance
-  const { searchValue, debouncedSearchValue, setSearchValue } =
-    useDebouncedSearch();
+  const { searchValue, debouncedSearchValue, setSearchValue } = useDebouncedSearch();
+  const chapterUrl = gradeId && chapterId ? API_ENDPOINTS.CHAPTER_DATA(gradeId, chapterId) : null;
+  const { data: chapterData, loading, error } = useDataFetch<Chapters>(chapterUrl);
 
-  // Use the optimized data fetching hook
-  const chapterUrl =
-    gradeId && chapterId
-      ? API_ENDPOINTS.CHAPTER_DATA(gradeId, chapterId)
-      : null;
-  const {
-    data: chapterData,
-    loading,
-    error,
-  } = useDataFetch<Chapters>(chapterUrl);
+  const breadcrumbs = useMemo(
+    () => [
+      { label: "Home", to: "/" },
+      { label: `Grade ${gradeId}`, to: `/grade/${gradeId}` },
+      { label: chapterData?.name || `Chapter ${chapterId}` },
+    ],
+    [chapterData?.name, chapterId, gradeId],
+  );
 
-  // Memoized filtered groups using helper function
   const filteredGroups = useMemo(() => {
     if (!chapterData) return [];
-    return filterQuestions(
-      chapterData.questions,
-      debouncedSearchValue,
-      contentFilter,
-      groupFilter,
-    );
+    return filterQuestions(chapterData.questions, debouncedSearchValue, contentFilter, groupFilter);
   }, [chapterData, debouncedSearchValue, contentFilter, groupFilter]);
 
-  // Memoized clear filters function
   const clearFilters = useCallback(() => {
     setGroupFilter("all");
     setContentFilter("all");
     setSearchValue("");
   }, [setSearchValue]);
 
-  // Memoized scroll to top function using helper
   const handleScrollToTop = useCallback(() => {
     scrollToTop();
   }, []);
 
-  // Handle scroll events to show/hide the scroll-to-top button
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.pageYOffset > SCROLL_THRESHOLD);
@@ -229,263 +211,268 @@ const Chapter = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Show loading state
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-lg font-medium text-gray-700">
-            Loading chapter...
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  // Show error state
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-center max-w-md p-6 bg-white rounded-lg shadow-md">
-          <div className="text-red-500 mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 mx-auto"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-              />
-            </svg>
-          </div>
-          <h3 className="text-lg font-medium text-gray-900 mb-2">
-            Error loading chapter
-          </h3>
-          <p className="text-gray-600 mb-4">{error}</p>
-          <Button asChild>
-            <Link to={`/grade/${gradeId}`}>Back to Grade</Link>
-          </Button>
-        </div>
-      </div>
-    );
-  }
-
-  const renderContent = (q: Question) => {
-    switch (q.content_type) {
+  const renderContent = (question: Question) => {
+    switch (question.content_type) {
       case "text":
-        return q.question && <GeneralQuestionRenderer question={q} />;
+        return question.question && <GeneralQuestionRenderer question={question} />;
       case "table":
-        return q.table_data && <TableRenderer data={q} />;
+        return question.table_data && <TableRenderer data={question} />;
       case "equation":
-        return q.equation && <EquationRenderer equation={q.equation} />;
+        return question.equation && <EquationRenderer equation={question.equation} />;
       case "math_problem":
-        return <MathProblemRenderer question={q} />;
+        return <MathProblemRenderer question={question} />;
       case "programming":
-        return <ProgrammingQuestionRenderer question={q} />;
+        return <ProgrammingQuestionRenderer question={question} />;
       default:
         return null;
     }
   };
 
+  if (loading) {
+    return (
+      <div className="min-h-screen">
+        <Navbar breadcrumbs={breadcrumbs} />
+        <div className="flex items-center justify-center px-4 py-24">
+          <div className="rounded-[2rem] border border-border/60 bg-card/80 px-8 py-10 text-center shadow-xl backdrop-blur">
+            <div className="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-primary/20 border-t-primary" />
+            <p className="text-lg font-medium">Loading chapter...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen">
+        <Navbar breadcrumbs={breadcrumbs} />
+        <div className="flex items-center justify-center px-4 py-24">
+          <div className="max-w-md rounded-[2rem] border border-border/60 bg-card/80 p-8 text-center shadow-xl backdrop-blur">
+            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-destructive/10 text-destructive">
+              <BookOpen className="h-7 w-7" />
+            </div>
+            <h3 className="text-lg font-semibold">Error loading chapter</h3>
+            <p className="mt-2 text-sm leading-7 text-muted-foreground">{error}</p>
+            <Button asChild className="mt-6 rounded-full">
+              <Link to={`/grade/${gradeId}`}>Back to grade</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const totalQuestions = chapterData?.questions.reduce((total, group) => total + group.questions.length, 0) || 0;
+  const hasActiveFilters = groupFilter !== "all" || contentFilter !== "all" || searchValue.trim().length > 0;
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4 flex-wrap">
-              <Link to={`/grade/${gradeId}`}>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="flex items-center space-x-2"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  <span>Back to Grade {gradeId}</span>
-                </Button>
-              </Link>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">
-                  {chapterData?.name || `Chapter ${chapterId}`}
-                </h1>
-                <p className="text-sm text-gray-600">
-                  {chapterData?.questions.reduce(
-                    (acc, group) => acc + group.questions.length,
-                    0,
-                  )}{" "}
-                  questions available
-                </p>
+    <div className="min-h-screen pb-16">
+      <Navbar breadcrumbs={breadcrumbs} />
+
+      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <section className="mb-8 rounded-[2rem] border border-border/60 bg-card/75 p-5 shadow-sm backdrop-blur sm:p-6 lg:p-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                <Layers3 className="h-3.5 w-3.5" />
+                Chapter reading mode
+              </div>
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{chapterData?.name || `Chapter ${chapterId}`}</h1>
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-muted-foreground">
+                Search across answers, switch by question group, and keep bookmarks close while you study.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="inline-flex items-center rounded-full border border-border/60 bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+                  Suggested: start with text questions
+                </span>
+                <span className="inline-flex items-center rounded-full border border-border/60 bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+                  Suggested: filter to programming answers
+                </span>
+                <span className="inline-flex items-center rounded-full border border-border/60 bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+                  Suggested: bookmark hard questions
+                </span>
+              </div>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[320px]">
+              <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-3">
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Groups</div>
+                <div className="mt-1 text-lg font-semibold">{chapterData?.questions.length || 0}</div>
+              </div>
+              <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-3">
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Questions</div>
+                <div className="mt-1 text-lg font-semibold">{totalQuestions}</div>
+              </div>
+              <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-3">
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Bookmarks</div>
+                <div className="mt-1 text-lg font-semibold">Local</div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Search and Filters */}
-        <div className="mb-8 space-y-4">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-              <Input
-                placeholder="Search questions or answers..."
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-                className="pl-10"
-              />
-            </div>
-            <div className="w-full sm:w-48">
-              <select
-                value={groupFilter}
-                onChange={(e) => setGroupFilter(e.target.value)}
-                className="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              >
-                <option value="all">All Question Groups</option>
-                {chapterData?.questions.map((group) => (
-                  <option
-                    key={group.question_group}
-                    value={group.question_group}
-                  >
-                    {group.question_group}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="w-full sm:w-48">
-              <select
-                value={contentFilter}
-                onChange={(e) => setContentFilter(e.target.value)}
-                className="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              >
-                <option value="all">All Content Types</option>
-                <option value="text">Text Only</option>
-                <option value="table">Tables</option>
-                <option value="equation">Equations</option>
-                <option value="math_problem">Math Problems</option>
-                <option value="programming">Programming</option>
-              </select>
-            </div>
-          </div>
+        <div className="space-y-6">
+          <section className="relative z-20 rounded-[1.75rem] border border-border/60 bg-card/90 p-3 shadow-sm backdrop-blur sm:p-4 lg:sticky lg:top-20">
+            <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
+              <div className="relative flex-1">
+                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <Input
+                  placeholder="Search questions or answers..."
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)}
+                  className="h-11 rounded-full pl-10"
+                />
+              </div>
 
-          {/* Quick Filter Buttons */}
-          {chapterData && (
-            <div className="flex flex-wrap gap-2">
-              <Button
-                variant={groupFilter === "all" ? "default" : "outline"}
-                size="sm"
-                onClick={() => setGroupFilter("all")}
-                className="text-xs"
-              >
-                All Groups (
-                {chapterData.questions.reduce(
-                  (acc, group) => acc + group.questions.length,
-                  0,
-                )}
-                )
+              <div className="flex items-center gap-2 lg:hidden">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-11 rounded-full px-4"
+                  onClick={() => setMobileFiltersOpen((open) => !open)}
+                  aria-expanded={mobileFiltersOpen}
+                  aria-controls="mobile-filters-panel"
+                >
+                  <Filter className="h-4 w-4" />
+                  Filters
+                </Button>
+              </div>
+
+              <div className="hidden grid gap-3 sm:grid-cols-2 lg:grid">
+                <select
+                  value={groupFilter}
+                  onChange={(e) => setGroupFilter(e.target.value)}
+                  aria-label="Filter by question group"
+                  className="h-11 w-full rounded-full border border-border/60 bg-background px-4 text-sm outline-none transition-colors focus:border-primary/40"
+                >
+                  <option value="all">All question groups</option>
+                  {chapterData?.questions.map((group) => (
+                    <option key={group.question_group} value={group.question_group}>
+                      {group.question_group}
+                    </option>
+                  ))}
+                </select>
+
+                <select
+                  value={contentFilter}
+                  onChange={(e) => setContentFilter(e.target.value)}
+                  aria-label="Filter by content type"
+                  className="h-11 w-full rounded-full border border-border/60 bg-background px-4 text-sm outline-none transition-colors focus:border-primary/40"
+                >
+                  <option value="all">All content types</option>
+                  <option value="text">Text</option>
+                  <option value="table">Tables</option>
+                  <option value="equation">Equations</option>
+                  <option value="math_problem">Math problems</option>
+                  <option value="programming">Programming</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              id="mobile-filters-panel"
+              className={`${mobileFiltersOpen ? "mt-3" : "hidden"} lg:hidden`}
+            >
+              <div className="grid gap-3 sm:grid-cols-2">
+                <select
+                  value={groupFilter}
+                  onChange={(e) => setGroupFilter(e.target.value)}
+                  aria-label="Filter by question group"
+                  className="h-11 w-full rounded-full border border-border/60 bg-background px-4 text-sm outline-none transition-colors focus:border-primary/40"
+                >
+                  <option value="all">All question groups</option>
+                  {chapterData?.questions.map((group) => (
+                    <option key={group.question_group} value={group.question_group}>
+                      {group.question_group}
+                    </option>
+                  ))}
+                </select>
+
+                <select
+                  value={contentFilter}
+                  onChange={(e) => setContentFilter(e.target.value)}
+                  aria-label="Filter by content type"
+                  className="h-11 w-full rounded-full border border-border/60 bg-background px-4 text-sm outline-none transition-colors focus:border-primary/40"
+                >
+                  <option value="all">All content types</option>
+                  <option value="text">Text</option>
+                  <option value="table">Tables</option>
+                  <option value="equation">Equations</option>
+                  <option value="math_problem">Math problems</option>
+                  <option value="programming">Programming</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="mt-4 flex snap-x gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mt-4">
+              <Button variant={groupFilter === "all" ? "default" : "outline"} size="sm" onClick={() => setGroupFilter("all")} className="shrink-0 rounded-full">
+                All groups
               </Button>
-              {chapterData.questions.map((group) => (
+              {chapterData?.questions.map((group) => (
                 <Button
                   key={group.question_group}
-                  variant={
-                    groupFilter === group.question_group ? "default" : "outline"
-                  }
+                  variant={groupFilter === group.question_group ? "default" : "outline"}
                   size="sm"
                   onClick={() => setGroupFilter(group.question_group)}
-                  className="text-xs"
+                  className="shrink-0 rounded-full"
                 >
-                  {group.question_group} ({group.questions.length})
+                  {group.question_group}
                 </Button>
               ))}
             </div>
+          </section>
+
+          {hasActiveFilters && (
+            <div className="fixed bottom-6 left-1/2 z-40 -translate-x-1/2">
+              <Button onClick={clearFilters} className="rounded-full shadow-xl shadow-primary/20" size="lg">
+                <Filter className="h-4 w-4" />
+                Clear all filters
+              </Button>
+            </div>
           )}
 
-          {/* Filter Status */}
-          {(groupFilter !== "all" ||
-            contentFilter !== "all" ||
-            searchValue) && (
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-              <div className="flex items-center justify-between">
-                <div className="text-sm text-blue-800">
-                  <span className="font-medium">Active filters:</span>
-                  {groupFilter !== "all" && (
-                    <span className="ml-2 bg-blue-100 px-2 py-1 rounded">
-                      Group: {groupFilter}
-                    </span>
-                  )}
-                  {contentFilter !== "all" && (
-                    <span className="ml-2 bg-blue-100 px-2 py-1 rounded">
-                      Type: {contentFilter}
-                    </span>
-                  )}
-                  {searchValue && (
-                    <span className="ml-2 bg-blue-100 px-2 py-1 rounded">
-                      Search: "{searchValue}"
-                    </span>
-                  )}
+          <section className="space-y-8 pt-2">
+            {filteredGroups.map((group) => (
+              <div key={group.question_group} className="space-y-4">
+                <div>
+                  <h2 className="text-xl font-semibold tracking-tight">{group.question_group}</h2>
+                  <p className="text-sm text-muted-foreground">{group.questions.length} question{group.questions.length !== 1 ? "s" : ""}</p>
                 </div>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={clearFilters}
-                  className="text-xs text-blue-600 hover:text-blue-800"
-                >
-                  Clear all
-                </Button>
+
+                <div className="space-y-4">
+                  {group.questions.map((question) => (
+                    <QuestionCard
+                      key={`${group.question_group}-${question.id}`}
+                      question={question}
+                      groupName={group.question_group}
+                      renderContent={renderContent}
+                      gradeId={gradeId}
+                      chapterId={chapterId}
+                      chapterName={chapterData?.name}
+                    />
+                  ))}
+                </div>
               </div>
+            ))}
+          </section>
+
+          {filteredGroups.length === 0 && (
+            <div className="rounded-[2rem] border border-dashed border-border/60 bg-card/60 px-6 py-16 text-center">
+              <Search className="mx-auto mb-4 h-12 w-12 text-muted-foreground/50" />
+              <p className="text-lg font-semibold">No questions found</p>
+              <p className="mt-2 text-sm text-muted-foreground">Try clearing the filters or using a different search phrase.</p>
             </div>
           )}
         </div>
+      </main>
 
-        {/* Questions List */}
-        <div className="space-y-8">
-          {filteredGroups.map((group) => (
-            <div key={group.question_group} className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-xl font-semibold text-gray-800">
-                  {group.question_group}
-                </h2>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                  {group.questions.length} question
-                  {group.questions.length !== 1 ? "s" : ""}
-                </span>
-              </div>
-              <div className="space-y-4">
-                {group.questions.map((q) => (
-                  <QuestionCard
-                    key={`${group.question_group}-${q.id}`}
-                    question={q}
-                    groupName={group.question_group}
-                    renderContent={renderContent}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {filteredGroups.length === 0 && (
-          <div className="text-center py-12">
-            <div className="text-gray-500 mb-4">
-              <Search className="h-12 w-12 mx-auto mb-4 opacity-50" />
-              <p className="text-lg">No questions found</p>
-              <p className="text-sm">Try adjusting your search criteria</p>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Floating Scroll to Top Button */}
       {showScrollTop && (
         <Button
           onClick={handleScrollToTop}
-          className="fixed bottom-6 right-6 h-12 w-12 rounded-full shadow-lg bg-blue-600 hover:bg-blue-700 text-white z-50 transition-all duration-300 ease-in-out"
+          className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full shadow-xl shadow-primary/20"
           size="sm"
+          aria-label="Scroll to top"
         >
           <ArrowUp className="h-5 w-5" />
         </Button>
